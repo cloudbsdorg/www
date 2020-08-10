@@ -1,7 +1,6 @@
 pipeline {
     agent {
-    	docker { 
-            image 'dockerregistry.development.redwolfsecurity.com/build_environment:latest' 
+    	any { 
         }
     }
 	stages {
