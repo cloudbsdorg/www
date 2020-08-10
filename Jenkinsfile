@@ -1,7 +1,6 @@
 pipeline {
     agent {
-    	freebsd_12_1 { 
-        }
+    	label 'freebsd_12_1'
     }
 	stages {
 		stage('Install Dependencies') {
