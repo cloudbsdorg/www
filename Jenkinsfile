@@ -1,6 +1,6 @@
 pipeline {
     agent {
-    	any { 
+    	freebsd_12_1 { 
         }
     }
 	stages {
