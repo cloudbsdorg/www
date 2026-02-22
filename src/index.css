@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cloudbsd-blue: #00529B;
+  --cloudbsd-red: #D32F2F;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-900 dark:text-slate-100;
+  }
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 82, 155, 0.8), rgba(0, 82, 155, 0.6)), url('/cloudbsd-background.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+}
+
+.dark .hero-bg {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('/cloudbsd-background.jpg');
+}
