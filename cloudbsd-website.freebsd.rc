@@ -9,28 +9,26 @@
 name="cloudbsd_website"
 rcvar="cloudbsd_website_enable"
 
-# Usually, nginx will serve the site, so this script might not be 
-# required for a pure static site. However, if CloudBSD needs a specific 
-# background service to serve or proxy, this script will manage it.
-# For now, it will ensure that the NGINX configuration is symlinked 
-# or ensure the assets are in place, but standard practice is to use 
-# the nginx rc script itself.
-
-# If the website had a dedicated backend (like nodejs), this would be:
-command="/usr/local/bin/npm"
-command_args="start"
-# Ensure /usr/local/bin is in PATH for npm to find node
-export PATH=$PATH:/usr/local/bin
-# For recovery/restating, standard rc.d doesn't have an auto-restart field like systemd,
-# but we can set the working directory and run it under a specific user.
-cloudbsd_website_chdir="/usr/local/www/cloudbsd-website"
-cloudbsd_website_user="www"
-# Note: To ensure it stays up, consider using a process manager like 'pm2' 
-# or a simple watchdog if strict auto-recovery is required on FreeBSD.
-
+# Configuration
 load_rc_config $name
 : ${cloudbsd_website_enable:="NO"}
 : ${cloudbsd_website_user:="www"}
 : ${cloudbsd_website_chdir:="/usr/local/www/cloudbsd-website"}
+: ${cloudbsd_website_log:="/var/log/${name}.log"}
+: ${cloudbsd_website_pidfile:="/var/run/${name}.pid"}
+
+# Ensure /usr/local/bin is in PATH for npm to find node
+export PATH=$PATH:/usr/local/bin
+
+command="/usr/sbin/daemon"
+# -f: Stay in the background (daemonize)
+# -r: Restart the process if it fails
+# -p: Create a PID file
+# -o: Redirect output to log file
+# -u: Run as specific user
+command_args="-f -r -p ${cloudbsd_website_pidfile} -o ${cloudbsd_website_log} -u ${cloudbsd_website_user} /usr/local/bin/npm start"
+
+pidfile="${cloudbsd_website_pidfile}"
+procname="/usr/local/bin/node"
 
 run_rc_command "$1"
