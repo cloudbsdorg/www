@@ -10,7 +10,7 @@ CloudBSD is a next-generation cloud platform built on FreeBSD. The website aims 
 - **Styling**: Tailwind CSS 3
 - **Language**: TypeScript
 - **Containerization**: OCI-compliant (Docker/Podman) with specific configurations for Linux and FreeBSD.
-- **Build Tooling**: GNU Makefile for cross-platform automation.
+- **Build Tooling**: Portable Makefile designed for compatibility with both GNU Make and BSD Make, using shell-based conditionals for reliable cross-platform automation.
 
 ## Key Features & Accomplishments
 1.  **Modern UI**: Responsive design using Tailwind CSS, featuring a sticky header, hero section with background optimization, and a feature grid.
