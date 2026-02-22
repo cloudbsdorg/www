@@ -1,5 +1,3 @@
-OS := $(shell uname -s)
-
 IMAGE_NAME = cloudbsd-website
 PORT = 8080
 
@@ -12,12 +10,13 @@ build:
 	npm run build
 
 install: build
-	@if [ "$(OS)" = "FreeBSD" ]; then \
+	@OS=$$(uname -s); \
+	if [ "$$OS" = "FreeBSD" ]; then \
 		$(MAKE) install-freebsd; \
-	elif [ "$(OS)" = "Linux" ]; then \
+	elif [ "$$OS" = "Linux" ]; then \
 		$(MAKE) install-linux; \
 	else \
-		echo "Unsupported OS for bare-metal install: $(OS)"; \
+		echo "Unsupported OS for bare-metal install: $$OS"; \
 		exit 1; \
 	fi
 
@@ -45,14 +44,15 @@ install-linux:
 	@echo "Installation complete. Start with: systemctl enable --now cloudbsd-website"
 
 run:
-	@if [ "$(OS)" = "FreeBSD" ]; then \
+	@OS=$$(uname -s); \
+	if [ "$$OS" = "FreeBSD" ]; then \
 		echo "Detected FreeBSD - Running development server..."; \
 		npm run dev; \
-	elif [ "$(OS)" = "Linux" ]; then \
+	elif [ "$$OS" = "Linux" ]; then \
 		echo "Detected Linux - Running development server..."; \
 		npm run dev; \
 	else \
-		echo "Unsupported OS: $(OS)"; \
+		echo "Unsupported OS: $$OS"; \
 		exit 1; \
 	fi
 

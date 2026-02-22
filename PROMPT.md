@@ -10,7 +10,7 @@ CloudBSD is a next-generation cloud platform built on FreeBSD. The website aims 
 - **Styling**: Tailwind CSS 3
 - **Language**: TypeScript
 - **Containerization**: OCI-compliant (Docker/Podman) with specific configurations for Linux and FreeBSD.
-- **Build Tooling**: Portable Makefile designed for compatibility with both GNU Make and BSD Make, using shell-based conditionals for reliable cross-platform automation.
+- **Build Tooling**: Portable Makefile designed for compatibility with both GNU Make and BSD Make, avoiding top-level GNU-specific assignments and using dynamic shell-based detection within targets.
 
 ## Key Features & Accomplishments
 1.  **Modern UI**: Responsive design using Tailwind CSS, featuring a sticky header, hero section with background optimization, and a feature grid.
@@ -20,15 +20,20 @@ CloudBSD is a next-generation cloud platform built on FreeBSD. The website aims 
 5.  **Multi-OS Container Support**:
     - `Containerfile.linux`: Standard OCI container for Linux environments.
     - `Containerfile.freebsd`: Specialized container for FreeBSD-based runtimes.
-6.  **Smart Makefile**: Automatically detects the host OS (Linux vs. FreeBSD) and provides commands for building, running development servers, building OCI images, and performing bare-metal installations.
-7.  **Bare-Metal Deployment**: 
+6.  **Security-First Design**:
+    - **Secure Isolation**: Leverages FreeBSD Jails and Bhyve for strong security boundaries between workloads.
+    - **Hardened Services**: Mandatory HTTPS redirection and automated certificate management (LetsEncrypt support).
+    - **ZFS Protection**: Native data integrity, encryption, and snapshotting.
+    - **Access Control**: Centralized role-based access control (RBAC) and SSH key management.
+7.  **Smart Makefile**: Automatically detects the host OS (Linux vs. FreeBSD) and provides commands for building, running development servers, building OCI images, and performing bare-metal installations.
+8.  **Bare-Metal Deployment**: 
     - `cloudbsd-nginx.conf`: NGINX configuration configured as a reverse proxy to redirect port 80 to the Node.js application (port 3000).
     - `cloudbsd-website.freebsd.rc`: Init script for FreeBSD that runs the application via `npm start`.
     - `cloudbsd-website.ubuntu.service`: Systemd service unit for Ubuntu with `Restart=always` for auto-recovery.
     - `make install`: Cross-platform command to deploy the application, install production dependencies, and configure NGINX and services.
-8.  **Application Architecture**: The site is built as a Single Page Application (SPA), served by a Node.js process (`serve` package) for consistent behavior, and proxied by NGINX for host sharing and SSL termination (managed externally).
-9.  **Background Optimization**: The `cloudbsd-background.jpg` is served with a sophisticated CSS gradient overlay (`hero-bg` class in `index.css`) to ensure text legibility and high visual impact without needing complex SVG conversions.
-10. **License**: Released under the 3-Clause BSD License.
+9.  **Application Architecture**: The site is built as a Single Page Application (SPA), served by a Node.js process (`serve` package) for consistent behavior, and proxied by NGINX for host sharing and SSL termination (managed externally).
+10. **Background Optimization**: The `cloudbsd-background.jpg` is served with a sophisticated CSS gradient overlay (`hero-bg` class in `index.css`) to ensure text legibility and high visual impact without needing complex SVG conversions.
+11. **License**: Released under the 3-Clause BSD License.
 
 ## Project Structure
 - `src/App.tsx`: Main application component and layout.

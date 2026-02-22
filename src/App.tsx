@@ -115,20 +115,28 @@ const App: React.FC = () => {
               description="Full Bhyve VMM integration for high-performance virtual hosts and hardware passthrough."
             />
             <FeatureCard 
+              title="Secure Isolation"
+              description="FreeBSD-native Jails and Bhyve provide high-density, low-overhead isolation with strong security boundaries."
+            />
+            <FeatureCard 
               title="GPU Management"
               description="Advanced hardware discovery and PCI passthrough support to share and manage GPU resources effectively."
             />
             <FeatureCard 
-              title="Secure Jails"
-              description="FreeBSD-native isolation for high-density, low-overhead containerized workloads."
+              title="ZFS-Native Security"
+              description="Industry-leading storage reliability with built-in data integrity, encryption support, and instant snapshotting."
+            />
+            <FeatureCard 
+              title="Hardened Services"
+              description="Mandatory HTTPS with automated certificate management and automatic redirection of insecure ports."
+            />
+            <FeatureCard 
+              title="Role-Based Access"
+              description="Centralized user management, SSH key distribution, and role-based authorization for granular control."
             />
             <FeatureCard 
               title="OCI Support"
               description="Seamlessly run and manage Linux OCI containers on FreeBSD with built-in orchestration."
-            />
-            <FeatureCard 
-              title="ZFS by Default"
-              description="Industry-leading storage reliability and performance with built-in data integrity and snapshotting."
             />
             <FeatureCard 
               title="System Discovery"
