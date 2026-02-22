@@ -19,6 +19,8 @@ rcvar="cloudbsd_website_enable"
 # If the website had a dedicated backend (like nodejs), this would be:
 command="/usr/local/bin/npm"
 command_args="start"
+# Ensure /usr/local/bin is in PATH for npm to find node
+export PATH=$PATH:/usr/local/bin
 # For recovery/restating, standard rc.d doesn't have an auto-restart field like systemd,
 # but we can set the working directory and run it under a specific user.
 cloudbsd_website_chdir="/usr/local/www/cloudbsd-website"

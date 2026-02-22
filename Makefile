@@ -6,6 +6,7 @@ PORT = 8080
 all: build
 
 build:
+	npm config delete python
 	npm install
 	npm run build
 
@@ -25,7 +26,7 @@ install-freebsd:
 	mkdir -p /usr/local/www/cloudbsd-website
 	cp -R dist /usr/local/www/cloudbsd-website/
 	cp package.json package-lock.json /usr/local/www/cloudbsd-website/
-	cd /usr/local/www/cloudbsd-website && npm install --production
+	cd /usr/local/www/cloudbsd-website && npm config delete python && npm install --omit=dev
 	cp cloudbsd-nginx.conf /usr/local/etc/nginx/conf.d/cloudbsd.conf
 	cp cloudbsd-website.freebsd.rc /usr/local/etc/rc.d/cloudbsd_website
 	chmod +x /usr/local/etc/rc.d/cloudbsd_website
@@ -36,7 +37,7 @@ install-linux:
 	mkdir -p /var/www/cloudbsd-website
 	cp -R dist /var/www/cloudbsd-website/
 	cp package.json package-lock.json /var/www/cloudbsd-website/
-	cd /var/www/cloudbsd-website && npm install --production
+	cd /var/www/cloudbsd-website && npm config delete python && npm install --omit=dev
 	cp cloudbsd-nginx.conf /etc/nginx/sites-available/cloudbsd.conf
 	ln -sf /etc/nginx/sites-available/cloudbsd.conf /etc/nginx/sites-enabled/
 	cp cloudbsd-website.ubuntu.service /etc/systemd/system/cloudbsd-website.service
