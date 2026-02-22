@@ -17,18 +17,22 @@ load_rc_config $name
 : ${cloudbsd_website_log:="/var/log/${name}.log"}
 : ${cloudbsd_website_pidfile:="/var/run/${name}.pid"}
 
-# Ensure /usr/local/bin is in PATH for npm to find node
-export PATH=$PATH:/usr/local/bin
-# Set HOME to a writable directory to avoid npm cache issues
-export HOME=${cloudbsd_website_chdir}
-
+# Note: We avoid daemon's -u flag here because for users like 'www' with 
+# nologin shell, it often triggers "failed to set user environment".
+# Instead, we use rc.subr's built-in user management.
 command="/usr/sbin/daemon"
 # -f: Stay in the background (daemonize)
 # -r: Restart the process if it fails
 # -p: Create a PID file
 # -o: Redirect output to log file
-# -u: Run as specific user
-command_args="-f -r -p ${cloudbsd_website_pidfile} -o ${cloudbsd_website_log} -u ${cloudbsd_website_user} /usr/local/bin/npm start"
+command_args="-f -r -p ${cloudbsd_website_pidfile} -o ${cloudbsd_website_log} /usr/local/bin/npm start"
+
+# Use rc.subr to handle user, directory, and environment
+cloudbsd_website_user=${cloudbsd_website_user}
+cloudbsd_website_chdir=${cloudbsd_website_chdir}
+# Ensure /usr/local/bin is in PATH for npm to find node
+# Set HOME to a writable directory to avoid npm cache issues
+cloudbsd_website_env="PATH=$PATH:/usr/local/bin HOME=${cloudbsd_website_chdir}"
 
 pidfile="${cloudbsd_website_pidfile}"
 procname="/usr/local/bin/node"
