@@ -1,7 +1,7 @@
 IMAGE_NAME = cloudbsd-website
 PORT = 8080
 
-.PHONY: all build run clean podman-linux podman-freebsd install install-freebsd install-linux
+.PHONY: all build run clean distclean podman-linux podman-freebsd install install-freebsd install-linux
 
 all: build
 
@@ -69,4 +69,7 @@ podman-freebsd:
 	@echo "Built FreeBSD OCI container. Run with: podman run -p $(PORT):80 $(IMAGE_NAME):freebsd"
 
 clean:
-	rm -rf dist node_modules
+	rm -rf dist
+
+distclean: clean
+	rm -rf node_modules

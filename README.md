@@ -88,6 +88,12 @@ npm start
 A `Makefile` is provided to simplify common tasks:
 - `make all`: Build the project.
 - `make clean`: Remove the `dist` directory.
+- `make distclean`: Remove `dist` and `node_modules`.
+
+## Documentation
+
+- [Project Features](docs/features.md): Detailed plan and feature set for CloudBSD.
+- [Developer Notes](docs/dev-notes.md): Technical rationale and implementation details.
 
 ## License
 
