@@ -156,7 +156,7 @@ const App: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 dark:text-white">Downloads</h2>
           <div className="max-w-xl mx-auto p-12 bg-slate-50 dark:bg-slate-800 border-2 border-dashed border-slate-200 dark:border-slate-700 rounded-2xl">
             <h3 className="text-2xl font-semibold text-slate-400 dark:text-slate-500">Coming Soon</h3>
-            <p className="mt-4 text-slate-500 dark:text-slate-400">We are currently finalizing the initial release. Stay tuned for ISO, IMG, and Netboot packages.</p>
+            <p className="mt-4 text-slate-500 dark:text-slate-400">We are still cooking. Stay tuned.</p>
           </div>
         </div>
       </section>
