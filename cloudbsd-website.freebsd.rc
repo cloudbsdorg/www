@@ -19,6 +19,8 @@ load_rc_config $name
 
 # Ensure /usr/local/bin is in PATH for npm to find node
 export PATH=$PATH:/usr/local/bin
+# Set HOME to a writable directory to avoid npm cache issues
+export HOME=${cloudbsd_website_chdir}
 
 command="/usr/sbin/daemon"
 # -f: Stay in the background (daemonize)
@@ -30,5 +32,20 @@ command_args="-f -r -p ${cloudbsd_website_pidfile} -o ${cloudbsd_website_log} -u
 
 pidfile="${cloudbsd_website_pidfile}"
 procname="/usr/local/bin/node"
+
+start_precmd="cloudbsd_website_prestart"
+
+cloudbsd_website_prestart()
+{
+	# Ensure log and pid files exist and are writable by the user
+	touch ${cloudbsd_website_log}
+	chown ${cloudbsd_website_user} ${cloudbsd_website_log}
+	# On FreeBSD, /var/run is normally root-only.
+	# The daemon utility started as root should be able to create the pid file,
+	# but it must have permission if it restarts and is already running as the user.
+	# Touching it and chowning it ensures it's ready.
+	touch ${cloudbsd_website_pidfile}
+	chown ${cloudbsd_website_user} ${cloudbsd_website_pidfile}
+}
 
 run_rc_command "$1"

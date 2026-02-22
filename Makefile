@@ -30,6 +30,9 @@ install-freebsd:
 	cp cloudbsd-nginx.conf /usr/local/etc/nginx/conf.d/cloudbsd.conf
 	cp cloudbsd-website.freebsd.rc /usr/local/etc/rc.d/cloudbsd_website
 	chmod +x /usr/local/etc/rc.d/cloudbsd_website
+	# Set up logging with proper permissions
+	touch /var/log/cloudbsd_website.log
+	chown www /var/log/cloudbsd_website.log
 	@echo "Installation complete. Enable with: sysrc cloudbsd_website_enable=YES"
 
 install-linux:

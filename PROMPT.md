@@ -35,7 +35,7 @@ CloudBSD is a next-generation cloud platform built on FreeBSD. The website aims 
 10. **Background Optimization**: The `cloudbsd-background.jpg` is served with a sophisticated CSS gradient overlay (`hero-bg` class in `index.css`) to ensure text legibility and high visual impact without needing complex SVG conversions.
 11. **License**: Released under the 3-Clause BSD License.
 12. **Service Robustness**:
-    - FreeBSD `rc` script now utilizes the `daemon` utility to background the process, manage PID files, and redirect STDOUT/STDERR to `/var/log/cloudbsd_website.log`. This ensures non-blocking startup and automatic recovery (`-r` flag) with full logging.
+    - FreeBSD `rc` script now utilizes the `daemon` utility to background the process, manage PID files, and redirect STDOUT/STDERR to `/var/log/cloudbsd_website.log`. It includes a `prestart` routine to handle file permissions for the `www` user and sets the `HOME` environment variable to ensure `npm` operations remain localized and permission-safe. This ensures non-blocking startup and automatic recovery (`-r` flag) with full logging.
 
 ## Project Structure
 - `src/App.tsx`: Main application component and layout.
