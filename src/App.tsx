@@ -27,7 +27,7 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900 transition-colors duration-300">
       {/* Header */}
       <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
-        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+        <div className="container mx-auto px-4 h-20 flex items-center justify-between relative">
           <div className="flex items-center space-x-2">
             <img src="/logo-head-only.png" alt="Logo" className="h-12 w-auto" />
             <span className="text-2xl font-bold text-cloudbsd-blue dark:text-blue-400">{CONFIG.projectName}</span>
@@ -75,33 +75,36 @@ const App: React.FC = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
-            <nav className="flex flex-col p-4 space-y-4">
-              <a 
-                href="#about" 
-                className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </a>
-              <a 
-                href="#features" 
-                className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Features
-              </a>
-              <a 
-                href="#downloads" 
-                className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Downloads
-              </a>
-            </nav>
-          </div>
-        )}
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 ${
+            isMobileMenuOpen ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ maxHeight: isMobileMenuOpen ? '300px' : '0' }}
+        >
+          <nav className="flex flex-col p-4 space-y-4">
+            <a 
+              href="#about" 
+              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </a>
+            <a 
+              href="#features" 
+              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a 
+              href="#downloads" 
+              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Downloads
+            </a>
+          </nav>
+        </div>
       </header>
 
       {/* Hero */}
