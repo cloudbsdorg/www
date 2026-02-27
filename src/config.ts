@@ -3,4 +3,5 @@ export const CONFIG = {
   companyName: "CloudBSD",
   ownerName: "Mark LaPointe",
   ownerEmail: "mark@cloudbsd.org",
+  discordLink: "https://discord.gg/8KYawCuG",
 };
