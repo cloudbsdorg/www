@@ -6,15 +6,15 @@
     "downloads": "Hegh"
   },
   "hero": {
-    "title": "Platform Cloud chu'",
-    "subtitle": "FreeBSD HoS, raD stability je lulo' cloud infrastructure luvut.",
+    "title": "eng rav chu'",
+    "subtitle": "FreeBSD HoS, raD stability je lulo' eng infrastructure luvut.",
     "learnMore": "vIghaj",
     "getStarted": "tagH"
   },
   "about": {
     "title": "nuq {{projectName}}?",
-    "p1": "CloudBSD distribution FreeBSD ghot build, Jail, VM (Bhyve), OCI container je hosting environment robust provide design.",
-    "p2": "System discovery, worker node installation automated, centralized management powerful Controller Service via focus."
+    "p1": "CloudBSD distribution FreeBSD ghot build, Jail, VM (Bhyve), OCI container je hosting environment HoS chu' ghot.",
+    "p2": "pat tu', worker ghot lulo' automated, management HoS Controller Service ghot."
   },
   "features": {
     "title": "SeH Qu'",
@@ -27,7 +27,7 @@
       "desc": "resource SeH orchestrated, PXE boot raD support, OS deployment effortless base je."
     },
     "nativeVirtualization": {
-      "title": "Native Virtualization",
+      "title": "qo' chu' ghun",
       "desc": "Bhyve VMM integration chu', virtual host HoS, hardware passthrough je."
     },
     "secureIsolation": {
@@ -39,44 +39,44 @@
       "desc": "hardware discovery chu', PCI passthrough support, GPU resource SeH manage share je."
     },
     "zfsSecurity": {
-      "title": "ZFS-Native Security",
-      "desc": "storage reliability industry-leading, data integrity, encryption support, instant snapshotting je."
+      "title": "ZFS Hub",
+      "desc": "storage reliability Hub chu', data integrity, encryption support, instant snapshotting je."
     },
     "hardenedServices": {
       "title": "Services quv",
       "desc": "HTTPS mandatory, certificate management automated, insecure port automatic redirection je."
     },
     "rbac": {
-      "title": "Role-Based Access",
+      "title": "Qu' SeH",
       "desc": "User management centralized, SSH key distribution, role-based authorization je."
     },
     "ociSupport": {
-      "title": "OCI Support",
+      "title": "OCI boQ",
       "desc": "Linux OCI container FreeBSD run, SeH orchestrated built-in je."
     },
     "discovery": {
-      "title": "System Discovery",
+      "title": "pat tu'",
       "desc": "hardware reporting automated, RAM, CPU, Disk, Network interface controller je."
     },
     "apiFirst": {
-      "title": "API First",
+      "title": "API wa'DIch",
       "desc": "management API chu', internal external system integration, automation je."
     }
   },
   "community": {
-    "title": "ghom join",
-    "connect": "Discord connect",
-    "desc": "Help, idea, CloudBSD future contribute.",
-    "join": "Server join"
+    "title": "ghom muv",
+    "connect": "Discord rar",
+    "desc": "boQ, idea, CloudBSD future ghot.",
+    "join": "De'wI' muv"
   },
   "downloads": {
     "title": "Hegh",
-    "comingSoon": "Soon",
-    "stayTuned": "Doy'ich. stay tuned."
+    "comingSoon": "tugh",
+    "stayTuned": "Doy'ich. yIloS."
   },
   "footer": {
-    "rights": "© 2026 {{companyName}}. rights reserved.",
-    "projectBy": "Project by",
+    "rights": "© 2026 {{companyName}}. Hoch.",
+    "projectBy": "Qu'vo'",
     "builtOn": "FreeBSD build · 3-Clause BSD License release"
   }
 }
