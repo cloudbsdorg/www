@@ -73,6 +73,6 @@ The project includes multi-OS container support via:
 Use `make podman-linux` or `make podman-freebsd` to build the respective images.
 
 ### Deployment Details
-- **FreeBSD**: Uses `daemon` in the RC script for background execution and logging to `/var/log/cloudbsd_website.log`.
+- **FreeBSD**: Uses `daemon` in the RC script for background execution and logging to `/var/log/cloudbsd_website.log`. The script includes custom logic to clean up the PID file upon stopping and handles edge cases where a negative PID might be present in the PID file by treating the service as stopped and cleaning up the stale file.
 - **Linux**: Uses Systemd with `Restart=always` for reliability.
 - **Proxy**: NGINX is used as a reverse proxy (config in `cloudbsd-nginx.conf`) to the Node.js application running on port 3000.

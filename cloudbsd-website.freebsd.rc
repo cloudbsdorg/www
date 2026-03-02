@@ -34,22 +34,57 @@ cloudbsd_website_chdir=${cloudbsd_website_chdir}
 # Set HOME to a writable directory to avoid npm cache issues
 cloudbsd_website_env="PATH=$PATH:/usr/local/bin HOME=${cloudbsd_website_chdir}"
 
+# Set up the commands and arguments
 pidfile="${cloudbsd_website_pidfile}"
 procname="/usr/local/bin/node"
 
 start_precmd="cloudbsd_website_prestart"
+stop_postcmd="cloudbsd_website_poststop"
+status_precmd="cloudbsd_website_status_check"
 
 cloudbsd_website_prestart()
 {
 	# Ensure log and pid files exist and are writable by the user
 	touch ${cloudbsd_website_log}
 	chown ${cloudbsd_website_user} ${cloudbsd_website_log}
+	
+	# If the pidfile exists, check if it contains a negative number
+	if [ -f "${pidfile}" ]; then
+		_pid=$(cat "${pidfile}" 2>/dev/null)
+		if [ -n "$_pid" ] && [ "$_pid" -lt 0 ] 2>/dev/null; then
+			echo "Stale negative PID (${_pid}) found in ${pidfile}. Cleaning up."
+			rm -f "${pidfile}"
+		fi
+	fi
+
 	# On FreeBSD, /var/run is normally root-only.
 	# The daemon utility started as root should be able to create the pid file,
 	# but it must have permission if it restarts and is already running as the user.
 	# Touching it and chowning it ensures it's ready.
 	touch ${cloudbsd_website_pidfile}
 	chown ${cloudbsd_website_user} ${cloudbsd_website_pidfile}
+}
+
+cloudbsd_website_poststop()
+{
+	# Clean out the pidfile after the process has stopped
+	if [ -f "${pidfile}" ]; then
+		rm -f "${pidfile}"
+	fi
+}
+
+cloudbsd_website_status_check()
+{
+	# If the pidfile exists, check if it contains a negative number
+	if [ -f "${pidfile}" ]; then
+		_pid=$(cat "${pidfile}" 2>/dev/null)
+		if [ -n "$_pid" ] && [ "$_pid" -lt 0 ] 2>/dev/null; then
+			echo "Negative PID (${_pid}) found. Considering service NOT running."
+			rm -f "${pidfile}"
+			return 1 # Failure in status means not running
+		fi
+	fi
+	return 0
 }
 
 run_rc_command "$1"
