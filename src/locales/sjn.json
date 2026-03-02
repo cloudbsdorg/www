@@ -6,77 +6,77 @@
     "downloads": "Fpe"
   },
   "hero": {
-    "title": "Platform Cloud o Pandora",
-    "subtitle": "Leithio i-ngul, i-varn, a i-thala o FreeBSD na cloud infrastructure lín.",
+    "title": "Teri Taw o Pandora",
+    "subtitle": "Leithio i-ngul, i-varn, a i-thala o FreeBSD na Taw Pat lín.",
     "learnMore": "Tielo ach",
     "getStarted": "Hero"
   },
   "about": {
     "title": "Peu {{projectName}}?",
-    "p1": "CloudBSD na distribution o FreeBSD, i-gasar na environment am-hosting Jails, VMs, a OCI containers.",
-    "p2": "Focus na system discovery, worker nodes, a management via Controller Service."
+    "p1": "CloudBSD na Lo o FreeBSD, i-gasar na Teri am-Tir Jails, VMs, a OCI Pat.",
+    "p2": "Tir na Pat Tu', Gwem Gwem, a Tir via Tir Lekter."
   },
   "features": {
     "title": "Säpängxe",
     "unifiedController": {
-      "title": "Unified Controller",
-      "desc": "Configuration point. Jail, VM, Container-ur SeH fte lu."
+      "title": "Sìp Tir",
+      "desc": "Sìp Tir. Jail, VM, Container-ur SeH fte lu."
     },
     "smartWorkerNodes": {
-      "title": "Smart Worker Nodes",
-      "desc": "Resource management, PXE boot support, am-base OS deployment."
+      "title": "Lekter Gwem Gwem",
+      "desc": "Sìp Tir, PXE boot Tir, am-base OS deployment."
     },
     "nativeVirtualization": {
-      "title": "Native Virtualization",
-      "desc": "Bhyve VMM integration, virtual host, a hardware passthrough."
+      "title": "Atl Lekter",
+      "desc": "Bhyve VMM Tir, virtual Teri, a hardware Tir."
     },
     "secureIsolation": {
-      "title": "Secure Isolation",
-      "desc": "FreeBSD-native Jails a Bhyve, isolation, a security boundaries."
+      "title": "Varn Tir",
+      "desc": "FreeBSD-Atl Jails a Bhyve, Tir, a Varn Tir."
     },
     "gpuManagement": {
-      "title": "GPU Management",
-      "desc": "Hardware discovery, PCI passthrough support, a GPU resource manage."
+      "title": "GPU Tir",
+      "desc": "Hardware Tu', PCI Tir Tir, a GPU resource Tir."
     },
     "zfsSecurity": {
-      "title": "ZFS-Native Security",
-      "desc": "Storage reliability, data integrity, encryption, a instant snapshots."
+      "title": "ZFS-Atl Varn",
+      "desc": "Storage Varn, data Varn, Varn, a Tugh Tugh."
     },
     "hardenedServices": {
-      "title": "Hardened Services",
-      "desc": "HTTPS, automated certificate management, a redirection."
+      "title": "Hardened Lekter",
+      "desc": "HTTPS, Tu' Lekter Tir, a Tir."
     },
     "rbac": {
-      "title": "Role-Based Access",
-      "desc": "User management, SSH key distribution, a role-based authorization."
+      "title": "Sìp Tir",
+      "desc": "User Tir, SSH key Lo, a Sìp Tir."
     },
     "ociSupport": {
-      "title": "OCI Support",
-      "desc": "Run a manage Linux OCI containers sui FreeBSD na orchestration."
+      "title": "OCI Tir",
+      "desc": "Lekter a Tir Linux OCI Pat sui FreeBSD na Tir."
     },
     "discovery": {
-      "title": "System Discovery",
-      "desc": "Hardware reporting o RAM, CPU, Disks, a Network interfaces."
+      "title": "Pat Tu'",
+      "desc": "Hardware Tu' o RAM, CPU, Disks, a Network Tir."
     },
     "apiFirst": {
-      "title": "API First",
-      "desc": "Management APIs, internal a external system integration, a automation."
+      "title": "API Tir",
+      "desc": "Tir APIs, Teri a Teri Pat Tir, a Tu'."
     }
   },
   "community": {
-    "title": "Join Olo'",
-    "connect": "Discord-ur connect",
-    "desc": "Help, ideas, a contribute am-future o CloudBSD.",
-    "join": "Server join"
+    "title": "Muv Olo'",
+    "connect": "Discord-ur Tir",
+    "desc": "Tir, Lekter, a Lo am-Tugh o CloudBSD.",
+    "join": "Pat Muv"
   },
   "downloads": {
-    "title": "Downloads",
-    "comingSoon": "Coming Soon",
-    "stayTuned": "Stay tuned."
+    "title": "Dep",
+    "comingSoon": "Tugh",
+    "stayTuned": "Sìp Tir."
   },
   "footer": {
-    "rights": "© 2026 {{companyName}}. Rights reserved.",
-    "projectBy": "Project by",
-    "builtOn": "Built on FreeBSD"
+    "rights": "© 2026 {{companyName}}. Hoch.",
+    "projectBy": "Qu'vo'",
+    "builtOn": "Build FreeBSD"
   }
 }

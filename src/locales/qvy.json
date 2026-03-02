@@ -6,77 +6,77 @@
     "downloads": "Dep"
   },
   "hero": {
-    "title": "Platform Cloud o Zaldrīzes",
-    "subtitle": "Fire, security, a stability o FreeBSD.",
+    "title": "Kosty Zaldrīzes o Zaldrīzes",
+    "subtitle": "Zald, Varn, a Varn o FreeBSD.",
     "learnMore": "Lekter mor",
     "getStarted": "Tag"
   },
   "about": {
     "title": "Skorkydo {{projectName}}?",
-    "p1": "CloudBSD distribution FreeBSD-er, environment o hosting Jails, VMs, OCI containers.",
-    "p2": "System discovery, worker nodes, management Controller Service."
+    "p1": "CloudBSD Kosty FreeBSD-er, Lekter o SeH Jails, VMs, OCI Pat.",
+    "p2": "Pat Tu', Gwem Gwem, SeH SeH Lekter."
   },
   "features": {
     "title": "Zaldrīzes",
     "unifiedController": {
-      "title": "Unified Controller",
-      "desc": "Kosty SeH. SeH Jails, VMs, Containers o Kosty."
+      "title": "Kosty SeH",
+      "desc": "Kosty SeH. SeH Jails, VMs, Pat o Kosty."
     },
     "smartWorkerNodes": {
-      "title": "Smart Worker Nodes",
+      "title": "Lekter Gwem Gwem",
       "desc": "Resource SeH, PXE boot, base OS deployment."
     },
     "nativeVirtualization": {
-      "title": "Native Virtualization",
-      "desc": "Bhyve VMM integration, virtual host, hardware passthrough."
+      "title": "Kosty Lekter",
+      "desc": "Bhyve VMM SeH, virtual Kosty, hardware SeH."
     },
     "secureIsolation": {
-      "title": "Secure Isolation",
-      "desc": "FreeBSD-native Jail, Bhyve, isolation density, security boundaries."
+      "title": "Varn Kosty",
+      "desc": "FreeBSD-Kosty Jail, Bhyve, Kosty density, Varn Kosty."
     },
     "gpuManagement": {
-      "title": "GPU Management",
-      "desc": "Hardware discovery, PCI passthrough, GPU resource SeH."
+      "title": "GPU SeH",
+      "desc": "Hardware Tu', PCI SeH, GPU resource SeH."
     },
     "zfsSecurity": {
-      "title": "ZFS-Native Security",
-      "desc": "Storage reliability, data integrity, encryption, snapshots."
+      "title": "ZFS-Kosty Varn",
+      "desc": "Storage Varn, data Varn, Varn, Tugh."
     },
     "hardenedServices": {
-      "title": "Hardened Services",
-      "desc": "HTTPS, certificate management, automatic redirection."
+      "title": "Hardened Lekter",
+      "desc": "HTTPS, Lekter SeH, automatic SeH."
     },
     "rbac": {
-      "title": "Role-Based Access",
-      "desc": "User management, SSH key distribution, role-based authorization."
+      "title": "Kosty SeH",
+      "desc": "User SeH, SSH key Kosty, Kosty SeH."
     },
     "ociSupport": {
-      "title": "OCI Support",
-      "desc": "Linux OCI container FreeBSD run, manage orchestrated built-in."
+      "title": "OCI SeH",
+      "desc": "Linux OCI container FreeBSD Lekter, SeH SeH built-in."
     },
     "discovery": {
-      "title": "System Discovery",
-      "desc": "Hardware reporting RAM, CPU, Disk, Network interface."
+      "title": "Pat Tu'",
+      "desc": "Hardware Tu' RAM, CPU, Disk, Network SeH."
     },
     "apiFirst": {
-      "title": "API First",
-      "desc": "Exposed management API, system integration, automation."
+      "title": "API Kosty",
+      "desc": "Tu' SeH API, Pat SeH, Tu'."
     }
   },
   "community": {
-    "title": "Join Gwem",
-    "connect": "Discord connect",
-    "desc": "Help, ideas, CloudBSD future contribute.",
-    "join": "Server join"
+    "title": "Muv Gwem",
+    "connect": "Discord SeH",
+    "desc": "SeH, Gwem, CloudBSD Tugh Kosty.",
+    "join": "Pat Muv"
   },
   "downloads": {
-    "title": "Downloads",
-    "comingSoon": "Coming Soon",
-    "stayTuned": "Stay tuned."
+    "title": "Dep",
+    "comingSoon": "Tugh",
+    "stayTuned": "Kosty SeH."
   },
   "footer": {
-    "rights": "© 2026 {{companyName}}. All rights reserved.",
-    "projectBy": "Project by",
-    "builtOn": "Built on FreeBSD"
+    "rights": "© 2026 {{companyName}}. Kosty SeH.",
+    "projectBy": "Qu'vo'",
+    "builtOn": "Build FreeBSD"
   }
 }

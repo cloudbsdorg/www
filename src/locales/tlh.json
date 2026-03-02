@@ -7,14 +7,14 @@
   },
   "hero": {
     "title": "eng rav chu'",
-    "subtitle": "FreeBSD HoS, raD stability je lulo' eng infrastructure luvut.",
+    "subtitle": "FreeBSD HoS, raD raD je lulo' eng rav luvut.",
     "learnMore": "vIghaj",
     "getStarted": "tagH"
   },
   "about": {
     "title": "nuq {{projectName}}?",
-    "p1": "CloudBSD distribution FreeBSD ghot build, Jail, VM (Bhyve), OCI container je hosting environment HoS chu' ghot.",
-    "p2": "pat tu', worker ghot lulo' automated, management HoS Controller Service ghot."
+    "p1": "CloudBSD ghot FreeBSD ghot build, Jail, VM (Bhyve), OCI container je vut vut HoS chu' ghot.",
+    "p2": "pat tu', ghun ghot lulo' chu', SeH HoS SeH Qu' ghot."
   },
   "features": {
     "title": "SeH Qu'",
@@ -23,50 +23,50 @@
       "desc": "network Hoch ghot wa' Daq SeH. Jail, VM, Container je SeH wa' Daq."
     },
     "smartWorkerNodes": {
-      "title": "Worker Nodes ghop",
-      "desc": "resource SeH orchestrated, PXE boot raD support, OS deployment effortless base je."
+      "title": "ghun ghop ghop",
+      "desc": "resource SeH chu', PXE boot raD boQ, OS deployment tugh base je."
     },
     "nativeVirtualization": {
       "title": "qo' chu' ghun",
-      "desc": "Bhyve VMM integration chu', virtual host HoS, hardware passthrough je."
+      "desc": "Bhyve VMM chu', virtual rav HoS, hardware boQ je."
     },
     "secureIsolation": {
-      "title": "Isolation quv",
-      "desc": "FreeBSD-native Jail Bhyve je, isolation density HoS, security boundary je provide."
+      "title": "vut quv",
+      "desc": "FreeBSD-qo' Jail Bhyve je, vut density HoS, Hub boundary je ghot."
     },
     "gpuManagement": {
       "title": "GPU SeH",
-      "desc": "hardware discovery chu', PCI passthrough support, GPU resource SeH manage share je."
+      "desc": "hardware tu' chu', PCI boQ boQ, GPU resource SeH SeH share je."
     },
     "zfsSecurity": {
       "title": "ZFS Hub",
-      "desc": "storage reliability Hub chu', data integrity, encryption support, instant snapshotting je."
+      "desc": "storage Hub chu', data Hub, Hub boQ, tugh snapshotting je."
     },
     "hardenedServices": {
-      "title": "Services quv",
-      "desc": "HTTPS mandatory, certificate management automated, insecure port automatic redirection je."
+      "title": "Qu' quv",
+      "desc": "HTTPS quv, Qu' SeH chu', insecure port automatic SeH je."
     },
     "rbac": {
       "title": "Qu' SeH",
-      "desc": "User management centralized, SSH key distribution, role-based authorization je."
+      "desc": "User SeH centralized, SSH key ghot, Qu' muv je."
     },
     "ociSupport": {
       "title": "OCI boQ",
-      "desc": "Linux OCI container FreeBSD run, SeH orchestrated built-in je."
+      "desc": "Linux OCI container FreeBSD ghun, SeH chu' built-in je."
     },
     "discovery": {
       "title": "pat tu'",
-      "desc": "hardware reporting automated, RAM, CPU, Disk, Network interface controller je."
+      "desc": "hardware tu' chu', RAM, CPU, Disk, Network SeH SeH je."
     },
     "apiFirst": {
       "title": "API wa'DIch",
-      "desc": "management API chu', internal external system integration, automation je."
+      "desc": "SeH API chu', vut vut pat chu', chu' je."
     }
   },
   "community": {
     "title": "ghom muv",
     "connect": "Discord rar",
-    "desc": "boQ, idea, CloudBSD future ghot.",
+    "desc": "boQ, idea, CloudBSD ghot ghot.",
     "join": "De'wI' muv"
   },
   "downloads": {

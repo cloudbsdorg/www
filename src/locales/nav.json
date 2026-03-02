@@ -6,77 +6,77 @@
     "downloads": "Fpe"
   },
   "hero": {
-    "title": "Platform Cloud o Pandora",
-    "subtitle": "Eywa security a stability o FreeBSD cloud infrastructure lín.",
+    "title": "Tsenge Taw o Pandora",
+    "subtitle": "Eywa Varn a Varn o FreeBSD Taw Pat lín.",
     "learnMore": "Tielo ach",
     "getStarted": "Hero"
   },
   "about": {
     "title": "Peu {{projectName}}?",
-    "p1": "CloudBSD lolu FreeBSD-ur, fte lolu Jail, VM, OCI container hosting environment.",
-    "p2": "Fte lu system discovery, worker nodes automated, centralized management Controller Service-ur."
+    "p1": "CloudBSD lolu FreeBSD-ur, fte lolu Jail, VM, OCI container Nìn Tsenge.",
+    "p2": "Fte lu Pat Tu', Sìpängxe Sìpängxe Tu', centralized Nìn Säheylu Sìpängxe-ur."
   },
   "features": {
     "title": "Säpängxe",
     "unifiedController": {
-      "title": "Unified Controller",
+      "title": "Sìpaw Säheylu",
       "desc": "SeH point. Jail, VM, Container-ur SeH fte lu."
     },
     "smartWorkerNodes": {
-      "title": "Smart Worker Nodes",
-      "desc": "Resource SeH, PXE boot support, OS deployment effortless."
+      "title": "Fpìl Sìpängxe Sìpängxe",
+      "desc": "Resource SeH, PXE boot Heh, OS deployment Tugh."
     },
     "nativeVirtualization": {
-      "title": "Native Virtualization",
-      "desc": "Bhyve VMM integration, virtual host, hardware passthrough."
+      "title": "Kxele Leit",
+      "desc": "Bhyve VMM Heh, virtual Tsenge, hardware Heh."
     },
     "secureIsolation": {
-      "title": "Secure Isolation",
-      "desc": "FreeBSD-native Jail, Bhyve, isolation, security boundaries."
+      "title": "Varn Veveng",
+      "desc": "FreeBSD-Kxele Jail, Bhyve, Veveng, Varn Veveng."
     },
     "gpuManagement": {
-      "title": "GPU Management",
-      "desc": "Hardware discovery, PCI passthrough support, GPU resource SeH."
+      "title": "GPU Nìn",
+      "desc": "Hardware Tu', PCI Heh Heh, GPU resource SeH."
     },
     "zfsSecurity": {
-      "title": "ZFS-Native Security",
-      "desc": "Storage reliability, data integrity, encryption, snapshots."
+      "title": "ZFS-Kxele Varn",
+      "desc": "Storage Varn, data Varn, Varn, Tugh."
     },
     "hardenedServices": {
-      "title": "Hardened Services",
-      "desc": "HTTPS, certificate management, insecure port redirection."
+      "title": "Hardened Sìpängxe",
+      "desc": "HTTPS, Sìpängxe Nìn, insecure port Nìn."
     },
     "rbac": {
-      "title": "Role-Based Access",
-      "desc": "User management, SSH key distribution, role-based authorization."
+      "title": "Sìpaw Heh",
+      "desc": "User Nìn, SSH key Lu, Sìpaw Heh."
     },
     "ociSupport": {
-      "title": "OCI Support",
-      "desc": "Linux OCI container FreeBSD run, SeH built-in."
+      "title": "OCI Heh",
+      "desc": "Linux OCI container FreeBSD Heh, SeH built-in."
     },
     "discovery": {
-      "title": "System Discovery",
-      "desc": "Hardware reporting RAM, CPU, Disk, Network interface."
+      "title": "Pat Tu'",
+      "desc": "Hardware Tu' RAM, CPU, Disk, Network Nìn."
     },
     "apiFirst": {
-      "title": "API First",
-      "desc": "Exposed management API, system integration, automation."
+      "title": "API 'Awve",
+      "desc": "Tu' Nìn API, Pat Heh, Tu'."
     }
   },
   "community": {
-    "title": "Join Olo'",
-    "connect": "Discord connect",
-    "desc": "Help, ideas, CloudBSD future contribute.",
-    "join": "Server join"
+    "title": "Muv Olo'",
+    "connect": "Discord Heh",
+    "desc": "Heh, Fpìl, CloudBSD Tugh Lu.",
+    "join": "Pat Muv"
   },
   "downloads": {
-    "title": "Downloads",
-    "comingSoon": "Soon",
-    "stayTuned": "Stay tuned."
+    "title": "Fpe",
+    "comingSoon": "Tugh",
+    "stayTuned": "Sìpaw Säheylu."
   },
   "footer": {
-    "rights": "© 2026 {{companyName}}. Rights reserved.",
-    "projectBy": "Project by",
-    "builtOn": "Built on FreeBSD"
+    "rights": "© 2026 {{companyName}}. Hoch.",
+    "projectBy": "Säpängxe o",
+    "builtOn": "Build FreeBSD"
   }
 }
