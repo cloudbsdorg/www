@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "Om", "features": "Funktioner", "community": "Gemenskap", "downloads": "Nedladdningar" },
-  "hero": { "title": "Nästa generations molnplattform", "subtitle": "Utnyttja den legendariska kraften och stabiliteten hos FreeBSD för din molninfrastruktur." },
-  "about": { "title": "Vad är {{projectName}}?", "p1": "CloudBSD är en omfattande distribution byggd på FreeBSD.", "p2": "Fokuserar på sömlös systemidentifiering och centraliserad hantering." },
-  "features": { "title": "Nyckelfunktioner", "unifiedController": { "title": "Enhetlig styrenhet", "desc": "Central konfigurationspunkt för hela ditt nätverk." } },
-  "community": { "title": "Gå med i vår gemenskap", "join": "Gå med i servern" },
-  "downloads": { "title": "Nedladdningar", "comingSoon": "Kommer snart" },
-  "footer": { "rights": "© 2026 {{companyName}}. Alla rättigheter förbehållna.", "builtOn": "Byggd på FreeBSD" }
+  "nav": {
+    "about": "Om",
+    "features": "Funktioner",
+    "community": "Gemenskap",
+    "downloads": "Nedladdningar"
+  },
+  "hero": {
+    "title": "Nästa generations molnplattform",
+    "subtitle": "Utnyttja den legendariska kraften, säkerheten och stabiliteten hos FreeBSD för din molninfrastruktur.",
+    "learnMore": "Läs mer",
+    "getStarted": "Kom igång"
+  },
+  "about": {
+    "title": "Vad är {{projectName}}?",
+    "p1": "CloudBSD är en omfattande FreeBSD-baserad distribution, designad för att erbjuda en robust miljö för hosting av resurser som Jails, virtuella maskiner (Bhyve) och OCI-containrar.",
+    "p2": "Fokus ligger på sömlös systemidentifiering, automatiserad installation av arbetsnoder och centraliserad hantering via en kraftfull styrtjänst."
+  },
+  "features": {
+    "title": "Nyckelfunktioner",
+    "unifiedController": {
+      "title": "Enhetlig styrenhet",
+      "desc": "En central konfigurationspunkt för hela ditt nätverk. Hantera Jails, virtuella maskiner och containrar från ett och samma ställe."
+    },
+    "smartWorkerNodes": {
+      "title": "Smarta arbetsnoder",
+      "desc": "Orkestrerad resurshantering med PXE-bootstöd för enkel driftsättning av grundoperativsystem."
+    },
+    "nativeVirtualization": {
+      "title": "Nativ virtualisering",
+      "desc": "Fullständig Bhyve VMM-integration för högpresterande virtuella värdar och hårdvarugenomföring (passthrough)."
+    },
+    "secureIsolation": {
+      "title": "Säker isolering",
+      "desc": "FreeBSD-nativa Jails och Bhyve erbjuder hög densitet och låg overhead med starka säkerhetsgränser."
+    },
+    "gpuManagement": {
+      "title": "GPU-hantering",
+      "desc": "Avancerad hårdvaruidentifiering och stöd för PCI-passthrough för att effektivt dela och hantera GPU-resurser."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-nativ säkerhet",
+      "desc": "Branschledande lagringstillförlitlighet med inbyggd dataintegritet, krypteringsstöd och omedelbara ögonblicksbilder (snapshots)."
+    },
+    "hardenedServices": {
+      "title": "Härdade tjänster",
+      "desc": "Obligatorisk HTTPS med automatiserad certifikathantering och automatisk omdirigering av osäkra portar."
+    },
+    "rbac": {
+      "title": "Rollbaserad åtkomst",
+      "desc": "Centraliserad användarhantering, distribution av SSH-nycklar och rollbaserad auktorisering för detaljerad kontroll."
+    },
+    "ociSupport": {
+      "title": "OCI-stöd",
+      "desc": "Kör och hantera Linux OCI-containrar sömlöst på FreeBSD med inbyggd orkestrering."
+    },
+    "discovery": {
+      "title": "Systemidentifiering",
+      "desc": "Automatiserad hårdvarurapportering för RAM, CPU, diskar och nätverksgränssnitt tillbaka till styrenheten."
+    },
+    "apiFirst": {
+      "title": "API först",
+      "desc": "Exponerade hanterings-API:er för integration och automatisering av interna och externa system."
+    }
+  },
+  "community": {
+    "title": "Gå med i vår gemenskap",
+    "connect": "Kontakta oss på Discord",
+    "desc": "Få hjälp, dela idéer och bidra till CloudBSD:s framtid.",
+    "join": "Gå med i servern"
+  },
+  "downloads": {
+    "title": "Nedladdningar",
+    "comingSoon": "Kommer snart",
+    "stayTuned": "Vi förbereder fortfarande allt. Håll dig uppdaterad."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Alla rättigheter förbehållna.",
+    "projectBy": "Ett projekt av",
+    "builtOn": "Byggd på FreeBSD · Släppt under 3-Clause BSD-licensen"
+  }
 }

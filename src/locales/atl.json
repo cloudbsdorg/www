@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "Tem", "features": "Ket", "community": "Nis", "downloads": "Log" },
-  "hero": { "title": "Cloud Platform of Atlantis", "subtitle": "Harness the crystal power of FreeBSD." },
-  "about": { "title": "Tid {{projectName}}?", "p1": "CloudBSD is the heart of Atlantis.", "p2": "Centralized management for your legacy." },
-  "features": { "title": "Features", "unifiedController": { "title": "Unified Controller", "desc": "One point of light." } },
-  "community": { "title": "Join Nis", "join": "Join Server" },
-  "downloads": { "title": "Downloads", "comingSoon": "Coming Soon" },
-  "footer": { "rights": "© 2026 {{companyName}}. Rights reserved.", "builtOn": "Built on FreeBSD" }
+  "nav": {
+    "about": "Tir",
+    "features": "Lekter",
+    "community": "Gwem",
+    "downloads": "Dep"
+  },
+  "hero": {
+    "title": "Platform Cloud o Atlantis",
+    "subtitle": "Crystal power, security, a stability o FreeBSD.",
+    "learnMore": "Lekter mor",
+    "getStarted": "Tag"
+  },
+  "about": {
+    "title": "Kem {{projectName}}?",
+    "p1": "CloudBSD distribution FreeBSD-er, environment o hosting Jails, VMs, OCI containers.",
+    "p2": "System discovery, worker nodes, management Controller Service."
+  },
+  "features": {
+    "title": "Lekter",
+    "unifiedController": {
+      "title": "Unified Controller",
+      "desc": "Tir SeH. SeH Jails, VMs, Containers o Tir."
+    },
+    "smartWorkerNodes": {
+      "title": "Smart Worker Nodes",
+      "desc": "Resource SeH, PXE boot, base OS deployment."
+    },
+    "nativeVirtualization": {
+      "title": "Native Virtualization",
+      "desc": "Bhyve VMM integration, virtual host, hardware passthrough."
+    },
+    "secureIsolation": {
+      "title": "Secure Isolation",
+      "desc": "FreeBSD-native Jail, Bhyve, isolation density, security boundaries."
+    },
+    "gpuManagement": {
+      "title": "GPU Management",
+      "desc": "Hardware discovery, PCI passthrough, GPU resource SeH."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-Native Security",
+      "desc": "Storage reliability, data integrity, encryption, snapshots."
+    },
+    "hardenedServices": {
+      "title": "Hardened Services",
+      "desc": "HTTPS, certificate management, automatic redirection."
+    },
+    "rbac": {
+      "title": "Role-Based Access",
+      "desc": "User management, SSH key distribution, role-based authorization."
+    },
+    "ociSupport": {
+      "title": "OCI Support",
+      "desc": "Linux OCI container FreeBSD run, manage orchestrated built-in."
+    },
+    "discovery": {
+      "title": "System Discovery",
+      "desc": "Hardware reporting RAM, CPU, Disk, Network interface."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "Exposed management API, system integration, automation."
+    }
+  },
+  "community": {
+    "title": "Join Gwem",
+    "connect": "Discord connect",
+    "desc": "Help, ideas, CloudBSD future contribute.",
+    "join": "Server join"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "comingSoon": "Coming Soon",
+    "stayTuned": "Stay tuned."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. All rights reserved.",
+    "projectBy": "Project by",
+    "builtOn": "Built on FreeBSD"
+  }
 }

@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "Om", "features": "Funksjoner", "community": "Samfunn", "downloads": "Nedlastinger" },
-  "hero": { "title": "Neste generasjons skyplattform", "subtitle": "Utnytt den legendariske kraften og stabiliteten til FreeBSD for din skyinfrastruktur." },
-  "about": { "title": "Hva er {{projectName}}?", "p1": "CloudBSD er en omfattende distribusjon bygget på FreeBSD.", "p2": "Fokuserer på sømløs systemoppdagelse og sentralisert styring." },
-  "features": { "title": "Nøkkelfunksjoner", "unifiedController": { "title": "Enhetlig kontroller", "desc": "Sentralt konfigurasjonspunkt for hele nettverket." } },
-  "community": { "title": "Bli med i samfunnet vårt", "join": "Bli med på serveren" },
-  "downloads": { "title": "Nedlastinger", "comingSoon": "Kommer snart" },
-  "footer": { "rights": "© 2026 {{companyName}}. Alle rettigheter forbeholdt.", "builtOn": "Bygget på FreeBSD" }
+  "nav": {
+    "about": "Om",
+    "features": "Funksjoner",
+    "community": "Samfunn",
+    "downloads": "Nedlastinger"
+  },
+  "hero": {
+    "title": "Neste generasjons skyplattform",
+    "subtitle": "Utnytt den legendariske kraften, sikkerheten og stabiliteten til FreeBSD for din skyinfrastruktur.",
+    "learnMore": "Lær mer",
+    "getStarted": "Kom i gang"
+  },
+  "about": {
+    "title": "Hva er {{projectName}}?",
+    "p1": "CloudBSD er en omfattende FreeBSD-basert distribusjon, designad for å gi et robust miljø for hosting av ressurser som Jails, virtuelle maskiner (Bhyve) og OCI-containere.",
+    "p2": "Fokuset ligger på sømløs systemoppdagelse, automatisert installasjon av arbeidsnoder og sentralisert styring via en kraftfull kontrollertjeneste."
+  },
+  "features": {
+    "title": "Nøkkelfunksjoner",
+    "unifiedController": {
+      "title": "Enhetlig kontroller",
+      "desc": "Et sentralt konfigurasjonspunkt for hele nettverket ditt. Administrer Jails, VM-er og containere fra ett sted."
+    },
+    "smartWorkerNodes": {
+      "title": "Smarte arbeidsnoder",
+      "desc": "Orkestrert ressursstyring med PXE-oppstartsstøtte for enkel distribusjon av grunnoperativsystemet."
+    },
+    "nativeVirtualization": {
+      "title": "Nativ virtualisering",
+      "desc": "Full Bhyve VMM-integrasjon for høyytelses virtuelle verter og maskinvare-passthrough."
+    },
+    "secureIsolation": {
+      "title": "Sikker isolering",
+      "desc": "FreeBSD-native Jails og Bhyve gir høy tetthet og lav overhead isolering med sterke sikkerhetsgrenser."
+    },
+    "gpuManagement": {
+      "title": "GPU-styring",
+      "desc": "Avansert maskinvareoppdagelse og støtte for PCI-passthrough for effektiv deling og styring av GPU-ressurser."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-nativ sikkerhet",
+      "desc": "Bransjeledende lagringspålitelighet med innebygd dataintegritet, støtte for kryptering og umiddelbare øyeblikksbilder (snapshots)."
+    },
+    "hardenedServices": {
+      "title": "Herdede tjenester",
+      "desc": "Obligatorisk HTTPS med automatisert sertifikatbehandling og automatisk omdirigering av usikre porter."
+    },
+    "rbac": {
+      "title": "Rollebasert tilgang",
+      "desc": "Sentralisert brukerstyring, distribusjon av SSH-nøkler og rollebasert autorisasjon for detaljert kontroll."
+    },
+    "ociSupport": {
+      "title": "OCI-støtte",
+      "desc": "Kjør og administrer Linux OCI-containere sømløst på FreeBSD med innebygd orkestrering."
+    },
+    "discovery": {
+      "title": "Systemoppdagelse",
+      "desc": "Automatisert maskinvarerapportering for RAM, CPU, disker og nettverksgrensesnitt tilbake til kontrolleren."
+    },
+    "apiFirst": {
+      "title": "API først",
+      "desc": "Eksponerte administrasjons-API-er for integrasjon og automatisering av interne og eksterne systemer."
+    }
+  },
+  "community": {
+    "title": "Bli med i samfunnet vårt",
+    "connect": "Kontakt oss på Discord",
+    "desc": "Få hjelp, dele ideer og bidra til fremtiden til CloudBSD.",
+    "join": "Bli med på serveren"
+  },
+  "downloads": {
+    "title": "Nedlastinger",
+    "comingSoon": "Kommer snart",
+    "stayTuned": "Vi forbereder oss fortsatt. Følg med."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Alle rettigheter forbeholdt.",
+    "projectBy": "Et prosjekt av",
+    "builtOn": "Bygget på FreeBSD · Utgitt under 3-Clause BSD-lisensen"
+  }
 }

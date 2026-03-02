@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "Teri", "features": "Säpängxe", "community": "Olo'", "downloads": "Fpe" },
-  "hero": { "title": "Cloud Platform of Pandora", "subtitle": "Harness the power of Eywa and FreeBSD." },
-  "about": { "title": "Peu {{projectName}}?", "p1": "CloudBSD is built for the people.", "p2": "Centralized management and discovery." },
-  "features": { "title": "Features", "unifiedController": { "title": "Unified Controller", "desc": "Central management point." } },
-  "community": { "title": "Join Olo'", "join": "Join Server" },
-  "downloads": { "title": "Downloads", "comingSoon": "Coming Soon" },
-  "footer": { "rights": "© 2026 {{companyName}}. Rights reserved.", "builtOn": "Built on FreeBSD" }
+  "nav": {
+    "about": "Teri",
+    "features": "Säpängxe",
+    "community": "Olo'",
+    "downloads": "Fpe"
+  },
+  "hero": {
+    "title": "Platform Cloud o Pandora",
+    "subtitle": "Eywa security a stability o FreeBSD cloud infrastructure lín.",
+    "learnMore": "Tielo ach",
+    "getStarted": "Hero"
+  },
+  "about": {
+    "title": "Peu {{projectName}}?",
+    "p1": "CloudBSD lolu FreeBSD-ur, fte lolu Jail, VM, OCI container hosting environment.",
+    "p2": "Fte lu system discovery, worker nodes automated, centralized management Controller Service-ur."
+  },
+  "features": {
+    "title": "Säpängxe",
+    "unifiedController": {
+      "title": "Unified Controller",
+      "desc": "SeH point. Jail, VM, Container-ur SeH fte lu."
+    },
+    "smartWorkerNodes": {
+      "title": "Smart Worker Nodes",
+      "desc": "Resource SeH, PXE boot support, OS deployment effortless."
+    },
+    "nativeVirtualization": {
+      "title": "Native Virtualization",
+      "desc": "Bhyve VMM integration, virtual host, hardware passthrough."
+    },
+    "secureIsolation": {
+      "title": "Secure Isolation",
+      "desc": "FreeBSD-native Jail, Bhyve, isolation, security boundaries."
+    },
+    "gpuManagement": {
+      "title": "GPU Management",
+      "desc": "Hardware discovery, PCI passthrough support, GPU resource SeH."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-Native Security",
+      "desc": "Storage reliability, data integrity, encryption, snapshots."
+    },
+    "hardenedServices": {
+      "title": "Hardened Services",
+      "desc": "HTTPS, certificate management, insecure port redirection."
+    },
+    "rbac": {
+      "title": "Role-Based Access",
+      "desc": "User management, SSH key distribution, role-based authorization."
+    },
+    "ociSupport": {
+      "title": "OCI Support",
+      "desc": "Linux OCI container FreeBSD run, SeH built-in."
+    },
+    "discovery": {
+      "title": "System Discovery",
+      "desc": "Hardware reporting RAM, CPU, Disk, Network interface."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "Exposed management API, system integration, automation."
+    }
+  },
+  "community": {
+    "title": "Join Olo'",
+    "connect": "Discord connect",
+    "desc": "Help, ideas, CloudBSD future contribute.",
+    "join": "Server join"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "comingSoon": "Soon",
+    "stayTuned": "Stay tuned."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Rights reserved.",
+    "projectBy": "Project by",
+    "builtOn": "Built on FreeBSD"
+  }
 }

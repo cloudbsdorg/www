@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "Tietoa", "features": "Ominaisuudet", "community": "Yhteisö", "downloads": "Lataukset" },
-  "hero": { "title": "Seuraavan sukupolven pilvialusta", "subtitle": "Hyödynnä FreeBSD:n legendaarista tehoa ja vakautta pilvi-infrastruktuurissasi." },
-  "about": { "title": "Mikä on {{projectName}}?", "p1": "CloudBSD on kattava jakelu, joka on rakennettu FreeBSD:n päälle.", "p2": "Se keskittyy saumattomaan järjestelmien löytämiseen ja keskitettyyn hallintaan." },
-  "features": { "title": "Tärkeimmät ominaisuudet", "unifiedController": { "title": "Yhtenäinen ohjain", "desc": "Keskitetty määrityspiste koko verkollesi." } },
-  "community": { "title": "Liity yhteisöömme", "join": "Liity palvelimelle" },
-  "downloads": { "title": "Lataukset", "comingSoon": "Tulossa pian" },
-  "footer": { "rights": "© 2026 {{companyName}}. Kaikki oikeudet pidätetään.", "builtOn": "Rakennettu FreeBSD:n päälle" }
+  "nav": {
+    "about": "Tietoa",
+    "features": "Ominaisuudet",
+    "community": "Yhteisö",
+    "downloads": "Lataukset"
+  },
+  "hero": {
+    "title": "Seuraavan sukupolven pilvialusta",
+    "subtitle": "Hyödynnä FreeBSD:n legendaarista tehoa, turvallisuutta ja vakautta pilvi-infrastruktuurissasi.",
+    "learnMore": "Lue lisää",
+    "getStarted": "Aloita nyt"
+  },
+  "about": {
+    "title": "Mikä on {{projectName}}?",
+    "p1": "CloudBSD on kattava FreeBSD-pohjainen jakelu, joka on suunniteltu tarjoamaan vankka ympäristö resursseille, kuten Jaileille, virtuaalikoneille (Bhyve) ja OCI-konteille.",
+    "p2": "Se keskittyy saumattomaan järjestelmien tunnistamiseen, automatisoituun työntekijäsolmujen asennukseen ja keskitettyyn hallintaan tehokkaan ohjainpalvelun kautta."
+  },
+  "features": {
+    "title": "Tärkeimmät ominaisuudet",
+    "unifiedController": {
+      "title": "Yhtenäinen ohjain",
+      "desc": "Keskitetty määrityspiste koko verkollesi. Hallitse Jaileja, virtuaalikoneita ja kontteja yhdestä paikasta."
+    },
+    "smartWorkerNodes": {
+      "title": "Älykkäät työntekijäsolmut",
+      "desc": "Orkestroitu resurssienhallinta PXE-käynnistystuella vaivatonta peruskäyttöjärjestelmän käyttöönottoa varten."
+    },
+    "nativeVirtualization": {
+      "title": "Natiivi virtualisointi",
+      "desc": "Täysi Bhyve VMM -integraatio suorituskykyisiä virtuaali-isäntiä ja laitteiston läpivientiä varten."
+    },
+    "secureIsolation": {
+      "title": "Turvallinen eristys",
+      "desc": "FreeBSD-natiivit Jailit ja Bhyve tarjoavat tiheän ja kevyen eristyksen vahvoilla turvarajoilla."
+    },
+    "gpuManagement": {
+      "title": "GPU-hallinta",
+      "desc": "Edistynyt laitteiston tunnistus ja PCI-läpivientituki GPU-resurssien tehokkaaseen jakamiseen ja hallintaan."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-natiivi tietoturva",
+      "desc": "Alan johtava tallennusvarmuus sisäänrakennetulla tietojen eheydellä, salaustuella ja välittömillä tilannevedoksilla."
+    },
+    "hardenedServices": {
+      "title": "Vahvistetut palvelut",
+      "desc": "Pakollinen HTTPS automatisoidulla varmenteiden hallinnalla ja suojaamattomien porttien automaattisella uudelleenohjauksella."
+    },
+    "rbac": {
+      "title": "Roolipohjainen pääsynhallinta",
+      "desc": "Keskitetty käyttäjien hallinta, SSH-avainten jakelu ja roolipohjainen valtuutus tarkkaa valvontaa varten."
+    },
+    "ociSupport": {
+      "title": "OCI-tuki",
+      "desc": "Suorita ja hallitse Linux OCI -kontteja saumattomasti FreeBSD:llä sisäänrakennetun orkestroinnin avulla."
+    },
+    "discovery": {
+      "title": "Järjestelmän tunnistus",
+      "desc": "Automatisoitu laitteistotietojen (RAM, CPU, levyt ja verkkoliitännät) raportointi takaisin ohjaimelle."
+    },
+    "apiFirst": {
+      "title": "API edellä",
+      "desc": "Avoimet hallinta-API:t sisäisten ja ulkoisten järjestelmien integrointia ja automatisointia varten."
+    }
+  },
+  "community": {
+    "title": "Liity yhteisöömme",
+    "connect": "Ota yhteyttä Discordissa",
+    "desc": "Hanki apua, jaa ideoita ja osallistu CloudBSD:n tulevaisuuden rakentamiseen.",
+    "join": "Liity palvelimelle"
+  },
+  "downloads": {
+    "title": "Lataukset",
+    "comingSoon": "Tulossa pian",
+    "stayTuned": "Valmistelut ovat käynnissä. Pysy kuulolla."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Kaikki oikeudet pidätetään.",
+    "projectBy": "Projektin tarjoaa",
+    "builtOn": "Rakennettu FreeBSD:n päälle · Julkaistu 3-Clause BSD -lisenssillä"
+  }
 }

@@ -1,29 +1,67 @@
 {
-  "nav": { "about": "ghot", "features": "SeH", "community": "ghom", "downloads": "Hegh" },
+  "nav": {
+    "about": "ghot",
+    "features": "SeH Qu'",
+    "community": "ghom",
+    "downloads": "Hegh"
+  },
   "hero": {
-    "title": "Next Generation Cloud Platform",
-    "subtitle": "FreeBSD HoS, raD, stability je lulo' cloud infrastructure luvut.",
+    "title": "Platform Cloud chu'",
+    "subtitle": "FreeBSD HoS, raD stability je lulo' cloud infrastructure luvut.",
     "learnMore": "vIghaj",
     "getStarted": "tagH"
   },
   "about": {
     "title": "nuq {{projectName}}?",
-    "p1": "CloudBSD ghaH FreeBSD qo' build asset Jail, Virtual Machine (Bhyve), OCI container je hosting environment robust provide design.",
-    "p2": "System discovery, automated worker node installation, centralized management powerful Controller Service via focus."
+    "p1": "CloudBSD distribution FreeBSD ghot build, Jail, VM (Bhyve), OCI container je hosting environment robust provide design.",
+    "p2": "System discovery, worker node installation automated, centralized management powerful Controller Service via focus."
   },
   "features": {
     "title": "SeH Qu'",
-    "unifiedController": { "title": "Unified Controller", "desc": "Central configuration point entire network. Manage Jail, VM, Container ghot wa' Daq." },
-    "smartWorkerNodes": { "title": "Smart Worker Nodes", "desc": "Orchestrated resource management PXE boot support effortless base OS deployment." },
-    "nativeVirtualization": { "title": "Native Virtualization", "desc": "Full Bhyve VMM integration high-performance virtual host hardware passthrough je." },
-    "secureIsolation": { "title": "Secure Isolation", "desc": "FreeBSD-native Jail Bhyve je provide high-density, low-overhead isolation security boundary je." },
-    "gpuManagement": { "title": "GPU Management", "desc": "Advanced hardware discovery PCI passthrough support share manage GPU resource effectively." },
-    "zfsSecurity": { "title": "ZFS-Native Security", "desc": "Industry-leading storage reliability data integrity, encryption support, instant snapshotting je." },
-    "hardenedServices": { "title": "Hardened Services", "desc": "Mandatory HTTPS automated certificate management automatic redirection insecure port je." },
-    "rbac": { "title": "Role-Based Access", "desc": "Centralized user management, SSH key distribution, role-based authorization granular control je." },
-    "ociSupport": { "title": "OCI Support", "desc": "Linux OCI container FreeBSD run manage orchestrated built-in." },
-    "discovery": { "title": "System Discovery", "desc": "Automated hardware reporting RAM, CPU, Disk, Network interface controller." },
-    "apiFirst": { "title": "API First", "desc": "Exposed management API internal external system integration automation je." }
+    "unifiedController": {
+      "title": "SeH tay'",
+      "desc": "network Hoch ghot wa' Daq SeH. Jail, VM, Container je SeH wa' Daq."
+    },
+    "smartWorkerNodes": {
+      "title": "Worker Nodes ghop",
+      "desc": "resource SeH orchestrated, PXE boot raD support, OS deployment effortless base je."
+    },
+    "nativeVirtualization": {
+      "title": "Native Virtualization",
+      "desc": "Bhyve VMM integration chu', virtual host HoS, hardware passthrough je."
+    },
+    "secureIsolation": {
+      "title": "Isolation quv",
+      "desc": "FreeBSD-native Jail Bhyve je, isolation density HoS, security boundary je provide."
+    },
+    "gpuManagement": {
+      "title": "GPU SeH",
+      "desc": "hardware discovery chu', PCI passthrough support, GPU resource SeH manage share je."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-Native Security",
+      "desc": "storage reliability industry-leading, data integrity, encryption support, instant snapshotting je."
+    },
+    "hardenedServices": {
+      "title": "Services quv",
+      "desc": "HTTPS mandatory, certificate management automated, insecure port automatic redirection je."
+    },
+    "rbac": {
+      "title": "Role-Based Access",
+      "desc": "User management centralized, SSH key distribution, role-based authorization je."
+    },
+    "ociSupport": {
+      "title": "OCI Support",
+      "desc": "Linux OCI container FreeBSD run, SeH orchestrated built-in je."
+    },
+    "discovery": {
+      "title": "System Discovery",
+      "desc": "hardware reporting automated, RAM, CPU, Disk, Network interface controller je."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "management API chu', internal external system integration, automation je."
+    }
   },
   "community": {
     "title": "ghom join",
@@ -34,7 +72,7 @@
   "downloads": {
     "title": "Hegh",
     "comingSoon": "Soon",
-    "stayTuned": "Stay tuned."
+    "stayTuned": "Doy'ich. stay tuned."
   },
   "footer": {
     "rights": "© 2026 {{companyName}}. rights reserved.",

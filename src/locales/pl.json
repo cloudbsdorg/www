@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "O nas", "features": "Funkcje", "community": "Społeczność", "downloads": "Pobieranie" },
-  "hero": { "title": "Platforma chmurowa nowej generacji", "subtitle": "Wykorzystaj legendarną moc i stabilność FreeBSD w swojej infrastrukturze chmurowej." },
-  "about": { "title": "Czym jest {{projectName}}?", "p1": "CloudBSD to kompleksowa dystrybucja zbudowana na FreeBSD.", "p2": "Skupia się na płynnym wykrywaniu systemów i scentralizowanym zarządzaniu." },
-  "features": { "title": "Kluczowe cechy", "unifiedController": { "title": "Zunifikowany kontroler", "desc": "Centralny punkt konfiguracji dla całej sieci." } },
-  "community": { "title": "Dołącz do społeczności", "join": "Dołącz do serwera" },
-  "downloads": { "title": "Pobieranie", "comingSoon": "Wkrótce" },
-  "footer": { "rights": "© 2026 {{companyName}}. Wszelkie prawa zastrzeżone.", "builtOn": "Zbudowano na FreeBSD" }
+  "nav": {
+    "about": "O nas",
+    "features": "Funkcje",
+    "community": "Społeczność",
+    "downloads": "Pobieranie"
+  },
+  "hero": {
+    "title": "Platforma Chmurowa Nowej Generacji",
+    "subtitle": "Wykorzystaj legendarną moc, bezpieczeństwo i stabilność FreeBSD w swojej infrastrukturze chmurowej.",
+    "learnMore": "Dowiedz się więcej",
+    "getStarted": "Zacznij teraz"
+  },
+  "about": {
+    "title": "Czym jest {{projectName}}?",
+    "p1": "CloudBSD to kompleksowa dystrybucja zbudowana na systemie FreeBSD, zaprojektowana w celu zapewnienia solidnego środowiska do hostowania zasobów takich jak Jails, maszyny wirtualne (Bhyve) i kontenery OCI.",
+    "p2": "Skupia się na płynnym wykrywaniu systemów, automatycznej instalacji węzłów roboczych i scentralizowanym zarządzaniu poprzez potężną usługę kontrolera."
+  },
+  "features": {
+    "title": "Kluczowe Funkcje",
+    "unifiedController": {
+      "title": "Zunifikowany Kontroler",
+      "desc": "Centralny punkt konfiguracji dla całej sieci. Zarządzaj Jails, maszynami wirtualnymi i kontenerami z jednego miejsca."
+    },
+    "smartWorkerNodes": {
+      "title": "Inteligentne Węzły Robocze",
+      "desc": "Orkiestrowane zarządzanie zasobami z obsługą PXE dla łatwego wdrażania podstawowego systemu operacyjnego."
+    },
+    "nativeVirtualization": {
+      "title": "Natywna Wirtualizacja",
+      "desc": "Pełna integracja z Bhyve VMM dla wysokowydajnych hostów wirtualnych i sprzętowego passthrough."
+    },
+    "secureIsolation": {
+      "title": "Bezpieczna Izolacja",
+      "desc": "Natywne mechanizmy Jails i Bhyve w systemie FreeBSD zapewniają wysoką gęstość i niskie obciążenie izolacji z silnymi granicami bezpieczeństwa."
+    },
+    "gpuManagement": {
+      "title": "Zarządzanie GPU",
+      "desc": "Zaawansowane wykrywanie sprzętu i obsługa passthrough PCI w celu efektywnego udostępniania i zarządzania zasobami GPU."
+    },
+    "zfsSecurity": {
+      "title": "Natywne Bezpieczeństwo ZFS",
+      "desc": "Wiodąca w branży niezawodność przechowywania z wbudowaną integralnością danych, obsługą szyfrowania i natychmiastowymi migawkami."
+    },
+    "hardenedServices": {
+      "title": "Utwardzone Usługi",
+      "desc": "Obowiązkowy protokół HTTPS z automatycznym zarządzaniem certyfikatami i automatycznym przekierowywaniem niezabezpieczonych portów."
+    },
+    "rbac": {
+      "title": "Dostęp Oparty na Rolach",
+      "desc": "Scentralizowane zarządzanie użytkownikami, dystrybucja kluczy SSH i autoryzacja oparta na rolach dla precyzyjnej kontroli."
+    },
+    "ociSupport": {
+      "title": "Obsługa OCI",
+      "desc": "Płynne uruchamianie i zarządzanie kontenerami Linux OCI na systemie FreeBSD z wbudowaną orkiestracją."
+    },
+    "discovery": {
+      "title": "Wykrywanie Systemu",
+      "desc": "Automatyczne raportowanie sprzętu (RAM, CPU, dyski i interfejsy sieciowe) z powrotem do kontrolera."
+    },
+    "apiFirst": {
+      "title": "Najpierw API",
+      "desc": "Udostępnione interfejsy API zarządzania dla wewnętrznej i zewnętrznej integracji oraz automatyzacji systemów."
+    }
+  },
+  "community": {
+    "title": "Dołącz do naszej Społeczności",
+    "connect": "Połącz się z nami na Discordzie",
+    "desc": "Uzyskaj pomoc, dziel się pomysłami i wspieraj przyszłość CloudBSD.",
+    "join": "Dołącz do Serwera"
+  },
+  "downloads": {
+    "title": "Pobieranie",
+    "comingSoon": "Wkrótce dostępne",
+    "stayTuned": "Wciąż pracujemy nad projektem. Bądź na bieżąco."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Wszelkie prawa zastrzeżone.",
+    "projectBy": "Projekt autorstwa",
+    "builtOn": "Zbudowano na FreeBSD · Wydano na licencji BSD (3-klauzulowej)"
+  }
 }

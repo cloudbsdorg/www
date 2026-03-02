@@ -1,9 +1,82 @@
 {
-  "nav": { "about": "소개", "features": "기능", "community": "커뮤니티", "downloads": "다운로드" },
-  "hero": { "title": "차세대 클라우드 플랫폼", "subtitle": "클라우드 인프라를 위해 FreeBSD의 전설적인 성능과 안정성을 활용하세요." },
-  "about": { "title": "{{projectName}}이란 무엇인가요?", "p1": "CloudBSD는 FreeBSD를 기반으로 구축된 포괄적인 배포판입니다.", "p2": "원활한 시스템 검색 및 중앙 집중식 관리에 중점을 둡니다." },
-  "features": { "title": "주요 기능", "unifiedController": { "title": "통합 컨트롤러", "desc": "전체 네트워크를 위한 중앙 구성 지점입니다." } },
-  "community": { "title": "커뮤니티 가입", "join": "서버 가입" },
-  "downloads": { "title": "다운로드", "comingSoon": "곧 출시 예정" },
-  "footer": { "rights": "© 2026 {{companyName}}. 모든 권리 보유.", "builtOn": "FreeBSD 기반" }
+  "nav": {
+    "about": "소개",
+    "features": "기능",
+    "community": "커뮤니티",
+    "downloads": "다운로드"
+  },
+  "hero": {
+    "title": "차세대 클라우드 플랫폼",
+    "subtitle": "클라우드 인프라를 위해 FreeBSD의 전설적인 성능과 안정성을 활용하세요.",
+    "learnMore": "더 알아보기",
+    "getStarted": "시작하기"
+  },
+  "about": {
+    "title": "{{projectName}}이란 무엇인가요?",
+    "p1": "CloudBSD는 FreeBSD를 기반으로 구축된 포괄적인 배포판으로, Jail, 가상 머신(Bhyve), OCI 컨테이너와 같은 자산을 호스팅하기 위한 견고한 환경을 제공하도록 설계되었습니다.",
+    "p2": "원활한 시스템 검색, 자동화된 작업자 노드 설치 및 강력한 컨트롤러 서비스를 통한 중앙 집중식 관리에 중점을 둡니다."
+  },
+  "features": {
+    "title": "주요 기능",
+    "unifiedController": {
+      "title": "통합 컨트롤러",
+      "desc": "전체 네트워크를 위한 중앙 구성 지점입니다. 한 곳에서 Jail, VM 및 컨테이너를 관리하세요."
+    },
+    "smartWorkerNodes": {
+      "title": "스마트 작업자 노드",
+      "desc": "손쉬운 기본 OS 배포를 위한 PXE 부팅 지원을 통한 오케스트레이션된 리소스 관리입니다."
+    },
+    "nativeVirtualization": {
+      "title": "네이티브 가상화",
+      "desc": "고성능 가상 호스트 및 하드웨어 패스스루를 위한 완전한 Bhyve VMM 통합입니다."
+    },
+    "secureIsolation": {
+      "title": "안전한 격리",
+      "desc": "FreeBSD 네이티브 Jail 및 Bhyve는 강력한 보안 경계와 함께 고밀도, 저오버헤드 격리를 제공합니다."
+    },
+    "gpuManagement": {
+      "title": "GPU 관리",
+      "desc": "GPU 리소스를 효과적으로 공유하고 관리하기 위한 고급 하드웨어 검색 및 PCI 패스스루 지원입니다."
+    },
+    "zfsSecurity": {
+      "title": "ZFS 네이티브 보안",
+      "desc": "내장된 데이터 무결성, 암호화 지원 및 즉각적인 스냅샷 기능을 갖춘 업계 최고의 스토리지 안정성입니다."
+    },
+    "hardenedServices": {
+      "title": "강화된 서비스",
+      "desc": "자동화된 인증서 관리 및 비보안 포트의 자동 리디렉션을 포함한 필수 HTTPS 적용입니다."
+    },
+    "rbac": {
+      "title": "역할 기반 액세스",
+      "desc": "세밀한 제어를 위한 중앙 집중식 사용자 관리, SSH 키 배포 및 역할 기반 권한 부여입니다."
+    },
+    "ociSupport": {
+      "title": "OCI 지원",
+      "desc": "내장된 오케스트레이션을 통해 FreeBSD에서 Linux OCI 컨테이너를 원활하게 실행하고 관리하세요."
+    },
+    "discovery": {
+      "title": "시스템 검색",
+      "desc": "RAM, CPU, 디스크 및 네트워크 인터페이스에 대한 자동화된 하드웨어 보고를 컨트롤러로 전송합니다."
+    },
+    "apiFirst": {
+      "title": "API 우선",
+      "desc": "내부 및 외부 시스템 통합과 자동화를 위해 공개된 관리 API입니다."
+    }
+  },
+  "community": {
+    "title": "커뮤니티 가입",
+    "connect": "Discord에서 소통하세요",
+    "desc": "도움을 받고, 아이디어를 공유하며, CloudBSD의 미래에 기여하세요.",
+    "join": "서버 가입"
+  },
+  "downloads": {
+    "title": "다운로드",
+    "comingSoon": "곧 출시 예정",
+    "stayTuned": "준비 중입니다. 계속 지켜봐 주세요."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. 모든 권리 보유.",
+    "projectBy": "프로젝트 작성자",
+    "builtOn": "FreeBSD 기반 · 3절 BSD 라이선스 하에 출시"
+  }
 }
