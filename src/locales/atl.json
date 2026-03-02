@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "Tem", "features": "Ket", "community": "Nis", "downloads": "Log" },
+  "hero": { "title": "Cloud Platform of Atlantis", "subtitle": "Harness the crystal power of FreeBSD." },
+  "about": { "title": "Tid {{projectName}}?", "p1": "CloudBSD is the heart of Atlantis.", "p2": "Centralized management for your legacy." },
+  "features": { "title": "Features", "unifiedController": { "title": "Unified Controller", "desc": "One point of light." } },
+  "community": { "title": "Join Nis", "join": "Join Server" },
+  "downloads": { "title": "Downloads", "comingSoon": "Coming Soon" },
+  "footer": { "rights": "© 2026 {{companyName}}. Rights reserved.", "builtOn": "Built on FreeBSD" }
+}

@@ -1,0 +1,44 @@
+{
+  "nav": { "about": "ghot", "features": "SeH", "community": "ghom", "downloads": "Hegh" },
+  "hero": {
+    "title": "Next Generation Cloud Platform",
+    "subtitle": "FreeBSD HoS, raD, stability je lulo' cloud infrastructure luvut.",
+    "learnMore": "vIghaj",
+    "getStarted": "tagH"
+  },
+  "about": {
+    "title": "nuq {{projectName}}?",
+    "p1": "CloudBSD ghaH FreeBSD qo' build asset Jail, Virtual Machine (Bhyve), OCI container je hosting environment robust provide design.",
+    "p2": "System discovery, automated worker node installation, centralized management powerful Controller Service via focus."
+  },
+  "features": {
+    "title": "SeH Qu'",
+    "unifiedController": { "title": "Unified Controller", "desc": "Central configuration point entire network. Manage Jail, VM, Container ghot wa' Daq." },
+    "smartWorkerNodes": { "title": "Smart Worker Nodes", "desc": "Orchestrated resource management PXE boot support effortless base OS deployment." },
+    "nativeVirtualization": { "title": "Native Virtualization", "desc": "Full Bhyve VMM integration high-performance virtual host hardware passthrough je." },
+    "secureIsolation": { "title": "Secure Isolation", "desc": "FreeBSD-native Jail Bhyve je provide high-density, low-overhead isolation security boundary je." },
+    "gpuManagement": { "title": "GPU Management", "desc": "Advanced hardware discovery PCI passthrough support share manage GPU resource effectively." },
+    "zfsSecurity": { "title": "ZFS-Native Security", "desc": "Industry-leading storage reliability data integrity, encryption support, instant snapshotting je." },
+    "hardenedServices": { "title": "Hardened Services", "desc": "Mandatory HTTPS automated certificate management automatic redirection insecure port je." },
+    "rbac": { "title": "Role-Based Access", "desc": "Centralized user management, SSH key distribution, role-based authorization granular control je." },
+    "ociSupport": { "title": "OCI Support", "desc": "Linux OCI container FreeBSD run manage orchestrated built-in." },
+    "discovery": { "title": "System Discovery", "desc": "Automated hardware reporting RAM, CPU, Disk, Network interface controller." },
+    "apiFirst": { "title": "API First", "desc": "Exposed management API internal external system integration automation je." }
+  },
+  "community": {
+    "title": "ghom join",
+    "connect": "Discord connect",
+    "desc": "Help, idea, CloudBSD future contribute.",
+    "join": "Server join"
+  },
+  "downloads": {
+    "title": "Hegh",
+    "comingSoon": "Soon",
+    "stayTuned": "Stay tuned."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. rights reserved.",
+    "projectBy": "Project by",
+    "builtOn": "FreeBSD build · 3-Clause BSD License release"
+  }
+}

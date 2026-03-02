@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "O nas", "features": "Funkcje", "community": "Społeczność", "downloads": "Pobieranie" },
+  "hero": { "title": "Platforma chmurowa nowej generacji", "subtitle": "Wykorzystaj legendarną moc i stabilność FreeBSD w swojej infrastrukturze chmurowej." },
+  "about": { "title": "Czym jest {{projectName}}?", "p1": "CloudBSD to kompleksowa dystrybucja zbudowana na FreeBSD.", "p2": "Skupia się na płynnym wykrywaniu systemów i scentralizowanym zarządzaniu." },
+  "features": { "title": "Kluczowe cechy", "unifiedController": { "title": "Zunifikowany kontroler", "desc": "Centralny punkt konfiguracji dla całej sieci." } },
+  "community": { "title": "Dołącz do społeczności", "join": "Dołącz do serwera" },
+  "downloads": { "title": "Pobieranie", "comingSoon": "Wkrótce" },
+  "footer": { "rights": "© 2026 {{companyName}}. Wszelkie prawa zastrzeżone.", "builtOn": "Zbudowano na FreeBSD" }
+}

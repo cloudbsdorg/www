@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "Hen", "features": "Kosty", "community": "Mentyr", "downloads": "Lentot" },
+  "hero": { "title": "Cloud Platform of the Dragon", "subtitle": "Valyrio eglie FreeBSD." },
+  "about": { "title": "Skorkydo {{projectName}}?", "p1": "CloudBSD is the blood of the dragon.", "p2": "Centralized management for your empire." },
+  "features": { "title": "Features", "unifiedController": { "title": "Unified Controller", "desc": "One point of command." } },
+  "community": { "title": "Join Mentyr", "join": "Join Server" },
+  "downloads": { "title": "Downloads", "comingSoon": "Coming Soon" },
+  "footer": { "rights": "© 2026 {{companyName}}. Rights reserved.", "builtOn": "Built on FreeBSD" }
+}

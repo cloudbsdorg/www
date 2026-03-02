@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "Teri", "features": "Säpängxe", "community": "Olo'", "downloads": "Fpe" },
+  "hero": { "title": "Cloud Platform of Pandora", "subtitle": "Harness the power of Eywa and FreeBSD." },
+  "about": { "title": "Peu {{projectName}}?", "p1": "CloudBSD is built for the people.", "p2": "Centralized management and discovery." },
+  "features": { "title": "Features", "unifiedController": { "title": "Unified Controller", "desc": "Central management point." } },
+  "community": { "title": "Join Olo'", "join": "Join Server" },
+  "downloads": { "title": "Downloads", "comingSoon": "Coming Soon" },
+  "footer": { "rights": "© 2026 {{companyName}}. Rights reserved.", "builtOn": "Built on FreeBSD" }
+}

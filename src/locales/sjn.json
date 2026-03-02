@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "O", "features": "Echel", "community": "Gwaith", "downloads": "Lleith" },
+  "hero": { "title": "Cloud Platform e-Adar", "subtitle": "Leithio i-ngul, i-varn, a i-thala o FreeBSD na cloud infrastructure lín." },
+  "about": { "title": "Man {{projectName}}?", "p1": "CloudBSD na distribution o FreeBSD.", "p2": "Focus na system discovery a management." },
+  "features": { "title": "Features", "unifiedController": { "title": "Unified Controller", "desc": "Central configuration point." } },
+  "community": { "title": "Join Gwaith", "join": "Join Server" },
+  "downloads": { "title": "Downloads", "comingSoon": "Coming Soon" },
+  "footer": { "rights": "© 2026 {{companyName}}. Rights reserved.", "builtOn": "Built on FreeBSD" }
+}

@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "概要", "features": "機能", "community": "コミュニティ", "downloads": "ダウンロード" },
+  "hero": { "title": "次世代クラウドプラットフォーム", "subtitle": "クラウドインフラストラクチャにFreeBSDの伝説的なパワーと安定性を活用してください。" },
+  "about": { "title": "{{projectName}}とは？", "p1": "CloudBSDは、FreeBSD上に構築された包括的なディストリブ्यूशनです。", "p2": "シームレスなシステム検出と集中管理に重点を置いています。" },
+  "features": { "title": "主な機能", "unifiedController": { "title": "統合コントローラー", "desc": "ネットワーク全体の中央構成ポイントです。" } },
+  "community": { "title": "コミュニティに参加", "join": "サーバーに参加" },
+  "downloads": { "title": "ダウンロード", "comingSoon": "近日公開" },
+  "footer": { "rights": "© 2026 {{companyName}}. All rights reserved.", "builtOn": "FreeBSD上で構築" }
+}

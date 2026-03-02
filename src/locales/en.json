@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "About",
+    "features": "Features",
+    "community": "Community",
+    "downloads": "Downloads"
+  },
+  "hero": {
+    "title": "The Next Generation Cloud Platform",
+    "subtitle": "Harness the legendary power, security, and stability of FreeBSD for your cloud infrastructure.",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started"
+  },
+  "about": {
+    "title": "What is {{projectName}}?",
+    "p1": "CloudBSD is a comprehensive distribution built upon FreeBSD, designed to provide a robust environment for hosting assets like Jails, Virtual Machines (Bhyve), and OCI containers.",
+    "p2": "It focuses on seamless system discovery, automated worker node installation, and centralized management via a powerful Controller Service."
+  },
+  "features": {
+    "title": "Key Features",
+    "unifiedController": {
+      "title": "Unified Controller",
+      "desc": "A central configuration point for your entire network. Manage Jails, VMs, and Containers from one place."
+    },
+    "smartWorkerNodes": {
+      "title": "Smart Worker Nodes",
+      "desc": "Orchestrated resource management with PXE boot support for effortless base OS deployment."
+    },
+    "nativeVirtualization": {
+      "title": "Native Virtualization",
+      "desc": "Full Bhyve VMM integration for high-performance virtual hosts and hardware passthrough."
+    },
+    "secureIsolation": {
+      "title": "Secure Isolation",
+      "desc": "FreeBSD-native Jails and Bhyve provide high-density, low-overhead isolation with strong security boundaries."
+    },
+    "gpuManagement": {
+      "title": "GPU Management",
+      "desc": "Advanced hardware discovery and PCI passthrough support to share and manage GPU resources effectively."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-Native Security",
+      "desc": "Industry-leading storage reliability with built-in data integrity, encryption support, and instant snapshotting."
+    },
+    "hardenedServices": {
+      "title": "Hardened Services",
+      "desc": "Mandatory HTTPS with automated certificate management and automatic redirection of insecure ports."
+    },
+    "rbac": {
+      "title": "Role-Based Access",
+      "desc": "Centralized user management, SSH key distribution, and role-based authorization for granular control."
+    },
+    "ociSupport": {
+      "title": "OCI Support",
+      "desc": "Seamlessly run and manage Linux OCI containers on FreeBSD with built-in orchestration."
+    },
+    "discovery": {
+      "title": "System Discovery",
+      "desc": "Automated hardware reporting for RAM, CPU, Disks, and Network interfaces back to the controller."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "Exposed management APIs for internal and external system integration and automation."
+    }
+  },
+  "community": {
+    "title": "Join our Community",
+    "connect": "Connect with us on Discord",
+    "desc": "Get help, share ideas, and contribute to the future of CloudBSD.",
+    "join": "Join Server"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "comingSoon": "Coming Soon",
+    "stayTuned": "We are still cooking. Stay tuned."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. All rights reserved.",
+    "projectBy": "A project by",
+    "builtOn": "Built on FreeBSD · Released under 3-Clause BSD License"
+  }
+}

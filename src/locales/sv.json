@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "Om", "features": "Funktioner", "community": "Gemenskap", "downloads": "Nedladdningar" },
+  "hero": { "title": "Nästa generations molnplattform", "subtitle": "Utnyttja den legendariska kraften och stabiliteten hos FreeBSD för din molninfrastruktur." },
+  "about": { "title": "Vad är {{projectName}}?", "p1": "CloudBSD är en omfattande distribution byggd på FreeBSD.", "p2": "Fokuserar på sömlös systemidentifiering och centraliserad hantering." },
+  "features": { "title": "Nyckelfunktioner", "unifiedController": { "title": "Enhetlig styrenhet", "desc": "Central konfigurationspunkt för hela ditt nätverk." } },
+  "community": { "title": "Gå med i vår gemenskap", "join": "Gå med i servern" },
+  "downloads": { "title": "Nedladdningar", "comingSoon": "Kommer snart" },
+  "footer": { "rights": "© 2026 {{companyName}}. Alla rättigheter förbehållna.", "builtOn": "Byggd på FreeBSD" }
+}

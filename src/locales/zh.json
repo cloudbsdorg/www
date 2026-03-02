@@ -1,0 +1,44 @@
+{
+  "nav": { "about": "关于", "features": "功能", "community": "社区", "downloads": "下载" },
+  "hero": {
+    "title": "下一代云平台",
+    "subtitle": "为您的云基础设施利用 FreeBSD 传奇般的力量、安全性和稳定性。",
+    "learnMore": "了解更多",
+    "getStarted": "开始使用"
+  },
+  "about": {
+    "title": "什么是 {{projectName}}?",
+    "p1": "CloudBSD 是一个基于 FreeBSD 构建的综合发行版，旨在为托管 Jail、虚拟机 (Bhyve) 和 OCI 容器等资产提供强大的环境。",
+    "p2": "它专注于无缝系统发现、自动化工作节点安装以及通过强大的控制器服务进行集中管理。"
+  },
+  "features": {
+    "title": "主要功能",
+    "unifiedController": { "title": "统一控制器", "desc": "整个网络的中央配置点。从一个地方管理 Jail、虚拟机和容器。" },
+    "smartWorkerNodes": { "title": "智能工作节点", "desc": "通过 PXE 引导支持进行编排式资源管理，轻松部署基础操作系统。" },
+    "nativeVirtualization": { "title": "原生虚拟化", "desc": "完整的 Bhyve VMM 集成，用于高性能虚拟主机和硬件直通。" },
+    "secureIsolation": { "title": "安全隔离", "desc": "FreeBSD 原生 Jail 和 Bhyve 提供高密度、低开销的隔离，具有强大的安全边界。" },
+    "gpuManagement": { "title": "GPU 管理", "desc": "先进的硬件发现和 PCI 直通支持，以有效共享和管理 GPU 资源。" },
+    "zfsSecurity": { "title": "ZFS 原生安全", "desc": "行业领先的存储可靠性，内置数据完整性、加密支持和即时快照。" },
+    "hardenedServices": { "title": "强化的服务", "desc": "强制性 HTTPS，具有自动化证书管理和不安全端口的自动重定向。" },
+    "rbac": { "title": "基于角色的访问", "desc": "集中用户管理、SSH 密钥分发和基于角色的授权，以实现精细控制。" },
+    "ociSupport": { "title": "OCI 支持", "desc": "通过内置编排，在 FreeBSD 上无缝运行和管理 Linux OCI 容器。" },
+    "discovery": { "title": "系统发现", "desc": "自动向控制器报告 RAM、CPU、磁盘和网络接口的硬件信息。" },
+    "apiFirst": { "title": "API 优先", "desc": "公开管理 API，用于内部和外部系统集成和自动化。" }
+  },
+  "community": {
+    "title": "加入我们的社区",
+    "connect": "在 Discord 上与我们联系",
+    "desc": "获取帮助、分享想法并为 CloudBSD 的未来做出贡献。",
+    "join": "加入服务器"
+  },
+  "downloads": {
+    "title": "下载",
+    "comingSoon": "即将推出",
+    "stayTuned": "我们仍在准备中。敬请关注。"
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}。保留所有权利。",
+    "projectBy": "项目发起人",
+    "builtOn": "基于 FreeBSD 构建 · 以 3-Clause BSD 许可证发布"
+  }
+}

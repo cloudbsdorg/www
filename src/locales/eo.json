@@ -1,0 +1,44 @@
+{
+  "nav": { "about": "Pri", "features": "Trajtoj", "community": "Komunumo", "downloads": "Elŝutoj" },
+  "hero": {
+    "title": "La Venonta Generacio de Nuba Platformo",
+    "subtitle": "Ekspluatu la legendan potencon, sekurecon kaj stabilecon de FreeBSD por via nuba infrastrukturo.",
+    "learnMore": "Lernu pli",
+    "getStarted": "Komenci"
+  },
+  "about": {
+    "title": "Kio estas {{projectName}}?",
+    "p1": "CloudBSD estas ampleksa distribuo konstruita sur FreeBSD, desegnita por provizi fortikan medjon por gastigi aktivaĵojn kiel Jails, Virtualaj Maŝinoj (Bhyve), kaj OCI-ujoj.",
+    "p2": "Ĝi fokusiĝas al senpenta sistema malkovro, aŭtomatigita instalo de laboraj nodoj, kaj centralizita administrado per potenca Regila Servo."
+  },
+  "features": {
+    "title": "Ĉefaj Trajtoj",
+    "unifiedController": { "title": "Unuigita Regilo", "desc": "Centra agorda punkto por via tuta reto. Administru Jails, VMs, kaj Ujojn de unu loko." },
+    "smartWorkerNodes": { "title": "Saĝaj Laboraj Nodoj", "desc": "Orkestrita administrado de rimedoj kun PXE-lanĉa subteno por senpena instalo de la baza operaciumo." },
+    "nativeVirtualization": { "title": "Indiĝena Virtualigo", "desc": "Plena integriĝo de Bhyve VMM por alt-efikecaj virtualaj gastigantoj kaj aparata pasigo." },
+    "secureIsolation": { "title": "Sekura Izolado", "desc": "FreeBSD-indiĝenaj Jails kaj Bhyve provizas alt-densan, malalt-kostan izoladon kun fortaj sekurecaj limoj." },
+    "gpuManagement": { "title": "GPU-Administrado", "desc": "Altnivela aparata malkovro kaj subteno de PCI-pasigo por efike dividi kaj administri GPU-rimedojn." },
+    "zfsSecurity": { "title": "ZFS-Indiĝena Sekureco", "desc": "Industri-vida fidindeco de stokado kun integrita datuma integreco, ĉifrada subteno, kaj tujaj kopioj." },
+    "hardenedServices": { "title": "Plifortigitaj Servoj", "desc": "Deviga HTTPS kun aŭtomata administrado de atestiloj kaj aŭtomata alidirektado de malsekuraj pordoj." },
+    "rbac": { "title": "Rolo-Bazita Aliro", "desc": "Centralizita uzant-administrado, dissendo de SSH-ŝlosiloj, kaj rolo-bazita rajtigo por detala kontrolo." },
+    "ociSupport": { "title": "OCI-Subteno", "desc": "Senpente rulu kaj administru Linux OCI-ujojn sur FreeBSD kun integrita orkestrado." },
+    "discovery": { "title": "Sistema Malkovro", "desc": "Aŭtomatigita raportado de aparataro por RAM, CPU, diskoj, kaj retaj interfacoj reen al la progremo." },
+    "apiFirst": { "title": "API Unue", "desc": "Eksponitaj administraj API-oj por interna kaj ekstera sistema integriĝo kaj aŭtomatigo." }
+  },
+  "community": {
+    "title": "Aliĝu al nia komunumo",
+    "connect": "Konektiĝu kun ni ĉe Discord",
+    "desc": "Ricevu helpon, dividu ideojn, kaj kontribuu al la estonteco de CloudBSD.",
+    "join": "Aliĝi al servilo"
+  },
+  "downloads": {
+    "title": "Elŝutoj",
+    "comingSoon": "Venontaj baldaŭ",
+    "stayTuned": "Ni ankoraŭ kuiras. Restu agordita."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Ĉiuj rajtoj rezervitaj.",
+    "projectBy": "Projekto de",
+    "builtOn": "Konstruita sur FreeBSD · Eldonita sub 3-Klaŭza BSD-Permesilo"
+  }
+}

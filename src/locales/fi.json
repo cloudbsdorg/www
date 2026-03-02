@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "Tietoa", "features": "Ominaisuudet", "community": "Yhteisö", "downloads": "Lataukset" },
+  "hero": { "title": "Seuraavan sukupolven pilvialusta", "subtitle": "Hyödynnä FreeBSD:n legendaarista tehoa ja vakautta pilvi-infrastruktuurissasi." },
+  "about": { "title": "Mikä on {{projectName}}?", "p1": "CloudBSD on kattava jakelu, joka on rakennettu FreeBSD:n päälle.", "p2": "Se keskittyy saumattomaan järjestelmien löytämiseen ja keskitettyyn hallintaan." },
+  "features": { "title": "Tärkeimmät ominaisuudet", "unifiedController": { "title": "Yhtenäinen ohjain", "desc": "Keskitetty määrityspiste koko verkollesi." } },
+  "community": { "title": "Liity yhteisöömme", "join": "Liity palvelimelle" },
+  "downloads": { "title": "Lataukset", "comingSoon": "Tulossa pian" },
+  "footer": { "rights": "© 2026 {{companyName}}. Kaikki oikeudet pidätetään.", "builtOn": "Rakennettu FreeBSD:n päälle" }
+}

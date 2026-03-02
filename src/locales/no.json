@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "Om", "features": "Funksjoner", "community": "Samfunn", "downloads": "Nedlastinger" },
+  "hero": { "title": "Neste generasjons skyplattform", "subtitle": "Utnytt den legendariske kraften og stabiliteten til FreeBSD for din skyinfrastruktur." },
+  "about": { "title": "Hva er {{projectName}}?", "p1": "CloudBSD er en omfattende distribusjon bygget på FreeBSD.", "p2": "Fokuserer på sømløs systemoppdagelse og sentralisert styring." },
+  "features": { "title": "Nøkkelfunksjoner", "unifiedController": { "title": "Enhetlig kontroller", "desc": "Sentralt konfigurasjonspunkt for hele nettverket." } },
+  "community": { "title": "Bli med i samfunnet vårt", "join": "Bli med på serveren" },
+  "downloads": { "title": "Nedlastinger", "comingSoon": "Kommer snart" },
+  "footer": { "rights": "© 2026 {{companyName}}. Alle rettigheter forbeholdt.", "builtOn": "Bygget på FreeBSD" }
+}

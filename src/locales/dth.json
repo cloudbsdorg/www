@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "about": "Sekke",
+    "features": "Asshekh",
+    "community": "Khalassar",
+    "downloads": "Vezh"
+  },
+  "hero": {
+    "title": "Cloud Platform of the Stallion",
+    "subtitle": "Harness the power of FreeBSD for your khalasar."
+  },
+  "about": {
+    "title": "Fin {{projectName}}?",
+    "p1": "CloudBSD is for the horse-lords of the cloud.",
+    "p2": "Centralized management for your entire horde."
+  },
+  "features": {
+    "title": "Features",
+    "unifiedController": {
+      "title": "Great Controller",
+      "desc": "One place to rule them all."
+    }
+  },
+  "community": {
+    "title": "Join Khalassar",
+    "join": "Join Server"
+  },
+  "downloads": {
+    "title": "Downloads",
+    "comingSoon": "Coming Soon"
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Rights reserved.",
+    "builtOn": "Built on FreeBSD"
+  }
+}

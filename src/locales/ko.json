@@ -1,0 +1,9 @@
+{
+  "nav": { "about": "소개", "features": "기능", "community": "커뮤니티", "downloads": "다운로드" },
+  "hero": { "title": "차세대 클라우드 플랫폼", "subtitle": "클라우드 인프라를 위해 FreeBSD의 전설적인 성능과 안정성을 활용하세요." },
+  "about": { "title": "{{projectName}}이란 무엇인가요?", "p1": "CloudBSD는 FreeBSD를 기반으로 구축된 포괄적인 배포판입니다.", "p2": "원활한 시스템 검색 및 중앙 집중식 관리에 중점을 둡니다." },
+  "features": { "title": "주요 기능", "unifiedController": { "title": "통합 컨트롤러", "desc": "전체 네트워크를 위한 중앙 구성 지점입니다." } },
+  "community": { "title": "커뮤니티 가입", "join": "서버 가입" },
+  "downloads": { "title": "다운로드", "comingSoon": "곧 출시 예정" },
+  "footer": { "rights": "© 2026 {{companyName}}. 모든 권리 보유.", "builtOn": "FreeBSD 기반" }
+}
