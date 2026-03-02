@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Peu {{projectName}}?",
-    "p1": "CloudBSD na Lo o FreeBSD, i-gasar na Teri am-Tir Jails, VMs, a OCI Pat.",
+    "p1": "CloudBSD na Lo o FreeBSD, i-gasar na Teri am-Tir Jails, VMs, a Linux a FreeBSD OCI Pat.",
     "p2": "Tir na Pat Tu', Gwem Gwem, a Tir via Tir Lekter."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI Tir",
-      "desc": "Lekter a Tir Linux OCI Pat sui FreeBSD na Tir."
+      "desc": "Lekter a Tir Linux a FreeBSD OCI Pat sui FreeBSD na Tir."
     },
     "discovery": {
       "title": "Pat Tu'",

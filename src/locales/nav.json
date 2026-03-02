@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Peu {{projectName}}?",
-    "p1": "CloudBSD lolu FreeBSD-ur, fte lolu Jail, VM, OCI container Nìn Tsenge.",
+    "p1": "CloudBSD lolu FreeBSD-ur, fte lolu Jail, VM, Linux, FreeBSD OCI container Nìn Tsenge.",
     "p2": "Fte lu Pat Tu', Sìpängxe Sìpängxe Tu', centralized Nìn Säheylu Sìpängxe-ur."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI Heh",
-      "desc": "Linux OCI container FreeBSD Heh, SeH built-in."
+      "desc": "Linux, FreeBSD OCI container FreeBSD Heh, SeH built-in."
     },
     "discovery": {
       "title": "Pat Tu'",

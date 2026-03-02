@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Skorkydo {{projectName}}?",
-    "p1": "CloudBSD Kosty FreeBSD-er, Lekter o SeH Jails, VMs, OCI Pat.",
+    "p1": "CloudBSD Kosty FreeBSD-er, Lekter o SeH Jails, VMs, Linux, FreeBSD OCI Pat.",
     "p2": "Pat Tu', Gwem Gwem, SeH SeH Lekter."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI SeH",
-      "desc": "Linux OCI container FreeBSD Lekter, SeH SeH built-in."
+      "desc": "Linux, FreeBSD OCI container FreeBSD Lekter, SeH SeH built-in."
     },
     "discovery": {
       "title": "Pat Tu'",

@@ -8,7 +8,7 @@
   },
   "about": {
     "title": "什么是 {{projectName}}?",
-    "p1": "CloudBSD 是一个基于 FreeBSD 构建的综合发行版，旨在为托管 Jail、虚拟机 (Bhyve) 和 OCI 容器等资产提供强大的环境。",
+    "p1": "CloudBSD 是一个基于 FreeBSD 构建的综合发行版，旨在为托管 Jail、虚拟机 (Bhyve) 和 Linux 和 FreeBSD OCI 容器等资产提供强大的环境。",
     "p2": "它专注于无缝系统发现、自动化工作节点安装以及通过强大的控制器服务进行集中管理。"
   },
   "features": {
@@ -21,7 +21,7 @@
     "zfsSecurity": { "title": "ZFS 原生安全", "desc": "行业领先的存储可靠性，内置数据完整性、加密支持和即时快照。" },
     "hardenedServices": { "title": "强化的服务", "desc": "强制性 HTTPS，具有自动化证书管理和不安全端口的自动重定向。" },
     "rbac": { "title": "基于角色的访问", "desc": "集中用户管理、SSH 密钥分发和基于角色的授权，以实现精细控制。" },
-    "ociSupport": { "title": "OCI 支持", "desc": "通过内置编排，在 FreeBSD 上无缝运行和管理 Linux OCI 容器。" },
+    "ociSupport": { "title": "OCI 支持", "desc": "通过内置编排，在 FreeBSD 上无缝运行和管理 Linux 和 FreeBSD OCI 容器。" },
     "discovery": { "title": "系统发现", "desc": "自动向控制器报告 RAM、CPU、磁盘和网络接口的硬件信息。" },
     "apiFirst": { "title": "API 优先", "desc": "公开管理 API，用于内部和外部系统集成和自动化。" }
   },

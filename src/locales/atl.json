@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Kem {{projectName}}?",
-    "p1": "CloudBSD Atl FreeBSD-er, Lekter o Tir Jails, VMs, OCI Pat.",
+    "p1": "CloudBSD Atl FreeBSD-er, Lekter o Tir Jails, VMs, Linux, FreeBSD OCI Pat.",
     "p2": "Pat Tu', Gwem Gwem, Tir Tir Lekter."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI Tir",
-      "desc": "Linux OCI container FreeBSD Lekter, Tir Tir built-in."
+      "desc": "Linux, FreeBSD OCI container FreeBSD Lekter, Tir Tir built-in."
     },
     "discovery": {
       "title": "Pat Tu'",

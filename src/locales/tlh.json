@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "nuq {{projectName}}?",
-    "p1": "CloudBSD ghot FreeBSD ghot build, Jail, VM (Bhyve), OCI container je vut vut HoS chu' ghot.",
+    "p1": "CloudBSD ghot FreeBSD ghot build, Jail, VM (Bhyve), Linux, FreeBSD OCI container je vut vut HoS chu' ghot.",
     "p2": "pat tu', ghun ghot lulo' chu', SeH HoS SeH Qu' ghot."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI boQ",
-      "desc": "Linux OCI container FreeBSD ghun, SeH chu' built-in je."
+      "desc": "Linux, FreeBSD OCI container FreeBSD ghun, SeH chu' built-in je."
     },
     "discovery": {
       "title": "pat tu'",

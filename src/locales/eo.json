@@ -8,7 +8,7 @@
   },
   "about": {
     "title": "Kio estas {{projectName}}?",
-    "p1": "CloudBSD estas ampleksa distribuo konstruita sur FreeBSD, desegnita por provizi fortikan medjon por gastigi aktivaĵojn kiel Jails, Virtualaj Maŝinoj (Bhyve), kaj OCI-ujoj.",
+    "p1": "CloudBSD estas ampleksa distribuo konstruita sur FreeBSD, desegnita por provizi fortikan medjon por gastigi aktivaĵojn kiel Jails, Virtualaj Maŝinoj (Bhyve), kaj Linux kaj FreeBSD OCI-ujoj.",
     "p2": "Ĝi fokusiĝas al senpenta sistema malkovro, aŭtomatigita instalo de laboraj nodoj, kaj centralizita administrado per potenca Regila Servo."
   },
   "features": {
@@ -21,7 +21,7 @@
     "zfsSecurity": { "title": "ZFS-Indiĝena Sekureco", "desc": "Industri-vida fidindeco de stokado kun integrita datuma integreco, ĉifrada subteno, kaj tujaj kopioj." },
     "hardenedServices": { "title": "Plifortigitaj Servoj", "desc": "Deviga HTTPS kun aŭtomata administrado de atestiloj kaj aŭtomata alidirektado de malsekuraj pordoj." },
     "rbac": { "title": "Rolo-Bazita Aliro", "desc": "Centralizita uzant-administrado, dissendo de SSH-ŝlosiloj, kaj rolo-bazita rajtigo por detala kontrolo." },
-    "ociSupport": { "title": "OCI-Subteno", "desc": "Senpente rulu kaj administru Linux OCI-ujojn sur FreeBSD kun integrita orkestrado." },
+    "ociSupport": { "title": "OCI-Subteno", "desc": "Senpente rulu kaj administru Linux kaj FreeBSD OCI-ujojn sur FreeBSD kun integrita orkestrado." },
     "discovery": { "title": "Sistema Malkovro", "desc": "Aŭtomatigita raportado de aparataro por RAM, CPU, diskoj, kaj retaj interfacoj reen al la progremo." },
     "apiFirst": { "title": "API Unue", "desc": "Eksponitaj administraj API-oj por interna kaj ekstera sistema integriĝo kaj aŭtomatigo." }
   },

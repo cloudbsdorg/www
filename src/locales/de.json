@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Was ist {{projectName}}?",
-    "p1": "CloudBSD ist eine umfassende Distribution, die auf FreeBSD aufbaut und eine robuste Umgebung für das Hosting von Assets wie Jails, virtuellen Maschinen (Bhyve) und OCI-Containern bietet.",
+    "p1": "CloudBSD ist eine umfassende Distribution, die auf FreeBSD aufbaut und eine robuste Umgebung für das Hosting von Assets wie Jails, virtuellen Maschinen (Bhyve) und Linux- und FreeBSD-OCI-Containern bietet.",
     "p2": "Der Schwerpunkt liegt auf nahtloser Systemerkennung, automatisierter Installation von Worker-Nodes und zentraler Verwaltung über einen leistungsstarken Controller-Service."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI-Unterstützung",
-      "desc": "Nahtlose Ausführung und Verwaltung von Linux-OCI-Containern auf FreeBSD mit integrierter Orchestrierung."
+      "desc": "Nahtlose Ausführung und Verwaltung von Linux- und FreeBSD-OCI-Containern auf FreeBSD mit integrierter Orchestrierung."
     },
     "discovery": {
       "title": "Systemerkennung",

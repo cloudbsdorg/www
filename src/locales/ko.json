@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "{{projectName}}이란 무엇인가요?",
-    "p1": "CloudBSD는 FreeBSD를 기반으로 구축된 포괄적인 배포판으로, Jail, 가상 머신(Bhyve), OCI 컨테이너와 같은 자산을 호스팅하기 위한 견고한 환경을 제공하도록 설계되었습니다.",
+    "p1": "CloudBSD는 FreeBSD를 기반으로 구축된 포괄적인 배포판으로, Jail, 가상 머신(Bhyve), Linux 및 FreeBSD OCI 컨테이너와 같은 자산을 호스팅하기 위한 견고한 환경을 제공하도록 설계되었습니다.",
     "p2": "원활한 시스템 검색, 자동화된 작업자 노드 설치 및 강력한 컨트롤러 서비스를 통한 중앙 집중식 관리에 중점을 둡니다."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI 지원",
-      "desc": "내장된 오케스트레이션을 통해 FreeBSD에서 Linux OCI 컨테이너를 원활하게 실행하고 관리하세요."
+      "desc": "내장된 오케스트레이션을 통해 FreeBSD에서 Linux 및 FreeBSD OCI 컨테이너를 원활하게 실행하고 관리하세요."
     },
     "discovery": {
       "title": "시스템 검색",

@@ -13,7 +13,7 @@
   },
   "about": {
     "title": "Mikä on {{projectName}}?",
-    "p1": "CloudBSD on kattava FreeBSD-pohjainen jakelu, joka on suunniteltu tarjoamaan vankka ympäristö resursseille, kuten Jaileille, virtuaalikoneille (Bhyve) ja OCI-konteille.",
+    "p1": "CloudBSD on kattava FreeBSD-pohjainen jakelu, joka on suunniteltu tarjoamaan vankka ympäristö resursseille, kuten Jaileille, virtuaalikoneille (Bhyve) ja Linux- ja FreeBSD-OCI-konteille.",
     "p2": "Se keskittyy saumattomaan järjestelmien tunnistamiseen, automatisoituun työntekijäsolmujen asennukseen ja keskitettyyn hallintaan tehokkaan ohjainpalvelun kautta."
   },
   "features": {
@@ -52,7 +52,7 @@
     },
     "ociSupport": {
       "title": "OCI-tuki",
-      "desc": "Suorita ja hallitse Linux OCI -kontteja saumattomasti FreeBSD:llä sisäänrakennetun orkestroinnin avulla."
+      "desc": "Suorita ja hallitse Linux- ja FreeBSD-OCI-kontteja saumattomasti FreeBSD:llä sisäänrakennetun orkestroinnin avulla."
     },
     "discovery": {
       "title": "Järjestelmän tunnistus",
