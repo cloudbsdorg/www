@@ -15,7 +15,8 @@ import ko from './locales/ko.json';
 import ja from './locales/ja.json';
 import ru from './locales/ru.json';
 import pl from './locales/pl.json';
-import pt from './locales/pt.json';
+import ptBR from './locales/pt-BR.json';
+import ptPT from './locales/pt-PT.json';
 import sv from './locales/sv.json';
 import no from './locales/no.json';
 import de from './locales/de.json';
@@ -24,6 +25,27 @@ import dth from './locales/dth.json';
 import qvy from './locales/qvy.json';
 import nav from './locales/nav.json';
 import atl from './locales/atl.json';
+import bg from './locales/bg.json';
+import ca from './locales/ca.json';
+import cs from './locales/cs.json';
+import el from './locales/el.json';
+import he from './locales/he.json';
+import hr from './locales/hr.json';
+import hu from './locales/hu.json';
+import id from './locales/id.json';
+import it from './locales/it.json';
+import lt from './locales/lt.json';
+import lv from './locales/lv.json';
+import pa from './locales/pa.json';
+import ro from './locales/ro.json';
+import sk from './locales/sk.json';
+import sl from './locales/sl.json';
+import sr from './locales/sr.json';
+import sw from './locales/sw.json';
+import tr from './locales/tr.json';
+import uk from './locales/uk.json';
+import ur from './locales/ur.json';
+import yo from './locales/yo.json';
 
 const resources = {
   en: { translation: en },
@@ -39,7 +61,8 @@ const resources = {
   ja: { translation: ja },
   ru: { translation: ru },
   pl: { translation: pl },
-  pt: { translation: pt },
+  'pt-BR': { translation: ptBR },
+  'pt-PT': { translation: ptPT },
   sv: { translation: sv },
   no: { translation: no },
   de: { translation: de },
@@ -47,7 +70,28 @@ const resources = {
   dth: { translation: dth },
   qvy: { translation: qvy },
   nav: { translation: nav },
-  atl: { translation: atl }
+  atl: { translation: atl },
+  bg: { translation: bg },
+  ca: { translation: ca },
+  cs: { translation: cs },
+  el: { translation: el },
+  he: { translation: he },
+  hr: { translation: hr },
+  hu: { translation: hu },
+  id: { translation: id },
+  it: { translation: it },
+  lt: { translation: lt },
+  lv: { translation: lv },
+  pa: { translation: pa },
+  ro: { translation: ro },
+  sk: { translation: sk },
+  sl: { translation: sl },
+  sr: { translation: sr },
+  sw: { translation: sw },
+  tr: { translation: tr },
+  uk: { translation: uk },
+  ur: { translation: ur },
+  yo: { translation: yo }
 };
 
 i18n

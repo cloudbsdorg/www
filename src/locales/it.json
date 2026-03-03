@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Informazioni",
+    "features": "Caratteristiche",
+    "community": "Comunità",
+    "downloads": "Download"
+  },
+  "hero": {
+    "title": "La piattaforma cloud di nuova generazione",
+    "subtitle": "Sfrutta la leggendaria potenza, sicurezza e stabilità di FreeBSD per la tua infrastruttura cloud.",
+    "learnMore": "Scopri di più",
+    "getStarted": "Inizia ora"
+  },
+  "about": {
+    "title": "Cos'è {{projectName}}?",
+    "p1": "CloudBSD è una distribuzione completa basata su FreeBSD, progettata per fornire un ambiente robusto per l'hosting di risorse come Jails, Macchine Virtuali (Bhyve) e container OCI sia Linux che FreeBSD.",
+    "p2": "Si concentra sulla scoperta fluida del sistema, sull'installazione automatizzata dei nodi worker e sulla gestione centralizzata tramite un potente servizio controller."
+  },
+  "features": {
+    "title": "Caratteristiche principali",
+    "unifiedController": {
+      "title": "Controller unificato",
+      "desc": "Un punto di configurazione centrale per l'intera rete. Gestisci Jails, VM e Container da un unico posto."
+    },
+    "smartWorkerNodes": {
+      "title": "Nodi worker intelligenti",
+      "desc": "Gestione orchestrata delle risorse con supporto al boot PXE per una distribuzione semplice del sistema operativo di base."
+    },
+    "nativeVirtualization": {
+      "title": "Virtualizzazione nativa",
+      "desc": "Integrazione completa di Bhyve VMM per host virtuali ad alte prestazioni e passthrough hardware."
+    },
+    "secureIsolation": {
+      "title": "Isolamento sicuro",
+      "desc": "Le Jails e Bhyve nativi di FreeBSD forniscono un isolamento ad alta densità e basso overhead con forti confini di sicurezza."
+    },
+    "gpuManagement": {
+      "title": "Gestione GPU",
+      "desc": "Scoperta hardware avanzata e supporto al passthrough PCI per condividere e gestire efficacemente le risorse GPU."
+    },
+    "zfsSecurity": {
+      "title": "Sicurezza nativa ZFS",
+      "desc": "Affidabilità di storage leader del settore con integrità dei dati integrata, supporto alla crittografia e snapshot istantanei."
+    },
+    "hardenedServices": {
+      "title": "Servizi protetti",
+      "desc": "HTTPS obbligatorio con gestione automatizzata dei certificati e reindirizzamento automatico delle porte non sicure."
+    },
+    "rbac": {
+      "title": "Accesso basato sui ruoli",
+      "desc": "Gestione centralizzata degli utenti, distribuzione delle chiavi SSH e autorizzazione basata sui ruoli per un controllo granulare."
+    },
+    "ociSupport": {
+      "title": "Supporto OCI",
+      "desc": "Esegui e gestisci senza problemi container OCI sia Linux che FreeBSD su FreeBSD con orchestrazione integrata."
+    },
+    "discovery": {
+      "title": "Scoperta del sistema",
+      "desc": "Report hardware automatizzati per RAM, CPU, dischi e interfacce di rete verso il controller."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "API di gestione esposte per l'integrazione e l'automazione di sistemi interni ed esterni."
+    }
+  },
+  "community": {
+    "title": "Unisciti alla nostra comunità",
+    "connect": "Connettiti con noi su Discord",
+    "desc": "Ricevi aiuto, condividi idee e contribuisci al futuro di CloudBSD.",
+    "join": "Entra nel server"
+  },
+  "downloads": {
+    "title": "Download",
+    "comingSoon": "Prossimamente",
+    "stayTuned": "Stiamo lavorando per voi. Restate sintonizzati."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Tutti i diritti riservati.",
+    "projectBy": "Un progetto di",
+    "builtOn": "Costruito su FreeBSD · Rilasciato sotto licenza BSD a 3 clausole"
+  }
+}

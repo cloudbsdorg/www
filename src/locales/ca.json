@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "features": "Característiques",
+    "community": "Comunitat",
+    "downloads": "Descarregues"
+  },
+  "hero": {
+    "title": "La Plataforma Cloud de Pròxima Generació",
+    "subtitle": "Aprofiti el poder llegendari, la seguretat i l'estabilitat de FreeBSD per a la seva infraestructura al núvol.",
+    "learnMore": "Més informació",
+    "getStarted": "Començar"
+  },
+  "about": {
+    "title": "Què és {{projectName}}?",
+    "p1": "CloudBSD és una distribució integral basada en FreeBSD, dissenyada per proporcionar un entorn robust per allotjar actius com Jails, Màquines Virtuals (Bhyve) i contenidors OCI tant de Linux com de FreeBSD.",
+    "p2": "Se centra en el descobriment fluid del sistema, la instal·lació automatitzada de nodes treballadors i la gestió centralitzada a través d'un potent Servei Controlador."
+  },
+  "features": {
+    "title": "Característiques Clau",
+    "unifiedController": {
+      "title": "Controlador Unificat",
+      "desc": "Un punt de configuració central per a tota la seva xarxa. Gestioni Jails, VMs i Contenidors des d'un sol lloc."
+    },
+    "smartWorkerNodes": {
+      "title": "Nodes Treballadors Intel·ligents",
+      "desc": "Gestió de recursos orquestrada amb suport d'arrencada PXE per a un desplegament sense esforç del SO base."
+    },
+    "nativeVirtualization": {
+      "title": "Virtualització Nativa",
+      "desc": "Integració completa de Bhyve VMM per a hosts virtuals d'alt rendiment i pas de maquinari."
+    },
+    "secureIsolation": {
+      "title": "Aïllament Segur",
+      "desc": "Jails i Bhyve natius de FreeBSD proporcionen un aïllament d'alta densitat i baixa sobrecàrrega amb forts límits de seguretat."
+    },
+    "gpuManagement": {
+      "title": "Gestió de GPU",
+      "desc": "Descobriment avançat de maquinari i suport de pas PCI per compartir i gestionar recursos de GPU de manera efectiva."
+    },
+    "zfsSecurity": {
+      "title": "Seguretat Nativa de ZFS",
+      "desc": "Fiabilitat d'emmagatzematge líder en la indústria amb integritat de dades integrada, suport de xifratge i instantànies."
+    },
+    "hardenedServices": {
+      "title": "Serveis Reforçats",
+      "desc": "HTTPS obligatori amb gestió automatitzada de certificats i redirecció automàtica de ports insegurs."
+    },
+    "rbac": {
+      "title": "Accés Basat en Rols",
+      "desc": "Gestió centralitzada d'usuaris, distribució de claus SSH i autorització basada en rols per a un control granular."
+    },
+    "ociSupport": {
+      "title": "Suport OCI",
+      "desc": "Executi i gestioni sense problemes contenidors OCI tant de Linux com de FreeBSD amb orquestració integrada."
+    },
+    "discovery": {
+      "title": "Descobriment del Sistema",
+      "desc": "Informes de maquinari automatitzats per a RAM, CPU, Discos i interfícies de Xarxa de tornada al controlador."
+    },
+    "apiFirst": {
+      "title": "API Primer",
+      "desc": "APIs de gestió exposades per a la integració i automatització de sistemes interns i externs."
+    }
+  },
+  "community": {
+    "title": "Uneix-te a la nostra Comunitat",
+    "connect": "Connecta't amb nosaltres a Discord",
+    "desc": "Obtingues ajuda, comparteix idees i contribueix al futur de CloudBSD.",
+    "join": "Unir-se al Servidor"
+  },
+  "downloads": {
+    "title": "Descarregues",
+    "comingSoon": "Properament",
+    "stayTuned": "Encara estem cuinant. Estigues atent."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Tots els drets reservats.",
+    "projectBy": "Un projecte de",
+    "builtOn": "Construït sobre FreeBSD · Llançat sota la Llicència BSD de 3 clàusules"
+  }
+}

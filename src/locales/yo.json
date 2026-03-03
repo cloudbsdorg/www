@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Nípa",
+    "features": "Àwọn Àbùdá",
+    "community": "Àwùjọ",
+    "downloads": "Àwọn Ìtọ́kasí"
+  },
+  "hero": {
+    "title": "Ìpìlẹ̀ Cloud Ìran Tuntun",
+    "subtitle": "Lo agbára, ààbò, àti ìdúróṣinṣin FreeBSD fún ìpìlẹ̀ cloud rẹ.",
+    "learnMore": "Kọ́ Síi",
+    "getStarted": "Bẹ̀rẹ̀ Ní báyìí"
+  },
+  "about": {
+    "title": "Kí ni {{projectName}}?",
+    "p1": "CloudBSD jẹ́ ìpín kan tí a kọ́ sí orí FreeBSD, tí a ṣe láti pèsè àyíká tó lágbára fún dídúró àwọn nǹkan bíi Jails, Virtual Machines (Bhyve), àti àwọn ohun èlò OCI ti Linux àti FreeBSD.",
+    "p2": "Ó pọkàn pọ̀ sí ìṣàwárí ètò tó dán mọ́rán, ìfisípò oríṣiríṣi ibi iṣẹ́ lọ́nà fúnrararẹ̀, àti ìṣàkóso láti ibì kan nípasẹ̀ Iṣẹ́ Olùṣàkóso tó lágbára."
+  },
+  "features": {
+    "title": "Àwọn Àbùdá Pàtàkì",
+    "unifiedController": {
+      "title": "Olùṣàkóso Papọ̀",
+      "desc": "Ibi ìṣètò kan fún gbogbo nẹ́tíwọ́ọ̀kì rẹ. Ṣàkóso Jails, VMs, àti Containers láti ibì kan."
+    },
+    "smartWorkerNodes": {
+      "title": "Àwọn Ibi Iṣẹ́ Ọlọgbọ́n",
+      "desc": "Ìṣàkóso ohun èlò tó tò lẹ́sẹẹsẹ pẹ̀lú ìtìlẹ́yìn PXE fún ìfisípò OS ìpìlẹ̀ láìsira."
+    },
+    "nativeVirtualization": {
+      "title": "Virtualization Àdámọ́",
+      "desc": "Ìṣọ̀kan Bhyve VMM kíkún fún àwọn olùgbàlejò virtual tó lágbára àti ìkọjá hardware."
+    },
+    "secureIsolation": {
+      "title": "Ìyà sọ́tọ̀ Tó Lóòótọ́",
+      "desc": "Jails àti Bhyve àdámọ́ FreeBSD ń pèsè ìyà sọ́tọ̀ tó nípọn pẹ̀lú ààbò tó lágbára."
+    },
+    "gpuManagement": {
+      "title": "Ìṣàkóso GPU",
+      "desc": "Ìṣàwárí hardware tó ti tẹ̀síwájú àti ìtìlẹ́yìn PCI passthrough láti pín àti láti ṣàkóso ohun èlò GPU lọ́nà tó múnádóko."
+    },
+    "zfsSecurity": {
+      "title": "Ààbò Àdámọ́ ZFS",
+      "desc": "Ìgbẹ́kẹ̀lé ìpamọ́ tó ga jùlọ pẹ̀lú ìdúróṣinṣin dátà, ìtìlẹ́yìn ìsekóòdù, àti yíya àwòrán ìpamọ́ lẹ́sẹ̀kẹsẹ̀."
+    },
+    "hardenedServices": {
+      "title": "Àwọn Iṣẹ́ Tó Lágbára",
+      "desc": "HTTPS dandan pẹ̀lú ìṣàkóso ìwé-ẹ̀rí fúnrararẹ̀ àti ìdarí àwọn ọ̀nà tí kò ní ààbò lọ́nà fúnrararẹ̀."
+    },
+    "rbac": {
+      "title": "Ìwọlé lórí Ipò",
+      "desc": "Ìṣàkóso oníṣe láti ibì kan, pípín bọ́tìnì SSH, àti ìyọ̀ǹda lórí ipò fún ìṣàkóso tó kún rẹ́rẹ́."
+    },
+    "ociSupport": {
+      "title": "Ìtìlẹ́yìn OCI",
+      "desc": "Ṣiṣẹ́ kí o sì ṣàkóso Linux àti FreeBSD OCI containers lórí FreeBSD pẹ̀lú ètò orkestration tó wà nínú rẹ̀."
+    },
+    "discovery": {
+      "title": "Ìṣàwárí Ètò",
+      "desc": "Ìròyìn hardware fúnrararẹ̀ fún RAM, CPU, Disks, àti Network interfaces padà sí ọ̀dọ̀ olùṣàkóso."
+    },
+    "apiFirst": {
+      "title": "API Lákọ̀ọ́kọ́",
+      "desc": "Àwọn API ìṣàkóso tó wà fún ìṣọ̀kan ètò inú àti òde àti fún iṣẹ́ fúnrararẹ̀."
+    }
+  },
+  "community": {
+    "title": "Darapọ̀ mọ́ Àwùjọ Wa",
+    "connect": "Sopọ̀ mọ́ wa lórí Discord",
+    "desc": "Gba ìrànlọ́wọ́, pín àwọn èrò, kí o sì rànlọ́wọ́ sí ọjọ́ iwájú CloudBSD.",
+    "join": "Darapọ̀ mọ́ Server"
+  },
+  "downloads": {
+    "title": "Àwọn Ìtọ́kasí",
+    "comingSoon": "Ó Ń Bọ̀ Lọ́nà",
+    "stayTuned": "A ṣì ń ṣètò rẹ̀. Ẹ máa wo wa láìpẹ́."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Gbogbo ẹ̀tọ́ wà ní dídúró.",
+    "projectBy": "Iṣẹ́ àkànṣe láti ọwọ́",
+    "builtOn": "A kọ́ rẹ̀ lórí FreeBSD · A gbé jáde lábẹ́ Ìwé-ẹ̀rí BSD ti Àpólà 3"
+  }
+}

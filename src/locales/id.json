@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Tentang",
+    "features": "Fitur",
+    "community": "Komunitas",
+    "downloads": "Unduhan"
+  },
+  "hero": {
+    "title": "Platform Cloud Generasi Berikutnya",
+    "subtitle": "Manfaatkan kekuatan, keamanan, dan stabilitas legendaris dari FreeBSD untuk infrastruktur cloud Anda.",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "getStarted": "Mulai"
+  },
+  "about": {
+    "title": "Apa itu {{projectName}}?",
+    "p1": "CloudBSD adalah distribusi komprehensif yang dibangun di atas FreeBSD, dirancang untuk menyediakan lingkungan yang kuat untuk hosting aset seperti Jails, Virtual Machines (Bhyve), dan kontainer OCI Linux dan FreeBSD.",
+    "p2": "Fokusnya adalah pada penemuan sistem yang mulus, instalasi node pekerja otomatis, dan manajemen terpusat melalui Layanan Pengontrol yang kuat."
+  },
+  "features": {
+    "title": "Fitur Utama",
+    "unifiedController": {
+      "title": "Pengontrol Terpadu",
+      "desc": "Titik konfigurasi pusat untuk seluruh jaringan Anda. Kelola Jails, VM, dan Kontainer dari satu tempat."
+    },
+    "smartWorkerNodes": {
+      "title": "Node Pekerja Cerdas",
+      "desc": "Manajemen sumber daya yang terorkestrasi dengan dukungan booting PXE untuk penerapan OS dasar tanpa upaya."
+    },
+    "nativeVirtualization": {
+      "title": "Virtualisasi Native",
+      "desc": "Integrasi penuh Bhyve VMM untuk host virtual berperforma tinggi dan hardware passthrough."
+    },
+    "secureIsolation": {
+      "title": "Isolasi Aman",
+      "desc": "Jails dan Bhyve asli FreeBSD menyediakan isolasi kepadatan tinggi dan overhead rendah dengan batas keamanan yang kuat."
+    },
+    "gpuManagement": {
+      "title": "Manajemen GPU",
+      "desc": "Penemuan perangkat keras canggih dan dukungan PCI passthrough untuk berbagi dan mengelola sumber daya GPU secara efektif."
+    },
+    "zfsSecurity": {
+      "title": "Keamanan Native ZFS",
+      "desc": "Keandalan penyimpanan terkemuka di industri dengan integritas data bawaan, dukungan enkripsi, dan snapshot instan."
+    },
+    "hardenedServices": {
+      "title": "Layanan yang Diperkuat",
+      "desc": "HTTPS wajib dengan manajemen sertifikat otomatis dan pengalihan otomatis port yang tidak aman."
+    },
+    "rbac": {
+      "title": "Akses Berbasis Peran",
+      "desc": "Manajemen pengguna terpusat, distribusi kunci SSH, dan otorisasi berbasis peran untuk kontrol granular."
+    },
+    "ociSupport": {
+      "title": "Dukungan OCI",
+      "desc": "Jalankan dan kelola kontainer OCI Linux dan FreeBSD dengan mulus di FreeBSD dengan orkestrasi bawaan."
+    },
+    "discovery": {
+      "title": "Penemuan Sistem",
+      "desc": "Pelaporan perangkat keras otomatis untuk RAM, CPU, Disk, dan antarmuka Jaringan kembali ke pengontrol."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "API manajemen yang diekspos untuk integrasi dan otomatisasi sistem internal dan eksternal."
+    }
+  },
+  "community": {
+    "title": "Bergabung dengan Komunitas Kami",
+    "connect": "Terhubung dengan kami di Discord",
+    "desc": "Dapatkan bantuan, berbagi ide, dan berkontribusi pada masa depan CloudBSD.",
+    "join": "Bergabung dengan Server"
+  },
+  "downloads": {
+    "title": "Unduhan",
+    "comingSoon": "Segera Hadir",
+    "stayTuned": "Kami masih mempersiapkannya. Tetap pantau."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Seluruh hak cipta dilindungi undang-undang.",
+    "projectBy": "Sebuah proyek oleh",
+    "builtOn": "Dibangun di atas FreeBSD · Dirilis di bawah Lisensi BSD 3-Clause"
+  }
+}

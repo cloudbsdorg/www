@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "O nama",
+    "features": "Funkcije",
+    "community": "Zajednica",
+    "downloads": "Preuzimanja"
+  },
+  "hero": {
+    "title": "Cloud platforma sledeće generacije",
+    "subtitle": "Iskoristite legendarnu snagu, bezbednost i stabilnost FreeBSD-a za svoju cloud infrastrukturu.",
+    "learnMore": "Saznajte više",
+    "getStarted": "Počnite"
+  },
+  "about": {
+    "title": "Šta je {{projectName}}?",
+    "p1": "CloudBSD je sveobuhvatna distribucija izgrađena na FreeBSD-u, dizajnirana da pruži robusno okruženje za udomljavanje resursa kao što su Jails, virtualne mašine (Bhyve) i Linux i FreeBSD OCI kontejneri.",
+    "p2": "Fokusira se na besprekorno otkrivanje sistema, automatizovanu instalaciju radnih čvorova i centralizovano upravljanje putem moćne usluge kontrolera."
+  },
+  "features": {
+    "title": "Ključne funkcije",
+    "unifiedController": {
+      "title": "Unificirani kontroler",
+      "desc": "Centralna tačka konfiguracije za celu vašu mrežu. Upravljajte Jails-ima, VM-ovima i kontejnerima sa jednog mesta."
+    },
+    "smartWorkerNodes": {
+      "title": "Pametni radni čvorovi",
+      "desc": "Orkestrirano upravljanje resursima sa podrškom za PXE podizanje sistema za jednostavno postavljanje osnovnog OS-a."
+    },
+    "nativeVirtualization": {
+      "title": "Nativna virtuelizacija",
+      "desc": "Potpuna integracija Bhyve VMM-a za virtuelne domaćine visokih performansi i hardverski passthrough."
+    },
+    "secureIsolation": {
+      "title": "Bezbedna izolacija",
+      "desc": "Nativni FreeBSD Jails i Bhyve pružaju izolaciju visoke gustine i niske potrošnje resursa sa jakim bezbednosnim granicama."
+    },
+    "gpuManagement": {
+      "title": "Upravljanje GPU-om",
+      "desc": "Napredno otkrivanje hardvera i podrška za PCI passthrough za efikasno deljenje i upravljanje GPU resursima."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-nativna bezbednost",
+      "desc": "Vodeća pouzdanost skladištenja u industriji sa ugrađenim integritetom podataka, podrškom za enkripciju i trenutnim snapshot-ovima."
+    },
+    "hardenedServices": {
+      "title": "Ojačane usluge",
+      "desc": "Obavezni HTTPS sa automatizovanim upravljanjem sertifikatima i automatskim preusmeravanjem nebezbednih portova."
+    },
+    "rbac": {
+      "title": "Pristup zasnovan na ulogama",
+      "desc": "Centralizovano upravljanje korisnicima, distribucija SSH ključeva i autorizacija zasnovana na ulogama za granularnu kontrolu."
+    },
+    "ociSupport": {
+      "title": "OCI podrška",
+      "desc": "Besprekorno pokrećite i upravljajte Linux i FreeBSD OCI kontejnerima na FreeBSD-u uz ugrađenu orkestraciju."
+    },
+    "discovery": {
+      "title": "Otkrivanje sistema",
+      "desc": "Automatsko izveštavanje hardvera za RAM, CPU, diskove i mrežne interfejse nazad kontroleru."
+    },
+    "apiFirst": {
+      "title": "Prvo API",
+      "desc": "Izloženi upravljački API-ji za internu i eksternu integraciju sistema i automatizaciju."
+    }
+  },
+  "community": {
+    "title": "Pridružite se našoj zajednici",
+    "connect": "Povežite se sa nama na Discord-u",
+    "desc": "Potražite pomoć, delite ideje i doprinesite budućnosti CloudBSD-a.",
+    "join": "Pridruži se serveru"
+  },
+  "downloads": {
+    "title": "Preuzimanja",
+    "comingSoon": "Uskoro",
+    "stayTuned": "Još uvek pripremamo. Pratite nas."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Sva prava zadržana.",
+    "projectBy": "Projekat od",
+    "builtOn": "Izgrađeno na FreeBSD-u · Objavljeno pod 3-Clause BSD licencom"
+  }
+}

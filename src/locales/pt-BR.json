@@ -6,25 +6,25 @@
     "downloads": "Downloads"
   },
   "hero": {
-    "title": "Plataforma Cloud de Próxima Geração",
-    "subtitle": "Aproveite o poder, segurança e estabilidade lendários do FreeBSD para sua infraestrutura em nuvem.",
-    "learnMore": "Saber mais",
+    "title": "A Plataforma Cloud de Próxima Geração",
+    "subtitle": "Aproveite o poder lendário, a segurança e a estabilidade do FreeBSD para sua infraestrutura em nuvem.",
+    "learnMore": "Saiba mais",
     "getStarted": "Começar"
   },
   "about": {
-    "title": "O que é o {{projectName}}?",
-    "p1": "O CloudBSD é uma distribuição abrangente construída sobre o FreeBSD, projetada para fornecer um ambiente robusto para hospedar ativos como Jails, Máquinas Virtuais (Bhyve) e containers Linux e FreeBSD OCI.",
-    "p2": "Ele foca na descoberta contínua de sistemas, instalação automatizada de nós de trabalho e gerenciamento centralizado através de um poderoso Serviço Controlador."
+    "title": "O que é {{projectName}}?",
+    "p1": "CloudBSD é uma distribuição abrangente construída sobre o FreeBSD, projetada para fornecer um ambiente robusto para hospedar ativos como Jails, Máquinas Virtuais (Bhyve) e contêineres OCI Linux e FreeBSD.",
+    "p2": "Ele se concentra na descoberta contínua de sistemas, instalação automatizada de nós de trabalho e gerenciamento centralizado por meio de um poderoso Serviço Controlador."
   },
   "features": {
     "title": "Recursos Principais",
     "unifiedController": {
       "title": "Controlador Unificado",
-      "desc": "Um ponto de configuração central para toda a sua rede. Gerencie Jails, VMs e containers em um só lugar."
+      "desc": "Um ponto de configuração central para toda a sua rede. Gerencie Jails, VMs e contêineres em um só lugar."
     },
     "smartWorkerNodes": {
       "title": "Nós de Trabalho Inteligentes",
-      "desc": "Gerenciamento de recursos orquestrado com suporte a boot PXE para implantação fácil do sistema operacional base."
+      "desc": "Gerenciamento de recursos orquestrado com suporte a boot PXE para implantação sem esforço do sistema operacional base."
     },
     "nativeVirtualization": {
       "title": "Virtualização Nativa",
@@ -32,18 +32,18 @@
     },
     "secureIsolation": {
       "title": "Isolamento Seguro",
-      "desc": "Jails nativas do FreeBSD e Bhyve fornecem isolamento de alta densidade e baixo overhead com fortes limites de segurança."
+      "desc": "Jails e Bhyve nativos do FreeBSD fornecem isolamento de alta densidade e baixo overhead com fortes limites de segurança."
     },
     "gpuManagement": {
       "title": "Gerenciamento de GPU",
-      "desc": "Descoberta de hardware avançada e suporte a passthrough PCI para compartilhar e gerenciar recursos de GPU de forma eficaz."
+      "desc": "Descoberta avançada de hardware e suporte a passthrough PCI para compartilhar e gerenciar recursos de GPU de forma eficaz."
     },
     "zfsSecurity": {
       "title": "Segurança Nativa ZFS",
       "desc": "Confiabilidade de armazenamento líder do setor com integridade de dados integrada, suporte a criptografia e snapshots instantâneos."
     },
     "hardenedServices": {
-      "title": "Serviços Endurecidos",
+      "title": "Serviços Protegidos",
       "desc": "HTTPS obrigatório com gerenciamento automatizado de certificados e redirecionamento automático de portas inseguras."
     },
     "rbac": {
@@ -52,14 +52,14 @@
     },
     "ociSupport": {
       "title": "Suporte OCI",
-      "desc": "Execute e gerencie containers Linux e FreeBSD OCI nativamente no FreeBSD com orquestração integrada."
+      "desc": "Execute e gerencie perfeitamente contêineres OCI Linux e FreeBSD no FreeBSD com orquestração integrada."
     },
     "discovery": {
-      "title": "Descoberta de Sistemas",
-      "desc": "Relatórios automáticos de hardware para RAM, CPU, Discos e interfaces de Rede para o controlador."
+      "title": "Descoberta de Sistema",
+      "desc": "Relatórios de hardware automatizados para RAM, CPU, Discos e interfaces de rede de volta ao controlador."
     },
     "apiFirst": {
-      "title": "Foco em API",
+      "title": "Prioridade para API",
       "desc": "APIs de gerenciamento expostas para integração e automação de sistemas internos e externos."
     }
   },
@@ -72,11 +72,11 @@
   "downloads": {
     "title": "Downloads",
     "comingSoon": "Em breve",
-    "stayTuned": "Ainda estamos preparando tudo. Fique atento."
+    "stayTuned": "Ainda estamos trabalhando. Fique ligado."
   },
   "footer": {
     "rights": "© 2026 {{companyName}}. Todos os direitos reservados.",
-    "projectBy": "Um projeto por",
-    "builtOn": "Construído em FreeBSD · Lançado sob Licença BSD de 3 Cláusulas"
+    "projectBy": "Um projeto de",
+    "builtOn": "Construído sobre FreeBSD · Lançado sob a Licença BSD de 3 cláusulas"
   }
 }

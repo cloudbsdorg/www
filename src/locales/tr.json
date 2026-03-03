@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Hakkında",
+    "features": "Özellikler",
+    "community": "Topluluk",
+    "downloads": "İndirmeler"
+  },
+  "hero": {
+    "title": "Yeni Nesil Bulut Platformu",
+    "subtitle": "Bulut altyapınız için FreeBSD'nin efsanevi gücünden, güvenliğinden ve kararlılığından yararlanın.",
+    "learnMore": "Daha Fazla Bilgi",
+    "getStarted": "Başlayın"
+  },
+  "about": {
+    "title": "{{projectName}} Nedir?",
+    "p1": "CloudBSD, Jails, Sanal Makineler (Bhyve) ve hem Linux hem de FreeBSD OCI konteynerleri gibi varlıkları barındırmak için sağlam bir ortam sağlamak üzere tasarlanmış, FreeBSD üzerine inşa edilmiş kapsamlı bir dağıtımdır.",
+    "p2": "Kesintisiz sistem keşfi, otomatik çalışan düğüm kurulumu ve güçlü bir Kontrolör Servisi aracılığıyla merkezi yönetime odaklanır."
+  },
+  "features": {
+    "title": "Ana Özellikler",
+    "unifiedController": {
+      "title": "Birleşik Kontrolör",
+      "desc": "Tüm ağınız için merkezi bir yapılandırma noktası. Jails, VM'ler ve Konteynırları tek bir yerden yönetin."
+    },
+    "smartWorkerNodes": {
+      "title": "Akıllı Çalışan Düğümler",
+      "desc": "Zahmetsiz temel işletim sistemi dağıtımı için PXE önyükleme desteği ile orkestre edilmiş kaynak yönetimi."
+    },
+    "nativeVirtualization": {
+      "title": "Yerel Sanallaştırma",
+      "desc": "Yüksek performanslı sanal ana bilgisayarlar ve donanım geçişi (passthrough) için tam Bhyve VMM entegrasyonu."
+    },
+    "secureIsolation": {
+      "title": "Güvenli İzolasyon",
+      "desc": "FreeBSD'ye özgü Jails ve Bhyve, güçlü güvenlik sınırları ile yüksek yoğunluklu, düşük ek yüklü izolasyon sağlar."
+    },
+    "gpuManagement": {
+      "title": "GPU Yönetimi",
+      "desc": "GPU kaynaklarını etkili bir şekilde paylaşmak ve yönetmek için gelişmiş donanım keşfi ve PCI geçiş desteği."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-Yerel Güvenlik",
+      "desc": "Yerleşik veri bütünlüğü, şifreleme desteği ve anlık görüntüleme (snapshot) ile sektör lideri depolama güvenilirliği."
+    },
+    "hardenedServices": {
+      "title": "Sertleştirilmiş Servisler",
+      "desc": "Otomatik sertifika yönetimi ve güvenli olmayan bağlantı noktalarının otomatik olarak yönlendirilmesi ile zorunlu HTTPS."
+    },
+    "rbac": {
+      "title": "Rol Tabanlı Erişim",
+      "desc": "Granüler kontrol için merkezi kullanıcı yönetimi, SSH anahtar dağıtımı ve rol tabanlı yetkilendirme."
+    },
+    "ociSupport": {
+      "title": "OCI Desteği",
+      "desc": "Yerleşik orkestrasyon ile FreeBSD üzerinde hem Linux hem de FreeBSD OCI konteynerlerini sorunsuz bir şekilde çalıştırın ve yönetin."
+    },
+    "discovery": {
+      "title": "Sistem Keşfi",
+      "desc": "RAM, CPU, Diskler ve Ağ arayüzleri için otomatik donanım raporlaması kontrolöre geri gönderilir."
+    },
+    "apiFirst": {
+      "title": "Önce API",
+      "desc": "Dahili ve harici sistem entegrasyonu ve otomasyonu için sunulan yönetim API'leri."
+    }
+  },
+  "community": {
+    "title": "Topluluğumuza Katılın",
+    "connect": "Discord'da bizimle iletişime geçin",
+    "desc": "Yardım alın, fikirlerinizi paylaşın ve CloudBSD'nin geleceğine katkıda bulunun.",
+    "join": "Sunucuya Katıl"
+  },
+  "downloads": {
+    "title": "İndirmeler",
+    "comingSoon": "Yakında",
+    "stayTuned": "Hala hazırlıyoruz. Bizi takip etmeye devam edin."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Tüm hakları saklıdır.",
+    "projectBy": "Bir projesidir:",
+    "builtOn": "FreeBSD üzerinde inşa edildi · 3-Clause BSD Lisansı altında yayınlandı"
+  }
+}

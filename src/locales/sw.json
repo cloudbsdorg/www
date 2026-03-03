@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Kuhusu",
+    "features": "Vipengele",
+    "community": "Jumuiya",
+    "downloads": "Vipakuzi"
+  },
+  "hero": {
+    "title": "Jukwaa la Wingu la Kizazi Kijacho",
+    "subtitle": "Tumia nguvu ya hadithi, usalama, na utulivu wa FreeBSD kwa miundombinu yako ya wingu.",
+    "learnMore": "Jifunze Zaidi",
+    "getStarted": "Anza Sasa"
+  },
+  "about": {
+    "title": "{{projectName}} ni nini?",
+    "p1": "CloudBSD ni usambazaji wa kina uliojengwa juu ya FreeBSD, ulioundwa kutoa mazingira thabiti ya kuhifadhi mali kama Jails, Mashine Pepe (Bhyve), na vyombo vya OCI vya Linux na FreeBSD.",
+    "p2": "Inalenga ugunduzi wa mfumo usio na mshono, usanidi wa nodi za mfanyakazi otomatiki, na usimamizi wa kati kupitia Huduma ya Mdhibiti yenye nguvu."
+  },
+  "features": {
+    "title": "Vipengele Muhimu",
+    "unifiedController": {
+      "title": "Mdhibiti Aliyetunukiwa",
+      "desc": "Hatua ya usanidi wa kati kwa mtandao wako wote. Simamia Jails, VMs, na Vyombo kutoka mahali pamoja."
+    },
+    "smartWorkerNodes": {
+      "title": "Nodi za Mfanyakazi Mahiri",
+      "desc": "Usimamizi wa rasilimali ulioratibiwa na usaidizi wa buti ya PXE kwa usambazaji rahisi wa OS ya msingi."
+    },
+    "nativeVirtualization": {
+      "title": "Uhalisia Pepe wa Asili",
+      "desc": "Ujumuishaji kamili wa Bhyve VMM kwa wenyeji pepe wa utendaji wa juu na passthrough ya maunzi."
+    },
+    "secureIsolation": {
+      "title": "Ujitengaji Salama",
+      "desc": "Jails na Bhyve asili ya FreeBSD hutoa ujitengaji wa msongamano mkubwa na gharama ndogo na mipaka madhubuti ya usalama."
+    },
+    "gpuManagement": {
+      "title": "Usimamizi wa GPU",
+      "desc": "Ugunduzi wa juu wa maunzi na usaidizi wa passthrough wa PCI ili kushiriki na kusimamia rasilimali za GPU kwa ufanisi."
+    },
+    "zfsSecurity": {
+      "title": "Usalama wa Asili wa ZFS",
+      "desc": "Uaminifu wa uhifadhi unaoongoza katika tasnia na uadilifu wa data uliojengwa ndani, usaidizi wa usimbaji fiche, na upigaji picha wa papo hapo."
+    },
+    "hardenedServices": {
+      "title": "Huduma Zilizimarishwa",
+      "desc": "HTTPS ya lazima na usimamizi wa cheti otomatiki na uelekezaji upya otomatiki wa bandari zisizo salama."
+    },
+    "rbac": {
+      "title": "Ufikiaji wa Msingi wa Jukumu",
+      "desc": "Usimamizi wa watumiaji wa kati, usambazaji wa funguo za SSH, na idhini ya msingi wa jukumu kwa udhibiti wa punjepunje."
+    },
+    "ociSupport": {
+      "title": "Usaidizi wa OCI",
+      "desc": "Endesha na udhibiti vyombo vya OCI vya Linux na FreeBSD bila mshono kwenye FreeBSD kwa uratibu uliojengwa ndani."
+    },
+    "discovery": {
+      "title": "Ugunduzi wa Mfumo",
+      "desc": "Ripoti ya otomatiki ya maunzi kwa RAM, CPU, Diski, na violesura vya Mtandao kurudi kwa mdhibiti."
+    },
+    "apiFirst": {
+      "title": "API Kwanza",
+      "desc": "API za usimamizi zilizo wazi kwa ujumuishaji na otomatiki wa mifumo ya ndani na nje."
+    }
+  },
+  "community": {
+    "title": "Jiunge na Jumuiya yetu",
+    "connect": "Ungana nasi kwenye Discord",
+    "desc": "Pata msaada, shiriki mawazo, na uchangie katika maisha ya baadaye ya CloudBSD.",
+    "join": "Jiunge na Seva"
+  },
+  "downloads": {
+    "title": "Vipakuzi",
+    "comingSoon": "Inakuja Karibuni",
+    "stayTuned": "Bado tunatayarisha. Endelea kufuatilia."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Haki zote zimehifadhiwa.",
+    "projectBy": "Mradi wa",
+    "builtOn": "Imejengwa juu ya FreeBSD · Imetolewa chini ya Leseni ya BSD ya Vifungu 3"
+  }
+}

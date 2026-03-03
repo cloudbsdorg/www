@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Despre",
+    "features": "Caracteristici",
+    "community": "Comunitate",
+    "downloads": "Descărcări"
+  },
+  "hero": {
+    "title": "Platforma Cloud de generație următoare",
+    "subtitle": "Profită de puterea legendară, securitatea și stabilitatea FreeBSD pentru infrastructura ta cloud.",
+    "learnMore": "Află mai multe",
+    "getStarted": "Începe acum"
+  },
+  "about": {
+    "title": "Ce este {{projectName}}?",
+    "p1": "CloudBSD este o distribuție cuprinzătoare construită pe FreeBSD, concepută pentru a oferi un mediu robust pentru găzduirea activelor precum Jails, Mașini Virtuale (Bhyve) și containere OCI atât Linux, cât și FreeBSD.",
+    "p2": "Se concentrează pe descoperirea fără probleme a sistemului, instalarea automatizată a nodurilor lucrătoare și managementul centralizat printr-un serviciu de control puternic."
+  },
+  "features": {
+    "title": "Caracteristici cheie",
+    "unifiedController": {
+      "title": "Controler unificat",
+      "desc": "Un punct central de configurare pentru întreaga rețea. Gestionează Jails, VM și containere dintr-un singur loc."
+    },
+    "smartWorkerNodes": {
+      "title": "Noduri lucrătoare inteligente",
+      "desc": "Management orchestrat al resurselor cu suport pentru boot PXE pentru implementarea fără efort a sistemului de operare de bază."
+    },
+    "nativeVirtualization": {
+      "title": "Virtualizare nativă",
+      "desc": "Integrare completă Bhyve VMM pentru gazde virtuale de înaltă performanță și passthrough hardware."
+    },
+    "secureIsolation": {
+      "title": "Izolare sigură",
+      "desc": "Jails și Bhyve native FreeBSD oferă izolare de înaltă densitate, cu overhead redus și limite de securitate puternice."
+    },
+    "gpuManagement": {
+      "title": "Management GPU",
+      "desc": "Descoperire hardware avansată și suport pentru passthrough PCI pentru a partaja și gestiona eficient resursele GPU."
+    },
+    "zfsSecurity": {
+      "title": "Securitate nativă ZFS",
+      "desc": "Fiabilitate de stocare de top în industrie, cu integritate a datelor încorporată, suport pentru criptare și instantanee."
+    },
+    "hardenedServices": {
+      "title": "Servicii securizate",
+      "desc": "HTTPS obligatoriu cu management automatizat al certificatelor și redirecționare automată a porturilor nesigure."
+    },
+    "rbac": {
+      "title": "Acces bazat pe roluri",
+      "desc": "Management centralizat al utilizatorilor, distribuția cheilor SSH și autorizare bazată pe roluri pentru control granular."
+    },
+    "ociSupport": {
+      "title": "Suport OCI",
+      "desc": "Rulați și gestionați fără probleme containere OCI atât Linux, cât și FreeBSD pe FreeBSD cu orchestrare încorporată."
+    },
+    "discovery": {
+      "title": "Descoperirea sistemului",
+      "desc": "Raportare hardware automatizată pentru RAM, CPU, discuri și interfețe de rețea înapoi la controler."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "API-uri de management expuse pentru integrarea și automatizarea sistemelor interne și externe."
+    }
+  },
+  "community": {
+    "title": "Alătură-te comunității noastre",
+    "connect": "Conectează-te cu noi pe Discord",
+    "desc": "Obține ajutor, împărtășește idei și contribuie la viitorul CloudBSD.",
+    "join": "Alătură-te serverului"
+  },
+  "downloads": {
+    "title": "Descărcări",
+    "comingSoon": "În curând",
+    "stayTuned": "Încă lucrăm la asta. Rămâneți aproape."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Toate drepturile rezervate.",
+    "projectBy": "Un proiect de",
+    "builtOn": "Construit pe FreeBSD · Lansat sub licența BSD cu 3 clauze"
+  }
+}

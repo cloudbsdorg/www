@@ -7,14 +7,14 @@
   },
   "hero": {
     "title": "La Plataforma Cloud de Próxima Generación",
-    "subtitle": "Aproveche la potencia, seguridad y estabilidad legendarias de FreeBSD para su infraestructura en la nube.",
+    "subtitle": "Aproveche el poder legendario, la seguridad y la estabilidad de FreeBSD para su infraestructura en la nube.",
     "learnMore": "Más información",
     "getStarted": "Empezar"
   },
   "about": {
     "title": "¿Qué es {{projectName}}?",
-    "p1": "CloudBSD es una distribución integral basada en FreeBSD, diseñada para proporcionar un entorno robusto para alojar activos como Jails, Máquinas Virtuales (Bhyve) y contenedores OCI de Linux y FreeBSD.",
-    "p2": "Se centra en el descubrimiento fluido de sistemas, la instalación automatizada de nodos de trabajo y la gestión centralizada a través de un potente Servicio Controlador."
+    "p1": "CloudBSD es una distribución integral basada en FreeBSD, diseñada para proporcionar un entorno robusto para alojar activos como Jails, Máquinas Virtuales (Bhyve) y contenedores OCI tanto de Linux como de FreeBSD.",
+    "p2": "Se centra en el descubrimiento fluido del sistema, la instalación automatizada de nodos trabajadores y la gestión centralizada a través de un potente Servicio Controlador."
   },
   "features": {
     "title": "Características Clave",
@@ -23,24 +23,24 @@
       "desc": "Un punto de configuración central para toda su red. Gestione Jails, VMs y Contenedores desde un solo lugar."
     },
     "smartWorkerNodes": {
-      "title": "Nodos de Trabajo Inteligentes",
-      "desc": "Gestión de recursos orquestada con soporte de arranque PXE para un despliegue sencillo del sistema operativo base."
+      "title": "Nodos Trabajadores Inteligentes",
+      "desc": "Gestión de recursos orquestada con soporte de arranque PXE para un despliegue sin esfuerzo del SO base."
     },
     "nativeVirtualization": {
       "title": "Virtualización Nativa",
-      "desc": "Integración completa de Bhyve VMM para hosts virtuales de alto rendimiento y passthrough de hardware."
+      "desc": "Integración completa de Bhyve VMM para hosts virtuales de alto rendimiento y paso de hardware."
     },
     "secureIsolation": {
       "title": "Aislamiento Seguro",
-      "desc": "Las Jails nativas de FreeBSD y Bhyve proporcionan un aislamiento de alta densidad y bajo consumo con sólidos límites de seguridad."
+      "desc": "Jails y Bhyve nativos de FreeBSD proporcionan un aislamiento de alta densidad y baja sobrecarga con fuertes límites de seguridad."
     },
     "gpuManagement": {
       "title": "Gestión de GPU",
-      "desc": "Descubrimiento de hardware avanzado y soporte de passthrough PCI para compartir y gestionar recursos de GPU de forma eficaz."
+      "desc": "Descubrimiento avanzado de hardware y soporte de paso PCI para compartir y gestionar recursos de GPU de manera efectiva."
     },
     "zfsSecurity": {
       "title": "Seguridad Nativa de ZFS",
-      "desc": "Fiabilidad de almacenamiento líder en la industria con integridad de datos integrada, soporte de cifrado y snapshots instantáneos."
+      "desc": "Fiabilidad de almacenamiento líder en la industria con integridad de datos integrada, soporte de cifrado e instantáneas."
     },
     "hardenedServices": {
       "title": "Servicios Reforzados",
@@ -48,15 +48,15 @@
     },
     "rbac": {
       "title": "Acceso Basado en Roles",
-      "desc": "Gestión centralizada de usuarios, distribución de claves SSH y autorización basada en roles para un control detallado."
+      "desc": "Gestión centralizada de usuarios, distribución de llaves SSH y autorización basada en roles para un control granular."
     },
     "ociSupport": {
       "title": "Soporte OCI",
-      "desc": "Ejecute y gestione sin problemas contenedores OCI de Linux y FreeBSD en FreeBSD con orquestación integrada."
+      "desc": "Ejecute y gestione sin problemas contenedores OCI tanto de Linux como de FreeBSD con orquestación integrada."
     },
     "discovery": {
-      "title": "Descubrimiento de Sistemas",
-      "desc": "Informes automáticos de hardware para RAM, CPU, discos e interfaces de red al controlador."
+      "title": "Descubrimiento del Sistema",
+      "desc": "Informes de hardware automatizados para RAM, CPU, Discos e interfaces de Red de vuelta al controlador."
     },
     "apiFirst": {
       "title": "API Primero",
@@ -72,11 +72,11 @@
   "downloads": {
     "title": "Descargas",
     "comingSoon": "Próximamente",
-    "stayTuned": "Todavía estamos cocinando. Mantente atento."
+    "stayTuned": "Todavía estamos cocinando. Mantente sintonizado."
   },
   "footer": {
     "rights": "© 2026 {{companyName}}. Todos los derechos reservados.",
     "projectBy": "Un proyecto de",
-    "builtOn": "Basado en FreeBSD · Publicado bajo la Licencia BSD de 3 cláusulas"
+    "builtOn": "Construido sobre FreeBSD · Lanzado bajo la Licencia BSD de 3 cláusulas"
   }
 }

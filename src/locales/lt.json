@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Apie",
+    "features": "Funkcijos",
+    "community": "Bendruomenė",
+    "downloads": "Atsisiuntimai"
+  },
+  "hero": {
+    "title": "Naujos kartos debesijos platforma",
+    "subtitle": "Išnaudokite legendinę FreeBSD galią, saugumą ir stabilumą savo debesijos infrastruktūrai.",
+    "learnMore": "Sužinoti daugiau",
+    "getStarted": "Pradėti"
+  },
+  "about": {
+    "title": "Kas yra {{projectName}}?",
+    "p1": "CloudBSD yra išsami distribucija, sukurta FreeBSD pagrindu, skirta užtikrinti tvirtą aplinką tokiems ištekliams kaip Jails, virtualios mašinos (Bhyve) bei Linux ir FreeBSD OCI konteineriai.",
+    "p2": "Pagrindinis dėmesys skiriamas sklandžiam sistemos atpažinimui, automatizuotam darbo mazgų diegimimui ir centralizuotam valdymui per galingą valdiklio paslaugą."
+  },
+  "features": {
+    "title": "Pagrindinės funkcijos",
+    "unifiedController": {
+      "title": "Vieningas valdiklis",
+      "desc": "Centrinis konfigūracijos taškas visam jūsų tinklui. Valdykite Jails, VM ir konteinerius iš vienos vietos."
+    },
+    "smartWorkerNodes": {
+      "title": "Išmanieji darbo mazgai",
+      "desc": "Orkestruotas išteklių valdymas su PXE įkrovos palaikymu lengvam bazinės operacinės sistemos diegimui."
+    },
+    "nativeVirtualization": {
+      "title": "Gimtoji virtualizacija",
+      "desc": "Pilna Bhyve VMM integracija didelio našumo virtualiems šeimininkams ir aparatinės įrangos perdavimui (passthrough)."
+    },
+    "secureIsolation": {
+      "title": "Saugi izoliacija",
+      "desc": "FreeBSD gimtieji Jails ir Bhyve užtikrina didelio tankio, mažų sąnaudų izoliaciją su stipriomis saugumo ribomis."
+    },
+    "gpuManagement": {
+      "title": "GPU valdymas",
+      "desc": "Pažangus aparatinės įrangos atpažinimas ir PCI passthrough palaikymas efektyviam GPU išteklių dalijimuisi ir valdymui."
+    },
+    "zfsSecurity": {
+      "title": "ZFS gimtasis saugumas",
+      "desc": "Pramonėje pirmaujantis saugyklos patikimumas su integruotu duomenų vientisumu, šifravimo palaikymu ir momentinėmis kopijomis."
+    },
+    "hardenedServices": {
+      "title": "Sustiprintos paslaugos",
+      "desc": "Privalomas HTTPS su automatizuotu sertifikatų valdymu ir automatiniu nesaugių prievadų peradresavimu."
+    },
+    "rbac": {
+      "title": "Vaidmenimis pagrįsta prieiga",
+      "desc": "Centralizuotas vartotojų valdymas, SSH raktų platinimas ir vaidmenimis pagrįsta autorizacija tiksliam valdymui."
+    },
+    "ociSupport": {
+      "title": "OCI palaikymas",
+      "desc": "Sklandžiai vykdykite ir valdykite tiek Linux, tiek FreeBSD OCI konteinerius FreeBSD sistemoje su integruota orkestracija."
+    },
+    "discovery": {
+      "title": "Sistemos atpažinimas",
+      "desc": "Automatinis aparatinės įrangos (RAM, CPU, diskų ir tinklo sąsajų) pranešimas valdikliui."
+    },
+    "apiFirst": {
+      "title": "Pirmiausia API",
+      "desc": "Atviros valdymo API vidinei ir išorinei sistemos integracijai bei automatizavimui."
+    }
+  },
+  "community": {
+    "title": "Prisijunkite prie mūsų bendruomenės",
+    "connect": "Susisiekite su mumis per Discord",
+    "desc": "Gaukite pagalbą, dalinkitės idėjomis ir prisidėkite prie CloudBSD ateities.",
+    "join": "Prisijungti prie serverio"
+  },
+  "downloads": {
+    "title": "Atsisiuntimai",
+    "comingSoon": "Netrukus",
+    "stayTuned": "Mes vis dar ruošiamės. Sekite naujienas."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Visos teisės saugomos.",
+    "projectBy": "Projektą sukūrė",
+    "builtOn": "Sukurta FreeBSD pagrindu · Išleista pagal 3-Clause BSD licenciją"
+  }
+}

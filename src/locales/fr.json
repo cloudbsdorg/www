@@ -1,44 +1,82 @@
 {
-  "nav": { "about": "À propos", "features": "Fonctionnalités", "community": "Communauté", "downloads": "Téléchargements" },
+  "nav": {
+    "about": "À propos",
+    "features": "Fonctionnalités",
+    "community": "Communauté",
+    "downloads": "Téléchargements"
+  },
   "hero": {
     "title": "La plateforme cloud de nouvelle génération",
-    "subtitle": "Exploitez la puissance, la sécurité et la stabilité légendaires de FreeBSD pour votre infrastructure cloud.",
+    "subtitle": "Exploitez la puissance légendaire, la sécurité et la stabilité de FreeBSD pour votre infrastructure cloud.",
     "learnMore": "En savoir plus",
     "getStarted": "Commencer"
   },
   "about": {
     "title": "Qu'est-ce que {{projectName}} ?",
-    "p1": "CloudBSD est une distribution complète construite sur FreeBSD, conçue pour fournir un environnement robuste pour l'hébergement d'actifs tels que les Jails, les machines virtuelles (Bhyve) et les conteneurs Linux et FreeBSD OCI.",
+    "p1": "CloudBSD est une distribution complète basée sur FreeBSD, conçue pour fournir un environnement robuste pour l'hébergement d'actifs tels que les Jails, les machines virtuelles (Bhyve) et les conteneurs OCI Linux et FreeBSD.",
     "p2": "Il se concentre sur la découverte transparente du système, l'installation automatisée des nœuds de travail et la gestion centralisée via un puissant service de contrôle."
   },
   "features": {
-    "title": "Principales caractéristiques",
-    "unifiedController": { "title": "Contrôleur unifié", "desc": "Un point de configuration central pour tout votre réseau. Gérez les Jails, les VMs et les conteneurs à partir d'un seul endroit." },
-    "smartWorkerNodes": { "title": "Nœuds de travail intelligents", "desc": "Gestion orchestrée des ressources avec prise en charge du démarrage PXE pour un déploiement sans effort de l'OS de base." },
-    "nativeVirtualization": { "title": "Virtualisation native", "desc": "Intégration complète de Bhyve VMM pour des hôtes virtuels haute performance et le passthrough matériel." },
-    "secureIsolation": { "title": "Isolation sécurisée", "desc": "Les Jails natives de FreeBSD et Bhyve offrent une isolation haute densité et à faible surcharge avec des frontières de sécurité solides." },
-    "gpuManagement": { "title": "Gestion des GPU", "desc": "Découverte matérielle avancée et prise en charge du passthrough PCI pour partager et gérer efficacement les ressources GPU." },
-    "zfsSecurity": { "title": "Sécurité native ZFS", "desc": "Fiabilité de stockage de premier plan avec intégrité des données intégrée, prise en charge du chiffrement et instantanés immédiats." },
-    "hardenedServices": { "title": "Services renforcés", "desc": "HTTPS obligatoire avec gestion automatisée des certificats et redirection automatique des ports non sécurisés." },
-    "rbac": { "title": "Accès basé sur les rôles", "desc": "Gestion centralisée des utilisateurs, distribution des clés SSH et autorisation basée sur les rôles pour un contrôle granulaire." },
-    "ociSupport": { "title": "Support OCI", "desc": "Exécutez et gérez de manière transparente des conteneurs Linux et FreeBSD OCI sur FreeBSD avec une orchestration intégrée." },
-    "discovery": { "title": "Découverte du système", "desc": "Rapports matériels automatisés pour la RAM, le CPU, les disques et les interfaces réseau au contrôleur." },
-    "apiFirst": { "title": "API d'abord", "desc": "APIs de gestion exposées pour l'intégration et l'automatisation des systèmes internes et externes." }
+    "title": "Fonctionnalités clés",
+    "unifiedController": {
+      "title": "Contrôleur unifié",
+      "desc": "Un point de configuration central pour l'ensemble de votre réseau. Gérez les Jails, les VM et les conteneurs à partir d'un seul endroit."
+    },
+    "smartWorkerNodes": {
+      "title": "Nœuds de travail intelligents",
+      "desc": "Gestion orchestrée des ressources avec prise en charge du démarrage PXE pour un déploiement sans effort du système d'exploitation de base."
+    },
+    "nativeVirtualization": {
+      "title": "Virtualisation native",
+      "desc": "Intégration complète de Bhyve VMM pour des hôtes virtuels haute performance et le passthrough matériel."
+    },
+    "secureIsolation": {
+      "title": "Isolation sécurisée",
+      "desc": "Les Jails et Bhyve natifs de FreeBSD offrent une isolation haute densité et à faible surcharge avec des limites de sécurité strictes."
+    },
+    "gpuManagement": {
+      "title": "Gestion des GPU",
+      "desc": "Découverte matérielle avancée et prise en charge du passthrough PCI pour partager et gérer efficacement les ressources GPU."
+    },
+    "zfsSecurity": {
+      "title": "Sécurité native ZFS",
+      "desc": "Fiabilité de stockage de pointe avec intégrité des données intégrée, prise en charge du chiffrement et instantanés."
+    },
+    "hardenedServices": {
+      "title": "Services renforcés",
+      "desc": "HTTPS obligatoire avec gestion automatisée des certificats et redirection automatique des ports non sécurisés."
+    },
+    "rbac": {
+      "title": "Accès basé sur les rôles",
+      "desc": "Gestion centralisée des utilisateurs, distribution des clés SSH et autorisation basée sur les rôles pour un contrôle granulaire."
+    },
+    "ociSupport": {
+      "title": "Prise en charge OCI",
+      "desc": "Exécutez et gérez en toute transparence des conteneurs OCI Linux et FreeBSD sur FreeBSD avec orchestration intégrée."
+    },
+    "discovery": {
+      "title": "Découverte du système",
+      "desc": "Rapports matériels automatisés pour la RAM, le CPU, les disques et les interfaces réseau vers le contrôleur."
+    },
+    "apiFirst": {
+      "title": "Priorité à l'API",
+      "desc": "API de gestion exposées pour l'intégration et l'automatisation des systèmes internes et externes."
+    }
   },
   "community": {
     "title": "Rejoignez notre communauté",
-    "connect": "Connectez-vous avec nous sur Discord",
+    "connect": "Rejoignez-nous sur Discord",
     "desc": "Obtenez de l'aide, partagez des idées et contribuez à l'avenir de CloudBSD.",
     "join": "Rejoindre le serveur"
   },
   "downloads": {
     "title": "Téléchargements",
     "comingSoon": "Bientôt disponible",
-    "stayTuned": "Nous cuisinons encore. Restez à l'écoute."
+    "stayTuned": "Nous y travaillons encore. Restez à l'écoute."
   },
   "footer": {
     "rights": "© 2026 {{companyName}}. Tous droits réservés.",
-    "projectBy": "Un projet de",
+    "projectBy": "Un projet par",
     "builtOn": "Construit sur FreeBSD · Publié sous licence BSD à 3 clauses"
   }
 }

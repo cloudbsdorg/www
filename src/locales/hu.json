@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "Rólunk",
+    "features": "Jellemzők",
+    "community": "Közösség",
+    "downloads": "Letöltések"
+  },
+  "hero": {
+    "title": "A következő generációs felhőplatform",
+    "subtitle": "Használja ki a FreeBSD legendás erejét, biztonságát és stabilitását felhőinfrastruktúrájához.",
+    "learnMore": "Tudjon meg többet",
+    "getStarted": "Kezdés"
+  },
+  "about": {
+    "title": "Mi az a {{projectName}}?",
+    "p1": "A CloudBSD egy FreeBSD-re épülő átfogó disztribúció, amelyet arra terveztek, hogy robusztus környezetet biztosítson olyan eszközök hosztolásához, mint a Jails, a virtuális gépek (Bhyve), valamint a Linux és FreeBSD OCI konténerek.",
+    "p2": "A zökkenőmentes rendszerfelderítésre, az automatizált munkacsomópont-telepítésre és a hatékony vezérlőszolgáltatáson keresztüli központosított felügyeletre összpontosít."
+  },
+  "features": {
+    "title": "Főbb jellemzők",
+    "unifiedController": {
+      "title": "Egységes vezérlő",
+      "desc": "Központi konfigurációs pont a teljes hálózat számára. Kezelje a Jaileket, VM-eket és konténereket egy helyről."
+    },
+    "smartWorkerNodes": {
+      "title": "Intelligens munkacsomópontok",
+      "desc": "Orkesztrált erőforrás-kezelés PXE-boot támogatással az egyszerű alap operációs rendszer telepítéséhez."
+    },
+    "nativeVirtualization": {
+      "title": "Natív virtualizáció",
+      "desc": "Teljes Bhyve VMM integráció a nagy teljesítményű virtuális gazdagépekhez és hardveres átengedéshez (passthrough)."
+    },
+    "secureIsolation": {
+      "title": "Biztonságos izoláció",
+      "desc": "A FreeBSD-natív Jails és Bhyve nagy sűrűségű, alacsony rezsijű izolációt biztosít erős biztonsági határokkal."
+    },
+    "gpuManagement": {
+      "title": "GPU kezelés",
+      "desc": "Fejlett hardverfelderítés és PCI-passthrough támogatás a GPU-erőforrások hatékony megosztásához és kezeléséhez."
+    },
+    "zfsSecurity": {
+      "title": "ZFS-natív biztonság",
+      "desc": "Iparágvezető tárolási megbízhatóság beépített adatvédelmi integritással, titkosítási támogatással és azonnali pillanatképekkel."
+    },
+    "hardenedServices": {
+      "title": "Megerősített szolgáltatások",
+      "desc": "Kötelező HTTPS automatizált tanúsítványkezeléssel és a nem biztonságos portok automatikus átirányításával."
+    },
+    "rbac": {
+      "title": "Szerepkör alapú hozzáférés",
+      "desc": "Központosított felhasználókezelés, SSH-kulcs elosztás és szerepkör alapú jogosultságkezelés a szemcsés vezérléshez."
+    },
+    "ociSupport": {
+      "title": "OCI támogatás",
+      "desc": "Zökkenőmentesen futtathat és kezelhet Linux és FreeBSD OCI konténereket FreeBSD-n beépített orkesztrációval."
+    },
+    "discovery": {
+      "title": "Rendszerfelderítés",
+      "desc": "Automatizált hardverjelentés a RAM-ról, CPU-ról, lemezekről és hálózati interfészekről a vezérlő felé."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "Exponált kezelő API-k a belső és külső rendszerintegrációhoz és automatizáláshoz."
+    }
+  },
+  "community": {
+    "title": "Csatlakozzon közösségünkhöz",
+    "connect": "Lépjen kapcsolatba velünk Discordon",
+    "desc": "Kérjen segítséget, ossza meg ötleteit, és járuljon hozzá a CloudBSD jövőjéhez.",
+    "join": "Csatlakozás a szerverhez"
+  },
+  "downloads": {
+    "title": "Letöltések",
+    "comingSoon": "Hamarosan",
+    "stayTuned": "Még készülünk. Maradjon velünk."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Minden jog fenntartva.",
+    "projectBy": "A projektet készítette:",
+    "builtOn": "FreeBSD-re építve · Megjelent a 3-Clause BSD licenc alatt"
+  }
+}

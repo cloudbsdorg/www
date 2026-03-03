@@ -2,45 +2,45 @@
   "nav": {
     "about": "Über uns",
     "features": "Funktionen",
-    "community": "Community",
+    "community": "Gemeinschaft",
     "downloads": "Downloads"
   },
   "hero": {
-    "title": "Cloud-Plattform der nächsten Generation",
-    "subtitle": "Nutzen Sie die legendäre Kraft und Stabilität von FreeBSD für Ihre Cloud-Infrastruktur.",
+    "title": "Die Cloud-Plattform der nächsten Generation",
+    "subtitle": "Nutzen Sie die legendäre Leistung, Sicherheit und Stabilität von FreeBSD für Ihre Cloud-Infrastruktur.",
     "learnMore": "Mehr erfahren",
-    "getStarted": "Loslegen"
+    "getStarted": "Erste Schritte"
   },
   "about": {
     "title": "Was ist {{projectName}}?",
-    "p1": "CloudBSD ist eine umfassende Distribution, die auf FreeBSD aufbaut und eine robuste Umgebung für das Hosting von Assets wie Jails, virtuellen Maschinen (Bhyve) und Linux- und FreeBSD-OCI-Containern bietet.",
-    "p2": "Der Schwerpunkt liegt auf nahtloser Systemerkennung, automatisierter Installation von Worker-Nodes und zentraler Verwaltung über einen leistungsstarken Controller-Service."
+    "p1": "CloudBSD ist eine umfassende Distribution auf Basis von FreeBSD, die entwickelt wurde, um eine robuste Umgebung für das Hosting von Assets wie Jails, virtuellen Maschinen (Bhyve) und sowohl Linux- als auch FreeBSD-OCI-Containern bereitzustellen.",
+    "p2": "Der Schwerpunkt liegt auf nahtloser Systemerkennung, automatisierter Installation von Worker-Nodes und zentralisierter Verwaltung über einen leistungsstarken Controller-Service."
   },
   "features": {
-    "title": "Hauptmerkmale",
+    "title": "Hauptfunktionen",
     "unifiedController": {
       "title": "Einheitlicher Controller",
-      "desc": "Ein zentraler Konfigurationspunkt für Ihr gesamtes Netzwerk. Verwalten Sie Jails, VMs und Container an einem Ort."
+      "desc": "Ein zentraler Konfigurationspunkt für Ihr gesamtes Netzwerk. Verwalten Sie Jails, VMs und Container von einem Ort aus."
     },
     "smartWorkerNodes": {
       "title": "Intelligente Worker-Nodes",
-      "desc": "Orchestrierte Ressourcenverwaltung mit PXE-Boot-Unterstützung für mühelose Basis-Betriebssystem-Bereitstellung."
+      "desc": "Orchestrierte Ressourcenverwaltung mit PXE-Boot-Unterstützung für mühelose Basis-OS-Bereitstellung."
     },
     "nativeVirtualization": {
       "title": "Native Virtualisierung",
       "desc": "Vollständige Bhyve-VMM-Integration für leistungsstarke virtuelle Hosts und Hardware-Passthrough."
     },
     "secureIsolation": {
-      "title": "Sichere Isolation",
-      "desc": "FreeBSD-native Jails und Bhyve bieten hochdichte Isolation mit geringem Overhead und starken Sicherheitsgrenzen."
+      "title": "Sichere Isolierung",
+      "desc": "FreeBSD-native Jails und Bhyve bieten hochdichte Isolierung mit geringem Overhead und starken Sicherheitsgrenzen."
     },
     "gpuManagement": {
       "title": "GPU-Verwaltung",
-      "desc": "Erweiterte Hardware-Erkennung und PCI-Passthrough-Unterstützung für effektive gemeinsame Nutzung von GPU-Ressourcen."
+      "desc": "Erweiterte Hardwareerkennung und PCI-Passthrough-Unterstützung zur effektiven gemeinsamen Nutzung und Verwaltung von GPU-Ressourcen."
     },
     "zfsSecurity": {
       "title": "ZFS-native Sicherheit",
-      "desc": "Branchenführende Speicherzuverlässigkeit mit integrierter Datenintegrität, Verschlüsselungsunterstützung und sofortigen Snapshots."
+      "desc": "Branchenführende Speicherzuverlässigkeit mit integrierter Datenintegrität, Verschlüsselungsunterstützung und Instant-Snapshotting."
     },
     "hardenedServices": {
       "title": "Gehärtete Dienste",
@@ -48,30 +48,30 @@
     },
     "rbac": {
       "title": "Rollenbasierter Zugriff",
-      "desc": "Zentrale Benutzerverwaltung, SSH-Schlüsselverteilung und rollenbasierte Autorisierung für granulare Kontrolle."
+      "desc": "Zentralisierte Benutzerverwaltung, SSH-Schlüsselverteilung und rollenbasierte Autorisierung für granulare Kontrolle."
     },
     "ociSupport": {
       "title": "OCI-Unterstützung",
-      "desc": "Nahtlose Ausführung und Verwaltung von Linux- und FreeBSD-OCI-Containern auf FreeBSD mit integrierter Orchestrierung."
+      "desc": "Nahtlose Ausführung und Verwaltung von sowohl Linux- als auch FreeBSD-OCI-Containern auf FreeBSD mit integrierter Orchestrierung."
     },
     "discovery": {
       "title": "Systemerkennung",
-      "desc": "Automatisierte Hardware-Meldung von RAM, CPU, Festplatten und Netzwerkschnittstellen zurück an den Controller."
+      "desc": "Automatisierte Hardwareberichte für RAM, CPU, Festplatten und Netzwerkschnittstellen zurück an den Controller."
     },
     "apiFirst": {
-      "title": "API-First",
-      "desc": "Offengelegte Management-APIs für interne und externe Systemintegration und Automatisierung."
+      "title": "API First",
+      "desc": "Offengelegte Verwaltungs-APIs für interne und externe Systemintegration und Automatisierung."
     }
   },
   "community": {
-    "title": "Treten Sie unserer Community bei",
+    "title": "Treten Sie unserer Gemeinschaft bei",
     "connect": "Verbinden Sie sich mit uns auf Discord",
     "desc": "Holen Sie sich Hilfe, teilen Sie Ideen und tragen Sie zur Zukunft von CloudBSD bei.",
     "join": "Server beitreten"
   },
   "downloads": {
     "title": "Downloads",
-    "comingSoon": "Demnächst",
+    "comingSoon": "Demnächst verfügbar",
     "stayTuned": "Wir bereiten alles vor. Bleiben Sie dran."
   },
   "footer": {

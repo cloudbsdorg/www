@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "O nás",
+    "features": "Funkce",
+    "community": "Komunita",
+    "downloads": "Ke stažení"
+  },
+  "hero": {
+    "title": "Cloudová platforma příští generace",
+    "subtitle": "Využijte legendární výkon, bezpečnost a stabilitu FreeBSD pro svou cloudovou infrastrukturu.",
+    "learnMore": "Dozvědět se více",
+    "getStarted": "Začínáme"
+  },
+  "about": {
+    "title": "Co je {{projectName}}?",
+    "p1": "CloudBSD je komplexní distribuce postavená na FreeBSD, navržená tak, aby poskytovala robustní prostředí pro hostování prostředků, jako jsou Jails, virtuální stroje (Bhyve) a OCI kontejnery pro Linux i FreeBSD.",
+    "p2": "Zaměřuje se na bezproblémovou detekci systému, automatizovanou instalaci pracovních uzlů a centralizovanou správu prostřednictvím výkonné služby Controller Service."
+  },
+  "features": {
+    "title": "Klíčové vlastnosti",
+    "unifiedController": {
+      "title": "Sjednocený kontrolér",
+      "desc": "Centrální bod konfigurace pro celou vaši síť. Spravujte Jails, VM a kontejnery z jednoho místa."
+    },
+    "smartWorkerNodes": {
+      "title": "Chytré pracovní uzly",
+      "desc": "Orchestrovaná správa prostředků s podporou PXE bootu pro snadné nasazení základního OS."
+    },
+    "nativeVirtualization": {
+      "title": "Nativní virtualizace",
+      "desc": "Plná integrace Bhyve VMM pro vysoce výkonné virtuální hostitele a hardware passthrough."
+    },
+    "secureIsolation": {
+      "title": "Bezpečná izolace",
+      "desc": "Nativní Jails a Bhyve ve FreeBSD poskytují izolaci s vysokou hustotou a nízkou režií se silnými bezpečnostními hranicemi."
+    },
+    "gpuManagement": {
+      "title": "Správa GPU",
+      "desc": "Pokročilá detekce hardwaru a podpora PCI passthrough pro efektivní sdílení a správu zdrojů GPU."
+    },
+    "zfsSecurity": {
+      "title": "Nativní zabezpečení ZFS",
+      "desc": "Špičková spolehlivost úložiště s vestavěnou integritou dat, podporou šifrování a okamžitými snímky."
+    },
+    "hardenedServices": {
+      "title": "Zabezpečené služby",
+      "desc": "Povinné HTTPS s automatickou správou certifikátů a automatickým přesměrováním nezabezpečených portů."
+    },
+    "rbac": {
+      "title": "Přístup založený na rolích",
+      "desc": "Centralizovaná správa uživatelů, distribuce SSH klíčů a autorizace založená na rolích pro granulární kontrolu."
+    },
+    "ociSupport": {
+      "title": "Podpora OCI",
+      "desc": "Plynule spouštějte a spravujte Linuxové i FreeBSD OCI kontejnery na FreeBSD s vestavěnou orchestrací."
+    },
+    "discovery": {
+      "title": "Detekce systému",
+      "desc": "Automatizované hlášení hardwaru pro RAM, CPU, disky a síťová rozhraní zpět do kontroléru."
+    },
+    "apiFirst": {
+      "title": "API First",
+      "desc": "Odkryté rozhraní API pro správu pro interní i externí integraci a automatizaci systému."
+    }
+  },
+  "community": {
+    "title": "Připojte se k naší komunitě",
+    "connect": "Spojte se s námi na Discordu",
+    "desc": "Získejte pomoc, sdílejte nápady a přispívejte k budoucnosti CloudBSD.",
+    "join": "Připojit se k serveru"
+  },
+  "downloads": {
+    "title": "Ke stažení",
+    "comingSoon": "Již brzy",
+    "stayTuned": "Stále na tom pracujeme. Zůstaňte naladěni."
+  },
+  "footer": {
+    "rights": "© 2026 {{companyName}}. Všechna práva vyhrazena.",
+    "projectBy": "Projekt vytvořil",
+    "builtOn": "Postaveno na FreeBSD · Vydáno pod licencí 3-Clause BSD"
+  }
+}
