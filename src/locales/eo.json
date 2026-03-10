@@ -80,8 +80,8 @@
     "builtOn": "Konstruita sur FreeBSD · Eldonita sub 3-Klaŭza BSD-Permesilo"
   },
   "gdpr": {
-    "title": "GDPR-Konformeco",
-    "message": "Ni taksas vian privatecon. Ĉi tiu retejo ne kolektas iujn kuketojn aŭ personajn datumojn. Ni provizas ĉi tiun avizon por travidebleco kaj konformaj celoj.",
-    "dismiss": "Mi Komprenas"
+    "title": "Konformeco al GDPR",
+    "message": "Ni taksas vian privatecon. Ĉiu retejo ne kolektas kuketojn aŭ personajn datumojn. Ni provizas ĉi tiun avizon por travidebleco kaj plenumo.",
+    "dismiss": "Mi komprenas"
   }
 }
