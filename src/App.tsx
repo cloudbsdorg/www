@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { CONFIG } from './config'
 import LanguageSelector from './components/LanguageSelector'
+import GDPRModal from './components/GDPRModal'
 
 const App: React.FC = () => {
   const { t } = useTranslation()
@@ -256,6 +257,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
+      <GDPRModal />
     </div>
   )
 }

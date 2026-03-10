@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Alle rettigheter forbeholdt.",
     "projectBy": "Et prosjekt av",
     "builtOn": "Bygget på FreeBSD · Utgitt under 3-Clause BSD-lisensen"
+  },
+  "gdpr": {
+    "title": "Personvern (GDPR)",
+    "message": "Vi verdsetter personvernet ditt. Dette nettstedet samler ikke inn informasjonskapsler eller personopplysninger. Vi gir denne meldingen for å sikre åpenhet og etterlevelse.",
+    "dismiss": "Jeg forstår"
   }
 }

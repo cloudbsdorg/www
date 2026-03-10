@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Seluruh hak cipta dilindungi undang-undang.",
     "projectBy": "Sebuah proyek oleh",
     "builtOn": "Dibangun di atas FreeBSD · Dirilis di bawah Lisensi BSD 3-Clause"
+  },
+  "gdpr": {
+    "title": "Kepatuhan GDPR",
+    "message": "Kami menghargai privasi Anda. Situs web ini tidak mengumpulkan cookie atau data pribadi apa pun. Kami memberikan pemberitahuan ini untuk tujuan transparansi dan kepatuhan.",
+    "dismiss": "Saya Mengerti"
   }
 }

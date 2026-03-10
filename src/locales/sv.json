@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Alla rättigheter förbehållna.",
     "projectBy": "Ett projekt av",
     "builtOn": "Byggd på FreeBSD · Släppt under 3-Clause BSD-licensen"
+  },
+  "gdpr": {
+    "title": "GDPR-efterlevnad",
+    "message": "Vi värdesätter din integritet. Denna webbplats samlar inte in några cookies eller personuppgifter. Vi tillhandåller detta meddelande för transparens och efterlevnad.",
+    "dismiss": "Jag förstår"
   }
 }

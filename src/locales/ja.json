@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. All rights reserved.",
     "projectBy": "プロジェクト作成者",
     "builtOn": "FreeBSD上で構築 · 3条項BSDライセンスの下で公開"
+  },
+  "gdpr": {
+    "title": "GDPRコンプライアンス",
+    "message": "私たちはあなたのプライバシーを尊重します。このウェブサイトはクッキーや個人データを収集しません。透明性とコンプライアンスを目的として、この通知を提供しています。",
+    "dismiss": "理解しました"
   }
 }

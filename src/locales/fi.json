@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Kaikki oikeudet pidätetään.",
     "projectBy": "Projektin tarjoaa",
     "builtOn": "Rakennettu FreeBSD:n päälle · Julkaistu 3-Clause BSD -lisenssillä"
+  },
+  "gdpr": {
+    "title": "GDPR-vaatimustenmukaisuus",
+    "message": "Arvostamme yksityisyyttäsi. Tämä verkkosivusto ei kerää evästeitä tai henkilötietoja. Annamme tämän ilmoituksen avoimuuden ja vaatimustenmukaisuuden vuoksi.",
+    "dismiss": "Ymmärrän"
   }
 }

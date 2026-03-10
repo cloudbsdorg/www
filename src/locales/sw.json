@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Haki zote zimehifadhiwa.",
     "projectBy": "Mradi wa",
     "builtOn": "Imejengwa juu ya FreeBSD · Imetolewa chini ya Leseni ya BSD ya Vifungu 3"
+  },
+  "gdpr": {
+    "title": "Uzingatiaji wa GDPR",
+    "message": "Tunathamini faragha yako. Tovuti hii haikusanyi kuki zozote au data ya kibinafsi. Tunatoa taarifa hii kwa madhumuni ya uwazi na uzingatiaji.",
+    "dismiss": "Naelewa"
   }
 }

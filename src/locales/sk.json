@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Všetky práva vyhradené.",
     "projectBy": "Projekt vytvoril",
     "builtOn": "Postavené na FreeBSD · Vydané pod licenciou 3-Clause BSD"
+  },
+  "gdpr": {
+    "title": "Súlad s GDPR",
+    "message": "Vážime si vaše súkromie. Táto webová stránka nezhromažďuje žiadne súbory cookie ani osobné údaje. Toto oznámenie poskytujeme na účely transparentnosti a súladu.",
+    "dismiss": "Rozumiem"
   }
 }

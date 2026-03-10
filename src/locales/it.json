@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Tutti i diritti riservati.",
     "projectBy": "Un progetto di",
     "builtOn": "Costruito su FreeBSD · Rilasciato sotto licenza BSD a 3 clausole"
+  },
+  "gdpr": {
+    "title": "Conformità GDPR",
+    "message": "Apprezziamo la tua privacy. Questo sito web non raccoglie cookie o dati personali. Forniamo questo avviso a fini di trasparenza e conformità.",
+    "dismiss": "Ho capito"
   }
 }

@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Gbogbo ẹ̀tọ́ wà ní dídúró.",
     "projectBy": "Iṣẹ́ àkànṣe láti ọwọ́",
     "builtOn": "A kọ́ rẹ̀ lórí FreeBSD · A gbé jáde lábẹ́ Ìwé-ẹ̀rí BSD ti Àpólà 3"
+  },
+  "gdpr": {
+    "title": "Ibamu GDPR",
+    "message": "A ṣe pataki aṣiri rẹ. Oju opo wẹẹbu yii ko gba eyikeyi kuki tabi data ti ara ẹni. A pese akiyesi yii fun akoyawo ati awọn idi ibamu.",
+    "dismiss": "Mo loye"
   }
 }

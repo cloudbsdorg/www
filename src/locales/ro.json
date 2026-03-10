@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Toate drepturile rezervate.",
     "projectBy": "Un proiect de",
     "builtOn": "Construit pe FreeBSD · Lansat sub licența BSD cu 3 clauze"
+  },
+  "gdpr": {
+    "title": "Conformitate GDPR",
+    "message": "Apreciem intimitatea dumneavoastră. Acest site web nu colectează module cookie sau date cu caracter personal. Furnizăm această notificare în scopuri de transparență și conformitate.",
+    "dismiss": "Am înțeles"
   }
 }

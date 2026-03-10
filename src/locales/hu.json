@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Minden jog fenntartva.",
     "projectBy": "A projektet készítette:",
     "builtOn": "FreeBSD-re építve · Megjelent a 3-Clause BSD licenc alatt"
+  },
+  "gdpr": {
+    "title": "GDPR megfelelőség",
+    "message": "Nagyra értékeljük az Ön magánéletét. Ez a webhely nem gyűjt sütiket vagy személyes adatokat. Ezt az értesítést az átláthatóság és a megfelelőség érdekében közöljük.",
+    "dismiss": "Értem"
   }
 }

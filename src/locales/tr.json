@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Tüm hakları saklıdır.",
     "projectBy": "Bir projesidir:",
     "builtOn": "FreeBSD üzerinde inşa edildi · 3-Clause BSD Lisansı altında yayınlandı"
+  },
+  "gdpr": {
+    "title": "GDPR Uyumluluğu",
+    "message": "Gizliliğinize değer veriyoruz. Bu web sitesi herhangi bir čerez veya kişisel veri toplamaz. Bu bildirimi şeffaflık ve uyumluluk amaçlarıyla sunuyoruz.",
+    "dismiss": "Anladım"
   }
 }

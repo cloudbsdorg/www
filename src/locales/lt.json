@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Visos teisės saugomos.",
     "projectBy": "Projektą sukūrė",
     "builtOn": "Sukurta FreeBSD pagrindu · Išleista pagal 3-Clause BSD licenciją"
+  },
+  "gdpr": {
+    "title": "BDAR laikymasis",
+    "message": "Mes vertiname jūsų privatumą. Ši svetainė nerenka jokių slapukų ar asmens duomenų. Šį pranešimą pateikiame skaidrumo ir atitikties tikslais.",
+    "dismiss": "Suprantu"
   }
 }

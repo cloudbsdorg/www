@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Tots els drets reservats.",
     "projectBy": "Un projecte de",
     "builtOn": "Construït sobre FreeBSD · Llançat sota la Llicència BSD de 3 clàusules"
+  },
+  "gdpr": {
+    "title": "Compliment del RGPD",
+    "message": "Valorem la teva privadesa. Aquest lloc web no recull cap galeta ni dada personal. Oferim aquest avís per motius de transparència i compliment.",
+    "dismiss": "Ho entenc"
   }
 }

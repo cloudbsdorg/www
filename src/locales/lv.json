@@ -78,5 +78,10 @@
     "rights": "© 2026 {{companyName}}. Visas tiesības aizsargātas.",
     "projectBy": "Projekta autors:",
     "builtOn": "Veidots uz FreeBSD bāzes · Izlaists saskaņā ar 3-Clause BSD licenci"
+  },
+  "gdpr": {
+    "title": "Vispārīgās datu aizsardzības regulas (VDAR) ievērošana",
+    "message": "Mēs novērtējam jūsu privātumu. Šī tīmekļa vietne neievāc nekādas sīkdatnes vai personas datus. Mēs sniedzam šo paziņojumu pārredzamības un atbilstības nolūkos.",
+    "dismiss": "Es saprotu"
   }
 }
