@@ -34,7 +34,7 @@ CloudBSD is a comprehensive distribution built upon FreeBSD, designed to provide
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd www-js
+   cd www-cloudbsd-org
    ```
 
 2. Install dependencies:
