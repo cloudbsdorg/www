@@ -1,10 +1,35 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { 
+  Settings2, 
+  Network, 
+  Box, 
+  ShieldCheck, 
+  Cpu, 
+  HardDrive, 
+  GlobeLock, 
+  Key, 
+  Package, 
+  Search, 
+  Code,
+  Zap
+} from 'lucide-react'
 import { CONFIG } from './config'
 import LanguageSelector from './components/LanguageSelector'
 import GDPRModal from './components/GDPRModal'
 import FeatureCard from './components/FeatureCard'
+
+const ZFSLogo = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 100 100" className={className} fill="currentColor">
+    <path d="M25,30 L75,30 L25,70 L75,70" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="50" cy="50" r="6" />
+    <circle cx="35" cy="40" r="3" />
+    <circle cx="65" cy="40" r="3" />
+    <circle cx="35" cy="60" r="3" />
+    <circle cx="65" cy="60" r="3" />
+  </svg>
+);
 
 const App = () => {
   const { t } = useTranslation()
@@ -312,66 +337,77 @@ const App = () => {
             >
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Settings2 className="w-8 h-8 text-slate-600 dark:text-slate-400" />}
                   title={t('features.unifiedController.title')}
                   description={t('features.unifiedController.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Network className="w-8 h-8 text-blue-500" />}
                   title={t('features.smartWorkerNodes.title')}
                   description={t('features.smartWorkerNodes.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Box className="w-8 h-8 text-indigo-500" />}
                   title={t('features.nativeVirtualization.title')}
                   description={t('features.nativeVirtualization.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<ShieldCheck className="w-8 h-8 text-emerald-500" />}
                   title={t('features.secureIsolation.title')}
                   description={t('features.secureIsolation.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Zap className="w-8 h-8 text-amber-500" />}
                   title={t('features.gpuManagement.title')}
                   description={t('features.gpuManagement.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<ZFSLogo className="w-8 h-8 text-blue-600 dark:text-blue-400" />}
                   title={t('features.zfsSecurity.title')}
                   description={t('features.zfsSecurity.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<GlobeLock className="w-8 h-8 text-cyan-500" />}
                   title={t('features.hardenedServices.title')}
                   description={t('features.hardenedServices.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Key className="w-8 h-8 text-orange-500" />}
                   title={t('features.rbac.title')}
                   description={t('features.rbac.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Package className="w-8 h-8 text-rose-500" />}
                   title={t('features.ociSupport.title')}
                   description={t('features.ociSupport.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Search className="w-8 h-8 text-violet-500" />}
                   title={t('features.discovery.title')}
                   description={t('features.discovery.desc')}
                 />
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
                 <FeatureCard
+                  icon={<Code className="w-8 h-8 text-teal-500" />}
                   title={t('features.apiFirst.title')}
                   description={t('features.apiFirst.desc')}
                 />

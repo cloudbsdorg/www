@@ -1,19 +1,19 @@
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
 interface FeatureCardProps {
   title: string;
   description: string;
+  icon: ReactNode;
 }
 
-const FeatureCard = ({ title, description }: FeatureCardProps) => (
+const FeatureCard = ({ title, description, icon }: FeatureCardProps) => (
   <motion.div
     whileHover={{ y: -5, transition: { duration: 0.2 } }}
-    className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-slate-100 dark:border-slate-700 h-full flex flex-col"
+    className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-slate-100 dark:border-slate-700 h-full flex flex-col group"
   >
-    <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 text-cloudbsd-blue dark:text-blue-400">
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
+    <div className="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 text-cloudbsd-blue dark:text-blue-400 group-hover:bg-cloudbsd-blue group-hover:text-white transition-all duration-300">
+      {icon}
     </div>
     <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-cloudbsd-blue transition-colors">
       {title}
