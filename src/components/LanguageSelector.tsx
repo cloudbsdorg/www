@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 import { languages, getLanguageByCode } from '../config/languages';
 import { changeLanguage } from '../i18n';
+import { Globe, X, Check } from 'lucide-react';
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
@@ -42,63 +44,97 @@ const LanguageSelector = () => {
   }, []);
 
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isOpen) {
-        setIsOpen(false);
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
   }, [isOpen]);
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
-      <div>
-        <button
-          type="button"
-          onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex justify-center w-full rounded-md border border-slate-300 dark:border-slate-700 shadow-sm px-4 py-2 bg-white dark:bg-slate-800 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cloudbsd-blue transition-colors"
-          aria-haspopup="true"
-          aria-expanded={isOpen}
-        >
-          <span className="mr-2" aria-hidden="true">{currentLanguage.flag}</span>
-          <span>{currentLanguage.nativeName}</span>
-          <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-          </svg>
-        </button>
-      </div>
+    <div className="relative inline-block" ref={dropdownRef}>
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="inline-flex items-center justify-center h-10 px-3 md:px-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm hover:border-cloudbsd-blue dark:hover:border-blue-500 transition-all duration-300 group"
+        aria-haspopup="true"
+        aria-expanded={isOpen}
+      >
+        <Globe className="w-4 h-4 md:mr-2 text-slate-500 group-hover:text-cloudbsd-blue transition-colors" />
+        <span className="hidden md:inline text-sm font-medium text-slate-700 dark:text-slate-200 mr-2">
+          {currentLanguage.nativeName}
+        </span>
+        <span className="md:hidden text-lg" aria-hidden="true">{currentLanguage.flag}</span>
+      </button>
 
-      {isOpen && (
-        <div
-          className="origin-top-right absolute right-0 mt-2 w-56 max-h-96 overflow-y-auto rounded-md shadow-lg bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 z-[60] focus:outline-none scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-700"
-          role="menu"
-          aria-orientation="vertical"
-        >
-          <div className="py-1">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => handleLanguageChange(lang.code)}
-                className={`${
-                  (i18n.language || '').startsWith(lang.code)
-                    ? 'bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-white'
-                    : 'text-slate-700 dark:text-slate-300'
-                } group flex items-center px-4 py-2 text-sm w-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors`}
-                role="menuitem"
-              >
-                <span className="mr-3 text-lg" aria-hidden="true">{lang.flag}</span>
-                <span className="flex-1 text-left">{lang.nativeName}</span>
-                {(i18n.language || '').startsWith(lang.code) && (
-                  <svg className="h-4 w-4 text-cloudbsd-blue" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Desktop Dropdown */}
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              className="hidden md:block absolute right-0 mt-2 w-64 max-h-96 overflow-y-auto rounded-2xl shadow-2xl bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 z-[100] focus:outline-none scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-700 p-2"
+            >
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => handleLanguageChange(lang.code)}
+                  className={`flex items-center px-4 py-3 text-sm w-full rounded-xl transition-all duration-200 ${
+                    (i18n.language || '').startsWith(lang.code)
+                      ? 'bg-blue-50 dark:bg-blue-900/30 text-cloudbsd-blue dark:text-blue-400 font-bold'
+                      : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50'
+                  }`}
+                >
+                  <span className="mr-3 text-lg">{lang.flag}</span>
+                  <span className="flex-1 text-left">{lang.nativeName}</span>
+                  {(i18n.language || '').startsWith(lang.code) && <Check className="w-4 h-4" />}
+                </button>
+              ))}
+            </motion.div>
+
+            {/* Mobile Full-Screen Modal */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="md:hidden fixed inset-0 z-[200] bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl p-6 overflow-y-auto"
+            >
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                  <Globe className="w-6 h-6 text-cloudbsd-blue" />
+                  Select Language
+                </h2>
+                <button 
+                  onClick={() => setIsOpen(false)}
+                  className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              
+              <div className="grid grid-cols-1 gap-3">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => handleLanguageChange(lang.code)}
+                    className={`flex items-center px-5 py-4 text-lg w-full rounded-2xl border transition-all ${
+                      (i18n.language || '').startsWith(lang.code)
+                        ? 'bg-blue-50 dark:bg-blue-900/30 border-cloudbsd-blue/30 text-cloudbsd-blue dark:text-blue-400 font-bold'
+                        : 'border-slate-100 dark:border-slate-800 text-slate-700 dark:text-slate-300'
+                    }`}
+                  >
+                    <span className="mr-4 text-2xl">{lang.flag}</span>
+                    <span className="flex-1 text-left">{lang.nativeName}</span>
+                    {(i18n.language || '').startsWith(lang.code) && <Check className="w-6 h-6" />}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
