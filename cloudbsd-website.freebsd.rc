@@ -17,63 +17,35 @@ load_rc_config $name
 : ${cloudbsd_website_log:="/var/log/${name}.log"}
 : ${cloudbsd_website_pidfile:="/var/run/${name}.pid"}
 
-command="/usr/local/bin/serve"
-command_args="-s ${cloudbsd_website_chdir}/dist -l 3000"
+# The daemon(8) utility provides supervision and automatic restarts (-r)
+command="/usr/sbin/daemon"
+# -r: restart child if it crashes
+# -f: direct output to log file
+# -P: supervisor pid file
+# -p: child pid file
+# -o: log file output
+command_args="-r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} /usr/local/bin/serve -s ${cloudbsd_website_chdir}/dist -l 3000"
 
+# Environment and execution context
 cloudbsd_website_user=${cloudbsd_website_user}
 cloudbsd_website_chdir=${cloudbsd_website_chdir}
 cloudbsd_website_env="PATH=/usr/local/bin:/usr/bin:/bin HOME=${cloudbsd_website_chdir}"
 
 pidfile="${cloudbsd_website_pidfile}"
-procname="/usr/local/bin/serve"
 
 start_precmd="cloudbsd_website_prestart"
-stop_postcmd="cloudbsd_website_poststop"
-status_precmd="cloudbsd_website_status_check"
 
 cloudbsd_website_prestart()
 {
-	# Ensure log and pid files exist and are writable by the user
-	touch ${cloudbsd_website_log}
-	chown ${cloudbsd_website_user} ${cloudbsd_website_log}
-
-	# If the pidfile exists, check if it contains a negative number
-	if [ -f "${pidfile}" ]; then
-		_pid=$(cat "${pidfile}" 2>/dev/null)
-		if [ -n "$_pid" ] && [ "$_pid" -lt 0 ] 2>/dev/null; then
-			echo "Stale negative PID (${_pid}) found in ${pidfile}. Cleaning up."
-			rm -f "${pidfile}"
-		fi
+	# Ensure log file exists and is writable by the www user
+	if [ ! -f "${cloudbsd_website_log}" ]; then
+		touch "${cloudbsd_website_log}"
+		chown "${cloudbsd_website_user}" "${cloudbsd_website_log}"
 	fi
 
-	# On FreeBSD, /var/run is normally root-only.
-	# The daemon utility started as root should be able to create the pid file,
-	# but it must have permission if it restarts and is already running as the user.
-	# Touching it and chowning it ensures it's ready.
-	touch ${cloudbsd_website_pidfile}
-	chown ${cloudbsd_website_user} ${cloudbsd_website_pidfile}
-}
-
-cloudbsd_website_poststop()
-{
-	# Clean out the pidfile after the process has stopped
-	if [ -f "${pidfile}" ]; then
-		rm -f "${pidfile}"
-	fi
-}
-
-cloudbsd_website_status_check()
-{
-	# If the pidfile exists, check if it contains a negative number
-	if [ -f "${pidfile}" ]; then
-		_pid=$(cat "${pidfile}" 2>/dev/null)
-		if [ -n "$_pid" ] && [ "$_pid" -lt 0 ] 2>/dev/null; then
-			echo "Negative PID (${_pid}) found. Considering service NOT running."
-			rm -f "${pidfile}"
-			return 1 # Failure in status means not running
-		fi
-	fi
-	return 0
+	# Ensure the directory is writable for the child pid file
+	chown "${cloudbsd_website_user}" "${cloudbsd_website_chdir}"
 }
 
 run_rc_command "$1"
+
