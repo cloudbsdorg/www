@@ -1,12 +1,34 @@
+# CloudBSD Website Makefile
 IMAGE_NAME = cloudbsd-website
 PORT = 8080
 
-.PHONY: all build run clean distclean podman-linux podman-freebsd install install-freebsd install-linux
+# Installation paths
+PREFIX ?= /usr/local
+DESTDIR ?=
+WWW_ROOT_FREEBSD = $(PREFIX)/www/cloudbsd-website
+WWW_ROOT_LINUX = /var/www/cloudbsd-website
+
+# Tools
+INSTALL ?= install
+STRIP ?= strip
+
+.PHONY: all help build run clean distclean podman-linux podman-freebsd install install-freebsd install-linux dist
 
 all: build
 
+help:
+	@echo "CloudBSD Website Management"
+	@echo "Usage:"
+	@echo "  make build          - Install dependencies and build production assets"
+	@echo "  make install        - Install the website to the local system (auto-detects OS)"
+	@echo "  make run            - Run the development server"
+	@echo "  make dist           - Create a tarball of the production build"
+	@echo "  make podman-linux   - Build OCI container for Linux"
+	@echo "  make podman-freebsd - Build OCI container for FreeBSD"
+	@echo "  make clean          - Remove build artifacts"
+
 build:
-	npm config delete python
+	@echo "Building production assets..."
 	npm install
 	npm run build
 
@@ -22,58 +44,64 @@ install: build
 	fi
 
 install-freebsd:
-	@echo "Installing for FreeBSD..."
-	mkdir -p /usr/local/www/cloudbsd-website
-	cp -R dist /usr/local/www/cloudbsd-website/
-	cp package.json package-lock.json /usr/local/www/cloudbsd-website/
-	cd /usr/local/www/cloudbsd-website && npm config delete python && npm install --omit=dev
-	if [ ! -f /usr/local/etc/nginx/conf.d/cloudbsd.conf ]; then \
-		cp cloudbsd-nginx.conf /usr/local/etc/nginx/conf.d/cloudbsd.conf; \
-	fi
-	cp cloudbsd-website.freebsd.rc /usr/local/etc/rc.d/cloudbsd_website
-	chmod +x /usr/local/etc/rc.d/cloudbsd_website
-	# Set up logging with proper permissions
-	touch /var/log/cloudbsd_website.log
-	chown www /var/log/cloudbsd_website.log
-	@echo "Installation complete. Enable with: sysrc cloudbsd_website_enable=YES"
+	@echo "Deploying to FreeBSD ($(WWW_ROOT_FREEBSD))..."
+	$(INSTALL) -d -m 755 $(DESTDIR)$(WWW_ROOT_FREEBSD)
+	cp -R dist/* $(DESTDIR)$(WWW_ROOT_FREEBSD)/
+	
+	@echo "Installing Nginx configuration..."
+	$(INSTALL) -d -m 755 $(DESTDIR)$(PREFIX)/etc/nginx/conf.d
+	$(INSTALL) -m 644 cloudbsd-nginx.conf $(DESTDIR)$(PREFIX)/etc/nginx/conf.d/cloudbsd.conf
+	
+	@echo "Installing RC script..."
+	$(INSTALL) -m 755 cloudbsd-website.freebsd.rc $(DESTDIR)$(PREFIX)/etc/rc.d/cloudbsd_website
+	
+	@echo "Setting up logging..."
+	$(INSTALL) -d -m 755 $(DESTDIR)/var/log
+	touch $(DESTDIR)/var/log/cloudbsd_website.log
+	chown www $(DESTDIR)/var/log/cloudbsd_website.log
+	
+	@echo "--------------------------------------------------------"
+	@echo "Installation complete!"
+	@echo "1. Enable:  sysrc cloudbsd_website_enable=YES"
+	@echo "2. Start:   service cloudbsd_website start"
+	@echo "--------------------------------------------------------"
 
 install-linux:
-	@echo "Installing for Linux (Ubuntu)..."
-	mkdir -p /var/www/cloudbsd-website
-	cp -R dist /var/www/cloudbsd-website/
-	cp package.json package-lock.json /var/www/cloudbsd-website/
-	cd /var/www/cloudbsd-website && npm config delete python && npm install --omit=dev
-	if [ ! -f /etc/nginx/sites-available/cloudbsd.conf ]; then \
-		cp cloudbsd-nginx.conf /etc/nginx/sites-available/cloudbsd.conf; \
-	fi
+	@echo "Deploying to Linux ($(WWW_ROOT_LINUX))..."
+	$(INSTALL) -d -m 755 $(DESTDIR)$(WWW_ROOT_LINUX)
+	cp -R dist/* $(DESTDIR)$(WWW_ROOT_LINUX)/
+	
+	@echo "Installing Nginx configuration..."
+	$(INSTALL) -d -m 755 $(DESTDIR)/etc/nginx/sites-available
+	$(INSTALL) -m 644 cloudbsd-nginx.conf $(DESTDIR)/etc/nginx/sites-available/cloudbsd.conf
 	ln -sf /etc/nginx/sites-available/cloudbsd.conf /etc/nginx/sites-enabled/
-	cp cloudbsd-website.ubuntu.service /etc/systemd/system/cloudbsd-website.service
+	
+	@echo "Installing Systemd service..."
+	$(INSTALL) -m 644 cloudbsd-website.ubuntu.service $(DESTDIR)/etc/systemd/system/cloudbsd-website.service
 	systemctl daemon-reload
-	@echo "Installation complete. Start with: systemctl enable --now cloudbsd-website"
+	
+	@echo "--------------------------------------------------------"
+	@echo "Installation complete!"
+	@echo "Start: systemctl enable --now cloudbsd-website"
+	@echo "--------------------------------------------------------"
 
 run:
-	@OS=$$(uname -s); \
-	if [ "$$OS" = "FreeBSD" ]; then \
-		echo "Detected FreeBSD - Running development server..."; \
-		npm run dev; \
-	elif [ "$$OS" = "Linux" ]; then \
-		echo "Detected Linux - Running development server..."; \
-		npm run dev; \
-	else \
-		echo "Unsupported OS: $$OS"; \
-		exit 1; \
-	fi
+	npm run dev
+
+dist: build
+	tar -czf $(IMAGE_NAME)-build.tar.gz dist/
+	@echo "Build package created: $(IMAGE_NAME)-build.tar.gz"
 
 podman-linux:
 	podman build -t $(IMAGE_NAME):linux -f Containerfile.linux .
-	@echo "Built Linux OCI container. Run with: podman run -p $(PORT):80 $(IMAGE_NAME):linux"
 
 podman-freebsd:
 	podman build -t $(IMAGE_NAME):freebsd -f Containerfile.freebsd .
-	@echo "Built FreeBSD OCI container. Run with: podman run -p $(PORT):80 $(IMAGE_NAME):freebsd"
 
 clean:
 	rm -rf dist
+	rm -f $(IMAGE_NAME)-build.tar.gz
 
 distclean: clean
 	rm -rf node_modules
+
