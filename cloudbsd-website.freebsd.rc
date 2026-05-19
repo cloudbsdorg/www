@@ -25,7 +25,7 @@ command="/usr/sbin/daemon"
 # -P: supervisor pid file (created as root in /var/run)
 # -p: child pid file
 # -o: log file output
-command_args="-u ${cloudbsd_website_svcuser} -r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} ${cloudbsd_website_chdir}/node_modules/.bin/serve -s ${cloudbsd_website_chdir}/dist -l 3000"
+command_args="-u ${cloudbsd_website_svcuser} -r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} ${cloudbsd_website_chdir}/node_modules/.bin/serve -s ${cloudbsd_website_chdir}/dist -l tcp://127.0.0.1:3000"
 
 # Environment and execution context
 # Note: We use _svcuser above instead of _user to prevent rc.subr from 
