@@ -584,13 +584,16 @@ const App = () => {
             <div className="mb-6 md:mb-0">
               <div className="flex items-center gap-3 mb-4">
                 <picture className="h-8 w-auto">
-                  <source srcSet="/logo_head_with_text.avif" type="image/avif" />
+                  <source srcSet="/logo-head-only.avif" type="image/avif" />
                   <img
-                    src="/logo_head_with_text.JPG"
+                    src="/logo-head-only.png"
                     alt={CONFIG.projectName}
                     className="h-full w-auto brightness-0 invert"
                   />
                 </picture>
+                <span className="text-xl font-bold text-white tracking-wider">
+                  {CONFIG.projectName}
+                </span>
               </div>
               <p className="text-sm">
                 {t('footer.rights', { companyName: CONFIG.companyName })}
