@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ShieldCheck, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const GDPRModal = () => {
   const { t } = useTranslation();
@@ -9,62 +11,62 @@ const GDPRModal = () => {
   useEffect(() => {
     const consent = localStorage.getItem('gdpr-consent');
     if (!consent) {
-      setIsVisible(true);
+      // Delay showing the modal for a smoother entrance
+      const timer = setTimeout(() => setIsVisible(true), 1500);
+      return () => clearTimeout(timer);
     }
   }, []);
-
-  useEffect(() => {
-    if (isVisible && dismissButtonRef.current) {
-      dismissButtonRef.current.focus();
-    }
-  }, [isVisible]);
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isVisible) {
-        handleDismiss();
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [isVisible]);
 
   const handleDismiss = () => {
     localStorage.setItem('gdpr-consent', 'true');
     setIsVisible(false);
   };
 
-  if (!isVisible) return null;
-
   return (
-    <div
-      className="fixed bottom-0 left-0 right-0 z-[100] p-4 md:p-6 animate-in fade-in slide-in-from-bottom-4 duration-500"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="gdpr-title"
-    >
-      <div className="container mx-auto max-w-4xl">
-        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-2xl rounded-2xl p-6 md:flex md:items-center md:justify-between space-y-4 md:space-y-0 md:space-x-8">
-          <div className="flex-1">
-            <h3 id="gdpr-title" className="text-lg font-semibold text-slate-900 dark:text-white mb-1">
-              {t('gdpr.title')}
-            </h3>
-            <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-              {t('gdpr.message')}
-            </p>
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ opacity: 0, y: 50, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 20, scale: 0.9 }}
+          className="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 z-[200] md:max-w-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="gdpr-title"
+        >
+          <div className="bg-slate-900/95 dark:bg-slate-800/95 backdrop-blur-xl border border-slate-700/50 shadow-2xl rounded-2xl p-5 shadow-blue-500/10">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-cloudbsd-blue/20 rounded-full flex items-center justify-center">
+                <ShieldCheck className="w-6 h-6 text-cloudbsd-blue" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center justify-between mb-1">
+                  <h3 id="gdpr-title" className="text-sm font-bold text-white">
+                    {t('gdpr.title')}
+                  </h3>
+                  <button 
+                    onClick={handleDismiss}
+                    className="text-slate-500 hover:text-white transition-colors"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+                <p className="text-slate-400 text-xs leading-relaxed mb-4">
+                  {t('gdpr.message')}
+                </p>
+                <button
+                  ref={dismissButtonRef}
+                  onClick={handleDismiss}
+                  className="w-full py-2 bg-cloudbsd-blue hover:bg-blue-600 text-white text-sm font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-500/20"
+                >
+                  {t('gdpr.dismiss')}
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-shrink-0">
-            <button
-              ref={dismissButtonRef}
-              onClick={handleDismiss}
-              className="w-full md:w-auto px-6 py-2.5 bg-cloudbsd-blue hover:bg-blue-600 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cloudbsd-blue"
-            >
-              {t('gdpr.dismiss')}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
