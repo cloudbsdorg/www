@@ -12,7 +12,7 @@ rcvar="cloudbsd_website_enable"
 # Configuration
 load_rc_config $name
 : ${cloudbsd_website_enable:="NO"}
-: ${cloudbsd_website_user:="www"}
+: ${cloudbsd_website_svcuser:="www"}
 : ${cloudbsd_website_chdir:="/usr/local/www/cloudbsd-website"}
 : ${cloudbsd_website_log:="/var/log/${name}.log"}
 : ${cloudbsd_website_pidfile:="/var/run/${name}.pid"}
@@ -25,12 +25,11 @@ command="/usr/sbin/daemon"
 # -P: supervisor pid file (created as root in /var/run)
 # -p: child pid file
 # -o: log file output
-command_args="-u ${cloudbsd_website_user} -r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} /usr/local/bin/serve -s ${cloudbsd_website_chdir}/dist -l 3000"
+command_args="-u ${cloudbsd_website_svcuser} -r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} /usr/local/bin/serve -s ${cloudbsd_website_chdir}/dist -l 3000"
 
 # Environment and execution context
-# We DO NOT set cloudbsd_website_user here because we want rc.subr to run 
-# the daemon command as root. The daemon utility will then drop privileges 
-# to the correct user itself via the -u flag above.
+# Note: We use _svcuser above instead of _user to prevent rc.subr from 
+# dropping privileges automatically before daemon(8) can create the pidfile.
 cloudbsd_website_chdir=${cloudbsd_website_chdir}
 cloudbsd_website_env="PATH=/usr/local/bin:/usr/bin:/bin HOME=${cloudbsd_website_chdir}"
 
@@ -40,16 +39,17 @@ start_precmd="cloudbsd_website_prestart"
 
 cloudbsd_website_prestart()
 {
-	# Ensure log file exists and is writable by the www user
+	# Ensure log file exists and is writable by the service user
 	if [ ! -f "${cloudbsd_website_log}" ]; then
 		touch "${cloudbsd_website_log}"
-		chown "${cloudbsd_website_user}" "${cloudbsd_website_log}"
+		chown "${cloudbsd_website_svcuser}" "${cloudbsd_website_log}"
 	fi
 
 	# Ensure the directory is writable for the child pid file
-	chown "${cloudbsd_website_user}" "${cloudbsd_website_chdir}"
+	chown "${cloudbsd_website_svcuser}" "${cloudbsd_website_chdir}"
 }
 
 run_rc_command "$1"
+
 
 
