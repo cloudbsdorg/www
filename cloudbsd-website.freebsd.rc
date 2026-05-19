@@ -17,26 +17,15 @@ load_rc_config $name
 : ${cloudbsd_website_log:="/var/log/${name}.log"}
 : ${cloudbsd_website_pidfile:="/var/run/${name}.pid"}
 
-# Note: We avoid daemon's -u flag here because for users like 'www' with 
-# nologin shell, it often triggers "failed to set user environment".
-# Instead, we use rc.subr's built-in user management.
-command="/usr/sbin/daemon"
-# -f: Stay in the background (daemonize)
-# -r: Restart the process if it fails
-# -p: Create a PID file
-# -o: Redirect output to log file
-command_args="-f -r -p ${cloudbsd_website_pidfile} -o ${cloudbsd_website_log} /usr/local/bin/npm start"
+command="/usr/local/bin/serve"
+command_args="-s ${cloudbsd_website_chdir}/dist -l 3000"
 
-# Use rc.subr to handle user, directory, and environment
 cloudbsd_website_user=${cloudbsd_website_user}
 cloudbsd_website_chdir=${cloudbsd_website_chdir}
-# Ensure /usr/local/bin is in PATH for npm to find node
-# Set HOME to a writable directory to avoid npm cache issues
-cloudbsd_website_env="PATH=$PATH:/usr/local/bin HOME=${cloudbsd_website_chdir}"
+cloudbsd_website_env="PATH=/usr/local/bin:/usr/bin:/bin HOME=${cloudbsd_website_chdir}"
 
-# Set up the commands and arguments
 pidfile="${cloudbsd_website_pidfile}"
-procname="/usr/local/bin/node"
+procname="/usr/local/bin/serve"
 
 start_precmd="cloudbsd_website_prestart"
 stop_postcmd="cloudbsd_website_poststop"
@@ -47,7 +36,7 @@ cloudbsd_website_prestart()
 	# Ensure log and pid files exist and are writable by the user
 	touch ${cloudbsd_website_log}
 	chown ${cloudbsd_website_user} ${cloudbsd_website_log}
-	
+
 	# If the pidfile exists, check if it contains a negative number
 	if [ -f "${pidfile}" ]; then
 		_pid=$(cat "${pidfile}" 2>/dev/null)

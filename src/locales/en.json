@@ -67,7 +67,10 @@
     "title": "Join our Community",
     "connect": "Connect with us on Discord",
     "desc": "Get help, share ideas, and contribute to the future of CloudBSD.",
-    "join": "Join Server"
+    "join": "Join Server",
+    "devMeeting": "Weekly Developer Meeting",
+    "devMeetingDesc": "Every Monday at 5:00 PM CST",
+    "viewEvent": "View Event"
   },
   "downloads": {
     "title": "Downloads",
