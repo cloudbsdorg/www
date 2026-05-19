@@ -1,33 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cloudbsd.org</loc>
+    <loc>https://cloudbsd.org/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudbsd.org/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://cloudbsd.org/?lng=ar"/>
+    <xhtml:link rel="alternate" hreflang="atl" href="https://cloudbsd.org/?lng=atl"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://cloudbsd.org/?lng=bg"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://cloudbsd.org/?lng=ca"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cloudbsd.org/?lng=zh"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cloudbsd.org/?lng=hr"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://cloudbsd.org/?lng=cs"/>
+    <xhtml:link rel="alternate" hreflang="dth" href="https://cloudbsd.org/?lng=dth"/>
+    <xhtml:link rel="alternate" hreflang="sjn" href="https://cloudbsd.org/?lng=sjn"/>
+    <xhtml:link rel="alternate" hreflang="eo" href="https://cloudbsd.org/?lng=eo"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://cloudbsd.org/?lng=fi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cloudbsd.org/?lng=fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cloudbsd.org/?lng=de"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cloudbsd.org/?lng=el"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://cloudbsd.org/?lng=he"/>
+    <xhtml:link rel="alternate" hreflang="qvy" href="https://cloudbsd.org/?lng=qvy"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://cloudbsd.org/?lng=hi"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://cloudbsd.org/?lng=hu"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://cloudbsd.org/?lng=id"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://cloudbsd.org/?lng=it"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cloudbsd.org/?lng=ja"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://cloudbsd.org/?lng=sw"/>
+    <xhtml:link rel="alternate" hreflang="tlh" href="https://cloudbsd.org/?lng=tlh"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cloudbsd.org/?lng=ko"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://cloudbsd.org/?lng=lv"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://cloudbsd.org/?lng=lt"/>
+    <xhtml:link rel="alternate" hreflang="nav" href="https://cloudbsd.org/?lng=nav"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://cloudbsd.org/?lng=no"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cloudbsd.org/?lng=pl"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cloudbsd.org/?lng=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cloudbsd.org/?lng=pt-PT"/>
+    <xhtml:link rel="alternate" hreflang="pa" href="https://cloudbsd.org/?lng=pa"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cloudbsd.org/?lng=ro"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cloudbsd.org/?lng=ru"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://cloudbsd.org/?lng=sr"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://cloudbsd.org/?lng=sk"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://cloudbsd.org/?lng=sl"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudbsd.org/?lng=es"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://cloudbsd.org/?lng=sv"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://cloudbsd.org/?lng=tr"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://cloudbsd.org/?lng=uk"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://cloudbsd.org/?lng=ur"/>
+    <xhtml:link rel="alternate" hreflang="yo" href="https://cloudbsd.org/?lng=yo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudbsd.org/"/>
   </url>
   <url>
     <loc>https://cloudbsd.org/#about</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudbsd.org/#about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://cloudbsd.org/?lng=ar#about"/>
+    <xhtml:link rel="alternate" hreflang="atl" href="https://cloudbsd.org/?lng=atl#about"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://cloudbsd.org/?lng=bg#about"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://cloudbsd.org/?lng=ca#about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cloudbsd.org/?lng=zh#about"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cloudbsd.org/?lng=hr#about"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://cloudbsd.org/?lng=cs#about"/>
+    <xhtml:link rel="alternate" hreflang="dth" href="https://cloudbsd.org/?lng=dth#about"/>
+    <xhtml:link rel="alternate" hreflang="sjn" href="https://cloudbsd.org/?lng=sjn#about"/>
+    <xhtml:link rel="alternate" hreflang="eo" href="https://cloudbsd.org/?lng=eo#about"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://cloudbsd.org/?lng=fi#about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cloudbsd.org/?lng=fr#about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cloudbsd.org/?lng=de#about"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cloudbsd.org/?lng=el#about"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://cloudbsd.org/?lng=he#about"/>
+    <xhtml:link rel="alternate" hreflang="qvy" href="https://cloudbsd.org/?lng=qvy#about"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://cloudbsd.org/?lng=hi#about"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://cloudbsd.org/?lng=hu#about"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://cloudbsd.org/?lng=id#about"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://cloudbsd.org/?lng=it#about"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cloudbsd.org/?lng=ja#about"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://cloudbsd.org/?lng=sw#about"/>
+    <xhtml:link rel="alternate" hreflang="tlh" href="https://cloudbsd.org/?lng=tlh#about"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cloudbsd.org/?lng=ko#about"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://cloudbsd.org/?lng=lv#about"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://cloudbsd.org/?lng=lt#about"/>
+    <xhtml:link rel="alternate" hreflang="nav" href="https://cloudbsd.org/?lng=nav#about"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://cloudbsd.org/?lng=no#about"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cloudbsd.org/?lng=pl#about"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cloudbsd.org/?lng=pt-BR#about"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cloudbsd.org/?lng=pt-PT#about"/>
+    <xhtml:link rel="alternate" hreflang="pa" href="https://cloudbsd.org/?lng=pa#about"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cloudbsd.org/?lng=ro#about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cloudbsd.org/?lng=ru#about"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://cloudbsd.org/?lng=sr#about"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://cloudbsd.org/?lng=sk#about"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://cloudbsd.org/?lng=sl#about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudbsd.org/?lng=es#about"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://cloudbsd.org/?lng=sv#about"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://cloudbsd.org/?lng=tr#about"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://cloudbsd.org/?lng=uk#about"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://cloudbsd.org/?lng=ur#about"/>
+    <xhtml:link rel="alternate" hreflang="yo" href="https://cloudbsd.org/?lng=yo#about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudbsd.org/#about"/>
   </url>
   <url>
     <loc>https://cloudbsd.org/#features</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudbsd.org/#features"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://cloudbsd.org/?lng=ar#features"/>
+    <xhtml:link rel="alternate" hreflang="atl" href="https://cloudbsd.org/?lng=atl#features"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://cloudbsd.org/?lng=bg#features"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://cloudbsd.org/?lng=ca#features"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cloudbsd.org/?lng=zh#features"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cloudbsd.org/?lng=hr#features"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://cloudbsd.org/?lng=cs#features"/>
+    <xhtml:link rel="alternate" hreflang="dth" href="https://cloudbsd.org/?lng=dth#features"/>
+    <xhtml:link rel="alternate" hreflang="sjn" href="https://cloudbsd.org/?lng=sjn#features"/>
+    <xhtml:link rel="alternate" hreflang="eo" href="https://cloudbsd.org/?lng=eo#features"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://cloudbsd.org/?lng=fi#features"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cloudbsd.org/?lng=fr#features"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cloudbsd.org/?lng=de#features"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cloudbsd.org/?lng=el#features"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://cloudbsd.org/?lng=he#features"/>
+    <xhtml:link rel="alternate" hreflang="qvy" href="https://cloudbsd.org/?lng=qvy#features"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://cloudbsd.org/?lng=hi#features"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://cloudbsd.org/?lng=hu#features"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://cloudbsd.org/?lng=id#features"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://cloudbsd.org/?lng=it#features"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cloudbsd.org/?lng=ja#features"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://cloudbsd.org/?lng=sw#features"/>
+    <xhtml:link rel="alternate" hreflang="tlh" href="https://cloudbsd.org/?lng=tlh#features"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cloudbsd.org/?lng=ko#features"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://cloudbsd.org/?lng=lv#features"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://cloudbsd.org/?lng=lt#features"/>
+    <xhtml:link rel="alternate" hreflang="nav" href="https://cloudbsd.org/?lng=nav#features"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://cloudbsd.org/?lng=no#features"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cloudbsd.org/?lng=pl#features"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cloudbsd.org/?lng=pt-BR#features"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cloudbsd.org/?lng=pt-PT#features"/>
+    <xhtml:link rel="alternate" hreflang="pa" href="https://cloudbsd.org/?lng=pa#features"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cloudbsd.org/?lng=ro#features"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cloudbsd.org/?lng=ru#features"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://cloudbsd.org/?lng=sr#features"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://cloudbsd.org/?lng=sk#features"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://cloudbsd.org/?lng=sl#features"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudbsd.org/?lng=es#features"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://cloudbsd.org/?lng=sv#features"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://cloudbsd.org/?lng=tr#features"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://cloudbsd.org/?lng=uk#features"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://cloudbsd.org/?lng=ur#features"/>
+    <xhtml:link rel="alternate" hreflang="yo" href="https://cloudbsd.org/?lng=yo#features"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudbsd.org/#features"/>
   </url>
   <url>
     <loc>https://cloudbsd.org/#community</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudbsd.org/#community"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://cloudbsd.org/?lng=ar#community"/>
+    <xhtml:link rel="alternate" hreflang="atl" href="https://cloudbsd.org/?lng=atl#community"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://cloudbsd.org/?lng=bg#community"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://cloudbsd.org/?lng=ca#community"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cloudbsd.org/?lng=zh#community"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cloudbsd.org/?lng=hr#community"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://cloudbsd.org/?lng=cs#community"/>
+    <xhtml:link rel="alternate" hreflang="dth" href="https://cloudbsd.org/?lng=dth#community"/>
+    <xhtml:link rel="alternate" hreflang="sjn" href="https://cloudbsd.org/?lng=sjn#community"/>
+    <xhtml:link rel="alternate" hreflang="eo" href="https://cloudbsd.org/?lng=eo#community"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://cloudbsd.org/?lng=fi#community"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cloudbsd.org/?lng=fr#community"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cloudbsd.org/?lng=de#community"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cloudbsd.org/?lng=el#community"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://cloudbsd.org/?lng=he#community"/>
+    <xhtml:link rel="alternate" hreflang="qvy" href="https://cloudbsd.org/?lng=qvy#community"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://cloudbsd.org/?lng=hi#community"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://cloudbsd.org/?lng=hu#community"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://cloudbsd.org/?lng=id#community"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://cloudbsd.org/?lng=it#community"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cloudbsd.org/?lng=ja#community"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://cloudbsd.org/?lng=sw#community"/>
+    <xhtml:link rel="alternate" hreflang="tlh" href="https://cloudbsd.org/?lng=tlh#community"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cloudbsd.org/?lng=ko#community"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://cloudbsd.org/?lng=lv#community"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://cloudbsd.org/?lng=lt#community"/>
+    <xhtml:link rel="alternate" hreflang="nav" href="https://cloudbsd.org/?lng=nav#community"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://cloudbsd.org/?lng=no#community"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cloudbsd.org/?lng=pl#community"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cloudbsd.org/?lng=pt-BR#community"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cloudbsd.org/?lng=pt-PT#community"/>
+    <xhtml:link rel="alternate" hreflang="pa" href="https://cloudbsd.org/?lng=pa#community"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cloudbsd.org/?lng=ro#community"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cloudbsd.org/?lng=ru#community"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://cloudbsd.org/?lng=sr#community"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://cloudbsd.org/?lng=sk#community"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://cloudbsd.org/?lng=sl#community"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudbsd.org/?lng=es#community"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://cloudbsd.org/?lng=sv#community"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://cloudbsd.org/?lng=tr#community"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://cloudbsd.org/?lng=uk#community"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://cloudbsd.org/?lng=ur#community"/>
+    <xhtml:link rel="alternate" hreflang="yo" href="https://cloudbsd.org/?lng=yo#community"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudbsd.org/#community"/>
   </url>
   <url>
     <loc>https://cloudbsd.org/#downloads</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cloudbsd.org/#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://cloudbsd.org/?lng=ar#downloads"/>
+    <xhtml:link rel="alternate" hreflang="atl" href="https://cloudbsd.org/?lng=atl#downloads"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://cloudbsd.org/?lng=bg#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://cloudbsd.org/?lng=ca#downloads"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cloudbsd.org/?lng=zh#downloads"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://cloudbsd.org/?lng=hr#downloads"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://cloudbsd.org/?lng=cs#downloads"/>
+    <xhtml:link rel="alternate" hreflang="dth" href="https://cloudbsd.org/?lng=dth#downloads"/>
+    <xhtml:link rel="alternate" hreflang="sjn" href="https://cloudbsd.org/?lng=sjn#downloads"/>
+    <xhtml:link rel="alternate" hreflang="eo" href="https://cloudbsd.org/?lng=eo#downloads"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://cloudbsd.org/?lng=fi#downloads"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cloudbsd.org/?lng=fr#downloads"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://cloudbsd.org/?lng=de#downloads"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://cloudbsd.org/?lng=el#downloads"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://cloudbsd.org/?lng=he#downloads"/>
+    <xhtml:link rel="alternate" hreflang="qvy" href="https://cloudbsd.org/?lng=qvy#downloads"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://cloudbsd.org/?lng=hi#downloads"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://cloudbsd.org/?lng=hu#downloads"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://cloudbsd.org/?lng=id#downloads"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://cloudbsd.org/?lng=it#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cloudbsd.org/?lng=ja#downloads"/>
+    <xhtml:link rel="alternate" hreflang="sw" href="https://cloudbsd.org/?lng=sw#downloads"/>
+    <xhtml:link rel="alternate" hreflang="tlh" href="https://cloudbsd.org/?lng=tlh#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://cloudbsd.org/?lng=ko#downloads"/>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://cloudbsd.org/?lng=lv#downloads"/>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://cloudbsd.org/?lng=lt#downloads"/>
+    <xhtml:link rel="alternate" hreflang="nav" href="https://cloudbsd.org/?lng=nav#downloads"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://cloudbsd.org/?lng=no#downloads"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://cloudbsd.org/?lng=pl#downloads"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://cloudbsd.org/?lng=pt-BR#downloads"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://cloudbsd.org/?lng=pt-PT#downloads"/>
+    <xhtml:link rel="alternate" hreflang="pa" href="https://cloudbsd.org/?lng=pa#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://cloudbsd.org/?lng=ro#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cloudbsd.org/?lng=ru#downloads"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://cloudbsd.org/?lng=sr#downloads"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://cloudbsd.org/?lng=sk#downloads"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://cloudbsd.org/?lng=sl#downloads"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://cloudbsd.org/?lng=es#downloads"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://cloudbsd.org/?lng=sv#downloads"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://cloudbsd.org/?lng=tr#downloads"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://cloudbsd.org/?lng=uk#downloads"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://cloudbsd.org/?lng=ur#downloads"/>
+    <xhtml:link rel="alternate" hreflang="yo" href="https://cloudbsd.org/?lng=yo#downloads"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cloudbsd.org/#downloads"/>
   </url>
 </urlset>

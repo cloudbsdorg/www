@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { CONFIG } from './config'
@@ -216,28 +217,43 @@ const App = () => {
 
       {/* Hero */}
       <main id="main-content" className="flex-1">
-        <section className="hero-bg py-20 md:py-32 text-white">
+        <section className="hero-bg py-24 md:py-40 text-white overflow-hidden">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight"
+            >
               {t('hero.title')}
-            </h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-blue-50">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-blue-50/90 leading-relaxed"
+            >
               {t('hero.subtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+            >
               <a
                 href="#about"
-                className="bg-white text-cloudbsd-blue px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                className="bg-white text-cloudbsd-blue px-10 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 {t('hero.learnMore')}
               </a>
               <a
                 href="#downloads"
-                className="bg-cloudbsd-red text-white px-8 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors"
+                className="bg-cloudbsd-red text-white px-10 py-4 rounded-xl font-bold hover:bg-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 {t('hero.getStarted')}
               </a>
-            </div>
+            </motion.div>
           </div>
         </section>
 
@@ -264,58 +280,103 @@ const App = () => {
         {/* Features Grid */}
         <section
           id="features"
-          className="py-20 bg-slate-50 dark:bg-slate-800/30 transition-colors duration-300"
+          className="py-24 bg-slate-50 dark:bg-slate-800/30 transition-colors duration-300"
         >
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-white">
-              {t('features.title')}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <FeatureCard
-                title={t('features.unifiedController.title')}
-                description={t('features.unifiedController.desc')}
-              />
-              <FeatureCard
-                title={t('features.smartWorkerNodes.title')}
-                description={t('features.smartWorkerNodes.desc')}
-              />
-              <FeatureCard
-                title={t('features.nativeVirtualization.title')}
-                description={t('features.nativeVirtualization.desc')}
-              />
-              <FeatureCard
-                title={t('features.secureIsolation.title')}
-                description={t('features.secureIsolation.desc')}
-              />
-              <FeatureCard
-                title={t('features.gpuManagement.title')}
-                description={t('features.gpuManagement.desc')}
-              />
-              <FeatureCard
-                title={t('features.zfsSecurity.title')}
-                description={t('features.zfsSecurity.desc')}
-              />
-              <FeatureCard
-                title={t('features.hardenedServices.title')}
-                description={t('features.hardenedServices.desc')}
-              />
-              <FeatureCard
-                title={t('features.rbac.title')}
-                description={t('features.rbac.desc')}
-              />
-              <FeatureCard
-                title={t('features.ociSupport.title')}
-                description={t('features.ociSupport.desc')}
-              />
-              <FeatureCard
-                title={t('features.discovery.title')}
-                description={t('features.discovery.desc')}
-              />
-              <FeatureCard
-                title={t('features.apiFirst.title')}
-                description={t('features.apiFirst.desc')}
-              />
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 dark:text-white">
+                {t('features.title')}
+              </h2>
+              <div className="w-24 h-1.5 bg-cloudbsd-blue mx-auto mb-16 rounded-full"></div>
+            </motion.div>
+            
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={{
+                hidden: { opacity: 0 },
+                show: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.1
+                  }
+                }
+              }}
+            >
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.unifiedController.title')}
+                  description={t('features.unifiedController.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.smartWorkerNodes.title')}
+                  description={t('features.smartWorkerNodes.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.nativeVirtualization.title')}
+                  description={t('features.nativeVirtualization.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.secureIsolation.title')}
+                  description={t('features.secureIsolation.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.gpuManagement.title')}
+                  description={t('features.gpuManagement.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.zfsSecurity.title')}
+                  description={t('features.zfsSecurity.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.hardenedServices.title')}
+                  description={t('features.hardenedServices.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.rbac.title')}
+                  description={t('features.rbac.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.ociSupport.title')}
+                  description={t('features.ociSupport.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.discovery.title')}
+                  description={t('features.discovery.desc')}
+                />
+              </motion.div>
+              <motion.div variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}>
+                <FeatureCard
+                  title={t('features.apiFirst.title')}
+                  description={t('features.apiFirst.desc')}
+                />
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
