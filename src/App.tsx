@@ -65,7 +65,10 @@ const App = () => {
       <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between relative">
           <div className="flex items-center space-x-2">
-            <img src="/logo-head-only.png" alt="Logo" className="h-12 w-auto" />
+            <picture className="h-12 w-auto">
+              <source srcSet="/logo-head-only.avif" type="image/avif" />
+              <img src="/logo-head-only.png" alt="Logo" className="h-full w-auto" />
+            </picture>
             <span className="text-2xl font-bold text-cloudbsd-blue dark:text-blue-400">
               {CONFIG.projectName}
             </span>
@@ -242,6 +245,21 @@ const App = () => {
       <main id="main-content" className="flex-1">
         <section className="hero-bg py-24 md:py-40 text-white overflow-hidden">
           <div className="container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="mb-8"
+            >
+              <picture className="w-32 h-32 md:w-48 md:h-48 mx-auto drop-shadow-2xl">
+                <source srcSet="/logo-head-only.avif" type="image/avif" />
+                <img
+                  src="/logo-head-only.png"
+                  alt="CloudBSD Logo"
+                  className="w-full h-full object-contain"
+                />
+              </picture>
+            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -564,10 +582,17 @@ const App = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                {CONFIG.projectName}
-              </span>
-              <p className="mt-2 text-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <picture className="h-8 w-auto">
+                  <source srcSet="/logo_head_with_text.avif" type="image/avif" />
+                  <img
+                    src="/logo_head_with_text.JPG"
+                    alt={CONFIG.projectName}
+                    className="h-full w-auto brightness-0 invert"
+                  />
+                </picture>
+              </div>
+              <p className="text-sm">
                 {t('footer.rights', { companyName: CONFIG.companyName })}
               </p>
             </div>
