@@ -48,7 +48,7 @@ install: build
 install-freebsd:
 	@echo "Deploying to FreeBSD ($(WWW_ROOT_FREEBSD))..."
 	$(INSTALL) -d -m 755 $(DESTDIR)$(WWW_ROOT_FREEBSD)
-	cp -R dist/. $(DESTDIR)$(WWW_ROOT_FREEBSD)/
+	cp -R dist $(DESTDIR)$(WWW_ROOT_FREEBSD)/
 	$(INSTALL) -m 644 package.json $(DESTDIR)$(WWW_ROOT_FREEBSD)/
 	$(INSTALL) -m 644 package-lock.json $(DESTDIR)$(WWW_ROOT_FREEBSD)/
 	
