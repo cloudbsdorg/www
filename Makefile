@@ -1,4 +1,7 @@
 # CloudBSD Website Makefile
+# Compatible with bmake (FreeBSD) and gmake (Linux)
+SHELL = /bin/sh
+
 IMAGE_NAME = cloudbsd-website
 PORT = 8080
 
@@ -10,7 +13,6 @@ WWW_ROOT_LINUX = /var/www/cloudbsd-website
 
 # Tools
 INSTALL ?= install
-STRIP ?= strip
 
 .PHONY: all help build run clean distclean podman-linux podman-freebsd install install-freebsd install-linux dist
 
@@ -33,7 +35,7 @@ build:
 	npm run build
 
 install: build
-	@OS=$$(uname -s); \
+	@OS=`uname -s`; \
 	if [ "$$OS" = "FreeBSD" ]; then \
 		$(MAKE) install-freebsd; \
 	elif [ "$$OS" = "Linux" ]; then \
@@ -46,7 +48,7 @@ install: build
 install-freebsd:
 	@echo "Deploying to FreeBSD ($(WWW_ROOT_FREEBSD))..."
 	$(INSTALL) -d -m 755 $(DESTDIR)$(WWW_ROOT_FREEBSD)
-	cp -R dist/* $(DESTDIR)$(WWW_ROOT_FREEBSD)/
+	cp -R dist/. $(DESTDIR)$(WWW_ROOT_FREEBSD)/
 	
 	@echo "Installing Nginx configuration..."
 	$(INSTALL) -d -m 755 $(DESTDIR)$(PREFIX)/etc/nginx/conf.d
@@ -69,7 +71,7 @@ install-freebsd:
 install-linux:
 	@echo "Deploying to Linux ($(WWW_ROOT_LINUX))..."
 	$(INSTALL) -d -m 755 $(DESTDIR)$(WWW_ROOT_LINUX)
-	cp -R dist/* $(DESTDIR)$(WWW_ROOT_LINUX)/
+	cp -R dist/. $(DESTDIR)$(WWW_ROOT_LINUX)/
 	
 	@echo "Installing Nginx configuration..."
 	$(INSTALL) -d -m 755 $(DESTDIR)/etc/nginx/sites-available
@@ -104,4 +106,5 @@ clean:
 
 distclean: clean
 	rm -rf node_modules
+
 
