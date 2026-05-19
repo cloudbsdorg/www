@@ -19,15 +19,18 @@ load_rc_config $name
 
 # The daemon(8) utility provides supervision and automatic restarts (-r)
 command="/usr/sbin/daemon"
+# -u: drop privileges to this user AFTER creating the supervisor pid
 # -r: restart child if it crashes
 # -f: direct output to log file
-# -P: supervisor pid file
+# -P: supervisor pid file (created as root in /var/run)
 # -p: child pid file
 # -o: log file output
-command_args="-r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} /usr/local/bin/serve -s ${cloudbsd_website_chdir}/dist -l 3000"
+command_args="-u ${cloudbsd_website_user} -r -f -P ${cloudbsd_website_pidfile} -p ${cloudbsd_website_chdir}/child.pid -o ${cloudbsd_website_log} /usr/local/bin/serve -s ${cloudbsd_website_chdir}/dist -l 3000"
 
 # Environment and execution context
-cloudbsd_website_user=${cloudbsd_website_user}
+# We DO NOT set cloudbsd_website_user here because we want rc.subr to run 
+# the daemon command as root. The daemon utility will then drop privileges 
+# to the correct user itself via the -u flag above.
 cloudbsd_website_chdir=${cloudbsd_website_chdir}
 cloudbsd_website_env="PATH=/usr/local/bin:/usr/bin:/bin HOME=${cloudbsd_website_chdir}"
 
@@ -48,4 +51,5 @@ cloudbsd_website_prestart()
 }
 
 run_rc_command "$1"
+
 
