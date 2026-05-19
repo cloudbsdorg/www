@@ -6,8 +6,6 @@ import {
   Network, 
   Box, 
   ShieldCheck, 
-  Cpu, 
-  HardDrive, 
   GlobeLock, 
   Key, 
   Package, 
