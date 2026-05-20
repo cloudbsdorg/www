@@ -52,7 +52,7 @@ const LanguageSelector = () => {
   }, [isOpen]);
 
   return (
-    <div className="relative inline-block z-50" ref={dropdownRef}>
+    <div className="relative inline-block z-[200]" ref={dropdownRef}>
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
@@ -75,7 +75,7 @@ const LanguageSelector = () => {
               initial={{ opacity: 0, y: 10, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
-              className="hidden md:block absolute right-0 mt-2 w-64 max-h-96 overflow-y-auto rounded-2xl shadow-2xl bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 z-[100] focus:outline-none scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-700 p-2"
+              className="hidden md:block absolute right-0 mt-2 w-64 max-h-96 overflow-y-auto rounded-2xl shadow-2xl bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 z-[300] focus:outline-none scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-700 p-2"
             >
               {languages.map((lang) => (
                 <button
