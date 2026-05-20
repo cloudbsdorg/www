@@ -183,12 +183,12 @@ const App = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-slate-900 ${
+          className={`md:hidden relative overflow-visible transition-all duration-300 ease-in-out bg-slate-900 ${
             isMobileMenuOpen ? 'opacity-100' : 'opacity-0'
           }`}
           style={{ maxHeight: isMobileMenuOpen ? '300px' : '0' }}
         >
-          <nav id="mobile-menu" className="flex flex-col p-4 space-y-4">
+          <nav id="mobile-menu" className="flex flex-col p-4 space-y-4 z-10 relative">
             <a
               href="#about"
               className="text-white/80 hover:text-white font-medium"
