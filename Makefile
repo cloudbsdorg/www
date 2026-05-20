@@ -14,7 +14,7 @@ WWW_ROOT_LINUX = /var/www/cloudbsd-website
 # Tools
 INSTALL ?= install
 
-.PHONY: all help build run clean distclean podman-linux podman-freebsd install install-freebsd install-linux dist
+.PHONY: all help build run clean distclean podman-linux podman-freebsd install install-freebsd install-linux install-ubuntu dist
 
 all: build
 
@@ -27,6 +27,7 @@ help:
 	@echo "  make dist           - Create a tarball of the production build"
 	@echo "  make podman-linux   - Build OCI container for Linux"
 	@echo "  make podman-freebsd - Build OCI container for FreeBSD"
+	@echo "  make install-ubuntu - Run the full Ubuntu system installer"
 	@echo "  make clean          - Remove build artifacts"
 
 build:
@@ -77,20 +78,24 @@ install-linux:
 	@echo "Deploying to Linux ($(WWW_ROOT_LINUX))..."
 	$(INSTALL) -d -m 755 $(DESTDIR)$(WWW_ROOT_LINUX)
 	cp -R dist/. $(DESTDIR)$(WWW_ROOT_LINUX)/
-	
+
 	@echo "Installing Nginx configuration..."
 	$(INSTALL) -d -m 755 $(DESTDIR)/etc/nginx/sites-available
 	$(INSTALL) -m 644 cloudbsd-nginx.conf $(DESTDIR)/etc/nginx/sites-available/cloudbsd.conf
 	ln -sf /etc/nginx/sites-available/cloudbsd.conf /etc/nginx/sites-enabled/
-	
+
 	@echo "Installing Systemd service..."
 	$(INSTALL) -m 644 cloudbsd-website.ubuntu.service $(DESTDIR)/etc/systemd/system/cloudbsd-website.service
 	systemctl daemon-reload
-	
+
 	@echo "--------------------------------------------------------"
 	@echo "Installation complete!"
 	@echo "Start: systemctl enable --now cloudbsd-website"
 	@echo "--------------------------------------------------------"
+
+install-ubuntu:
+	@echo "Running Ubuntu system installer..."
+	bash scripts/install.sh
 
 run:
 	npm run dev
