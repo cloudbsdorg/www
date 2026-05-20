@@ -66,7 +66,7 @@ export const languages: Language[] = availableLocales
   .sort((a, b) => {
     if (a.code === 'en') return -1;
     if (b.code === 'en') return 1;
-    return a.name.localeCompare(b.name);
+    return a.nativeName.localeCompare(b.nativeName);
   });
 
 export const getLanguageByCode = (code: string | undefined | null): Language | undefined => {
