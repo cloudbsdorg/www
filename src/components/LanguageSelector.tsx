@@ -56,12 +56,12 @@ const LanguageSelector = () => {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center justify-center h-10 px-3 md:px-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm hover:border-cloudbsd-blue dark:hover:border-blue-500 transition-all duration-300 group"
+        className="inline-flex items-center justify-center h-10 px-3 md:px-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md shadow-sm hover:border-white/30 transition-all duration-300 group text-white"
         aria-haspopup="true"
         aria-expanded={isOpen}
       >
-        <Globe className="w-4 h-4 md:mr-2 text-slate-500 group-hover:text-cloudbsd-blue transition-colors" />
-        <span className="hidden md:inline text-sm font-medium text-slate-700 dark:text-slate-200 mr-2">
+        <Globe className="w-4 h-4 md:mr-2 text-white/80 group-hover:text-white transition-colors" />
+        <span className="hidden md:inline text-sm font-medium text-white/90 mr-2">
           {currentLanguage.nativeName}
         </span>
         <span className="md:hidden text-lg" aria-hidden="true">{currentLanguage.flag}</span>

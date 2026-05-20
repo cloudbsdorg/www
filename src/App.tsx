@@ -62,103 +62,82 @@ const App = () => {
       </a>
 
       {/* Header */}
-      <header className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
-        <div className="container mx-auto px-4 h-20 flex items-center justify-between relative">
-          <div className="flex items-center space-x-2">
-            <picture className="h-12 w-auto">
-              <source srcSet="/logo-head-only.avif" type="image/avif" />
-              <img src="/logo-head-only.png" alt="Logo" className="h-full w-auto" />
-            </picture>
-            <span className="text-2xl font-bold text-cloudbsd-blue dark:text-blue-400">
-              {CONFIG.projectName}
-            </span>
-          </div>
-          <nav className="hidden md:flex items-center space-x-8">
+      <header className="sticky top-0 z-50 transition-all duration-300">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-8">
+          <div className="relative flex h-16 items-center justify-between rounded-2xl border border-white/5 bg-slate-900/90 backdrop-blur-md px-6 shadow-2xl">
+            <div className="flex flex-shrink-0 items-center">
+              <picture className="h-10 w-auto mr-3">
+                <source srcSet="/logo-head-only.avif" type="image/avif" />
+                <img src="/logo-head-only.png" alt="Logo" className="h-full w-auto" />
+              </picture>
+              <span className="text-2xl font-bold tracking-tight text-white drop-shadow-md">
+                Cloud<span className="text-cyan-400">BSD</span>
+              </span>
+            </div>
+            <nav className="hidden md:flex items-center space-x-8">
             <a
               href="#about"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium transition-colors"
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium drop-shadow-sm"
             >
               {t('nav.about')}
             </a>
             <a
               href="#features"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium transition-colors"
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium drop-shadow-sm"
             >
               {t('nav.features')}
             </a>
             <a
               href="#community"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium transition-colors"
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium drop-shadow-sm"
             >
               {t('nav.community')}
             </a>
             <a
               href="#downloads"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium transition-colors"
+              className="text-white/80 hover:text-white transition-colors text-sm font-medium drop-shadow-sm"
             >
               {t('nav.downloads')}
             </a>
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {isDarkMode ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-              )}
-            </button>
-            <LanguageSelector />
+            <div className="pl-4 border-l border-white/10 flex items-center gap-2">
+              <button
+                onClick={toggleDarkMode}
+                className="p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                {isDarkMode ? (
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fillRule="evenodd" clipRule="evenodd" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  </svg>
+                )}
+              </button>
+              <LanguageSelector />
+            </div>
           </nav>
-          <div className="md:hidden flex items-center space-x-2">
+            <div className="md:hidden flex items-center space-x-2">
             <LanguageSelector />
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors"
+              className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                  ></path>
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fillRule="evenodd" clipRule="evenodd" />
                 </svg>
               ) : (
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                 </svg>
               )}
             </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors"
+              className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
@@ -198,12 +177,13 @@ const App = () => {
                 </svg>
               )}
             </button>
+            </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 ${
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-slate-900 ${
             isMobileMenuOpen ? 'opacity-100' : 'opacity-0'
           }`}
           style={{ maxHeight: isMobileMenuOpen ? '300px' : '0' }}
@@ -211,34 +191,35 @@ const App = () => {
           <nav id="mobile-menu" className="flex flex-col p-4 space-y-4">
             <a
               href="#about"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              className="text-white/80 hover:text-white font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t('nav.about')}
             </a>
             <a
               href="#features"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              className="text-white/80 hover:text-white font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t('nav.features')}
             </a>
             <a
               href="#community"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              className="text-white/80 hover:text-white font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t('nav.community')}
             </a>
             <a
               href="#downloads"
-              className="text-slate-600 dark:text-slate-300 hover:text-cloudbsd-blue dark:hover:text-blue-400 font-medium"
+              className="text-white/80 hover:text-white font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t('nav.downloads')}
             </a>
           </nav>
         </div>
+        <br />
       </header>
 
       {/* Hero */}
