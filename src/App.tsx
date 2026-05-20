@@ -74,7 +74,7 @@ const App = () => {
                 Cloud<span className="text-cyan-400">BSD</span>
               </span>
             </div>
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-8 overflow-visible">
             <a
               href="#about"
               className="text-white/80 hover:text-white transition-colors text-sm font-medium drop-shadow-sm"

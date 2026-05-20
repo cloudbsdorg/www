@@ -71,10 +71,7 @@ const LanguageSelector = () => {
         {isOpen && (
           <>
             {/* Desktop Dropdown */}
-            <motion.div
-              initial={{ opacity: 0, y: 10, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+            <div
               className="hidden md:block absolute right-0 mt-2 w-64 max-h-96 overflow-y-auto rounded-2xl shadow-2xl bg-white dark:bg-slate-800 ring-1 ring-black ring-opacity-5 z-[300] focus:outline-none scrollbar-thin scrollbar-thumb-slate-200 dark:scrollbar-thumb-slate-700 p-2"
             >
               {languages.map((lang) => (
@@ -92,7 +89,7 @@ const LanguageSelector = () => {
                   {(i18n.language || '').startsWith(lang.code) && <Check className="w-4 h-4" />}
                 </button>
               ))}
-            </motion.div>
+            </div>
 
             {/* Mobile Full-Screen Modal */}
             <motion.div
