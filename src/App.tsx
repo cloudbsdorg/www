@@ -64,7 +64,7 @@ const App = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 transition-all duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-8">
-          <div className="relative flex h-16 items-center justify-between rounded-2xl border border-white/5 bg-slate-900/90 backdrop-blur-md px-6 shadow-2xl">
+          <div className="relative flex h-16 items-center justify-between rounded-2xl border border-white/5 bg-slate-900/90 backdrop-blur-md px-6 shadow-2xl z-[60]">
             <div className="flex flex-shrink-0 items-center">
               <picture className="h-10 w-auto mr-3">
                 <source srcSet="/logo-head-only.avif" type="image/avif" />
