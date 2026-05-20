@@ -577,7 +577,7 @@ const App = () => {
                 </span>
               </div>
               <p className="text-sm">
-                {t('footer.rights', { companyName: CONFIG.companyName })}
+                © 2026 <a href={CONFIG.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">{CONFIG.companyName}</a>. All rights reserved.
               </p>
             </div>
             <div className="text-center md:text-right">
