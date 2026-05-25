@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import { isFirefox } from './utils/browser'
 import {
   Settings2,
   Network,
@@ -32,7 +33,10 @@ const App = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900 transition-colors duration-300">
+    <div 
+      className="min-h-screen flex flex-col bg-white dark:bg-slate-900 transition-colors duration-300"
+      data-browser={isFirefox() ? 'firefox' : 'other'}
+    >
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-slate-900 focus:rounded-lg focus:shadow-lg"
@@ -53,7 +57,7 @@ const App = () => {
               className="mb-8"
             >
               <picture className="w-32 h-32 md:w-48 md:h-48 mx-auto drop-shadow-2xl">
-                <source srcSet="/logo-head-only.avif" type="image/avif" />
+                {!isFirefox() && <source srcSet="/logo-head-only.avif" type="image/avif" />}
                 <img
                   src="/logo-head-only.png"
                   alt="CloudBSD Logo"
@@ -385,7 +389,7 @@ const App = () => {
             <div className="mb-6 md:mb-0">
               <div className="flex items-center gap-3 mb-4">
                 <picture className="h-8 w-auto">
-                  <source srcSet="/logo-head-only.avif" type="image/avif" />
+                  {!isFirefox() && <source srcSet="/logo-head-only.avif" type="image/avif" />}
                   <img
                     src="/logo-head-only.png"
                     alt={CONFIG.projectName}

@@ -1,6 +1,7 @@
 import { memo, useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { isFirefox } from '../utils/browser';
 import { languages, getLanguageByCode } from '../config/languages';
 import { changeLanguage } from '../i18n';
 import { X, Globe, Check, Sun, Moon } from 'lucide-react';
@@ -132,7 +133,7 @@ const Navbar = memo(() => {
           <div className="relative flex h-16 items-center justify-between rounded-2xl border border-white/5 bg-slate-900/90 backdrop-blur-md px-6 shadow-2xl">
             <div className="flex flex-shrink-0 items-center">
               <picture className="h-10 w-auto mr-3">
-                <source srcSet="/logo-head-only.avif" type="image/avif" />
+                {!isFirefox() && <source srcSet="/logo-head-only.avif" type="image/avif" />}
                 <img src="/logo-head-only.png" alt="Logo" className="h-full w-auto" />
               </picture>
               <span className="text-2xl font-bold tracking-tight text-white drop-shadow-md">
