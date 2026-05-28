@@ -31,7 +31,7 @@ command_args="-u ${cloudbsd_website_svcuser} -r -f -P ${cloudbsd_website_pidfile
 # Note: We use _svcuser above instead of _user to prevent rc.subr from 
 # dropping privileges automatically before daemon(8) can create the pidfile.
 cloudbsd_website_chdir=${cloudbsd_website_chdir}
-cloudbsd_website_env="PATH=/usr/local/bin:/usr/bin:/bin HOME=${cloudbsd_website_chdir}"
+cloudbsd_website_env="PATH=/usr/local/bin:/usr/bin:/bin HOME=${cloudbsd_website_chdir} NODE_ENV=production"
 
 pidfile="${cloudbsd_website_pidfile}"
 
